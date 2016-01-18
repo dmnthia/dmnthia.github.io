@@ -1,0 +1,76 @@
+table {
+  font-size: 13px;
+  font-family: Roboto, Trebuchet MS, Arial;
+}
+
+body {
+  padding-top: 50px;
+}
+
+.ui-tooltip, .qtip {
+  max-width: 400px;
+}
+
+.itemtooltip {
+  text-decoration: underline;
+  text-decoration-color: #636363;
+  -moz-text-decoration-color: #636363; /* Code for Firefox */
+}
+
+.itemdescription {
+  min-width: 300px;
+  padding: 10px;
+  background: black;
+  color: #b09066;
+  font-size: 1.1em;
+  position: relative;
+  font-weight: normal;
+}
+
+.itemdescription .icon {
+  padding: 8px;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.itemdescription .desc {
+  margin-left: 3em;
+  position: relative;
+}
+
+.itemdescription .title {
+  font-family: "Book Antiqua", Georgia, serif;
+  position: relative;
+  margin-left: 2em;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+}
+
+.itemdescription .effects {
+  margin-top: 2em;
+  color: #ffff00;
+}
+
+.itemdescription .footer {
+  margin-top: 1em;
+  position: relative;
+}
+
+.itemdescriptoin .value {
+  position: absolute;
+  left: 0;
+}
+
+.itemdescription .stack {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.itemdescription .highlight {
+  color: #00ffff;
+}
