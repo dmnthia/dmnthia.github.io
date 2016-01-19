@@ -10,21 +10,46 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.10/css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/s/bs/dt-1.10.10,fh-3.1.0,r-2.0.0/datatables.min.css"/>
+
     <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.css">
-    <link rel="stylesheet" type="text/css" href="/style.css">
-    <!-- Placed at the end of the document so the pages load faster -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.10/css/dataTables.bootstrap.min.css">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
-    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.10/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/s/bs/dt-1.10.10,fh-3.1.0,r-2.0.0/datatables.min.js"></script>
     <script type="text/javascript" charset="utf8" src="http://cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.1/jquery.qtip.min.js"></script>
-
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script>
+      $(document).ready(function() {
+        // Apply tooltips to any item in the page
+        $('.itemtooltip').on('mouseover', function(event) {
+            overwrite: false,
+            $(this).qtip({
+                content: {
+                      text: 'Loading...',
+                      ajax: {
+                          url: $(this).attr('rel')
+                      } 
+                },
+                show: {
+                    event: event.type,
+                    ready: true,
+                    solo: true
+                },
+                position: {viewport: $(window)},
+                style: {
+                  classes: "qtip-tipsy"
+                }
+            });
+        });
+      });
+    </script>
   </head>
   <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav id="navMenu" class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -33,7 +58,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">GORGON Browser</a>
+          <a class="navbar-brand" href="/">GorgonEye <span class="label label-danger">BETA</span></a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -42,6 +67,7 @@
             <li><a href="abilities.html">Abilities</a></li>
             <li><a href="powers.html">Mods</a></li>
             <li><a href="recipes.html">Recipes</a></li>
+            <li><a style="color: red; font-weight: bold" href="https://github.com/dmnthia/gorgon/issues">Report bug!</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -84,7 +110,7 @@
     ["25", "+1 Anatomy", "", ""],
   ];
 </script>
-    <table id="skill54" class="display" cellspacing="0" width="100%">
+    <table id="skill54" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill95"><h1>Aberration Phrenology</h1></a>
@@ -123,7 +149,7 @@
     ["30", "Mentalism/Psychology critical hit chance: +1% (total 5%)", "", ""],
   ];
 </script>
-    <table id="skill95" class="display" cellspacing="0" width="100%">
+    <table id="skill95" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill34"><h1>Alchemy</h1></a>
@@ -155,7 +181,7 @@
     ["30", "Ability granted: PoisonBlade3", "", ""],
   ];
 </script>
-    <table id="skill34" class="display" cellspacing="0" width="100%">
+    <table id="skill34" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill18"><h1>Anatomy</h1></a>
@@ -199,7 +225,7 @@
     ["35", "+1 Alchemy", "", ""],
   ];
 </script>
-    <table id="skill117" class="display" cellspacing="0" width="100%">
+    <table id="skill117" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill35"><h1>Animal Handling</h1></a>
@@ -268,7 +294,7 @@
     ["57", "Ability granted: MonstrousRage6", "", ""],
   ];
 </script>
-    <table id="skill35" class="display" cellspacing="0" width="100%">
+    <table id="skill35" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill63"><h1>Archery</h1></a>
@@ -318,7 +344,7 @@
     ["50", "Ability granted: AimedShot4", "", ""],
   ];
 </script>
-    <table id="skill63" class="display" cellspacing="0" width="100%">
+    <table id="skill63" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill115"><h1>Armor Augmentation</h1></a>
@@ -343,7 +369,7 @@
     ["35", "+1 Alchemy", "", ""],
   ];
 </script>
-    <table id="skill115" class="display" cellspacing="0" width="100%">
+    <table id="skill115" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill25"><h1>Armor Patching</h1></a>
@@ -374,7 +400,7 @@
     ["30", "Ability granted: ArmorPatching4", "", ""],
   ];
 </script>
-    <table id="skill25" class="display" cellspacing="0" width="100%">
+    <table id="skill25" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill20"><h1>Art History</h1></a>
@@ -403,7 +429,7 @@
     ["30", "+1 Artistry", "", ""],
   ];
 </script>
-    <table id="skill20" class="display" cellspacing="0" width="100%">
+    <table id="skill20" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill46"><h1>Arthropod Anatomy</h1></a>
@@ -464,7 +490,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["50", "Skinning yields a trophy skin: +1% (total 5%)", "", ""],
   ];
 </script>
-    <table id="skill46" class="display" cellspacing="0" width="100%">
+    <table id="skill46" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill104"><h1>Artistry</h1></a>
@@ -632,7 +658,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["51", "Ability granted: SummonMinigolem5", "", ""],
   ];
 </script>
-    <table id="skill36" class="display" cellspacing="0" width="100%">
+    <table id="skill36" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill49"><h1>Bear and Bugbear Anatomy</h1></a>
@@ -693,7 +719,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["50", "Skinning yields a trophy skin: +1% (total 5%)", "", ""],
   ];
 </script>
-    <table id="skill49" class="display" cellspacing="0" width="100%">
+    <table id="skill49" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill17"><h1>Beast Metabolism</h1></a>
@@ -764,7 +790,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["30", "+1 Toolcrafting", "", ""],
   ];
 </script>
-    <table id="skill69" class="display" cellspacing="0" width="100%">
+    <table id="skill69" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill126"><h1>Buckle Artistry</h1></a>
@@ -815,7 +841,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["60", "BuckleOfHealthyHammering13", "", ""],
   ];
 </script>
-    <table id="skill126" class="display" cellspacing="0" width="100%">
+    <table id="skill126" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill79"><h1>Butchering</h1></a>
@@ -844,7 +870,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["30", "+1 Skinning", "", ""],
   ];
 </script>
-    <table id="skill79" class="display" cellspacing="0" width="100%">
+    <table id="skill79" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill23"><h1>Calligraphy</h1></a>
@@ -920,7 +946,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["50", "Calligraphy50", "", ""],
   ];
 </script>
-    <table id="skill23" class="display" cellspacing="0" width="100%">
+    <table id="skill23" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill44"><h1>Canine Anatomy</h1></a>
@@ -982,7 +1008,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["50", "Skinning yields a trophy skin: +1% (total 5%)", "", ""],
   ];
 </script>
-    <table id="skill44" class="display" cellspacing="0" width="100%">
+    <table id="skill44" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill26"><h1>Carpentry</h1></a>
@@ -1010,7 +1036,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["30", "+1 Toolcrafting", "", ""],
   ];
 </script>
-    <table id="skill26" class="display" cellspacing="0" width="100%">
+    <table id="skill26" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill106"><h1>Cartography</h1></a>
@@ -1090,7 +1116,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["50", "Skinning yields a trophy skin: +1% (total 5%)", "", ""],
   ];
 </script>
-    <table id="skill45" class="display" cellspacing="0" width="100%">
+    <table id="skill45" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill77"><h1>Cheesemaking</h1></a>
@@ -1121,7 +1147,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["30", "+1 Alchemy", "", ""],
   ];
 </script>
-    <table id="skill77" class="display" cellspacing="0" width="100%">
+    <table id="skill77" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill119"><h1>Civic Pride</h1></a>
@@ -1169,7 +1195,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["30", "+1 Lore", "", ""],
   ];
 </script>
-    <table id="skill85" class="display" cellspacing="0" width="100%">
+    <table id="skill85" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill56"><h1>Construct Anatomy</h1></a>
@@ -1205,7 +1231,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["25", "+1 Anatomy", "", ""],
   ];
 </script>
-    <table id="skill56" class="display" cellspacing="0" width="100%">
+    <table id="skill56" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill10"><h1>Cooking</h1></a>
@@ -1233,7 +1259,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["30", "+1 Alchemy", "", ""],
   ];
 </script>
-    <table id="skill10" class="display" cellspacing="0" width="100%">
+    <table id="skill10" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill107"><h1>Corpse Talking</h1></a>
@@ -1305,7 +1331,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["52", "Ability granted: CollectMilk3", "", ""],
   ];
 </script>
-    <table id="skill32" class="display" cellspacing="0" width="100%">
+    <table id="skill32" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill97"><h1>Crone-Kin Anatomy</h1></a>
@@ -1341,7 +1367,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["25", "+1 Anatomy", "", ""],
   ];
 </script>
-    <table id="skill97" class="display" cellspacing="0" width="100%">
+    <table id="skill97" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill96"><h1>Crone-Kin Phrenology</h1></a>
@@ -1380,7 +1406,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["30", "Mentalism/Psychology critical hit chance: +1% (total 5%)", "", ""],
   ];
 </script>
-    <table id="skill96" class="display" cellspacing="0" width="100%">
+    <table id="skill96" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill31"><h1>Deer</h1></a>
@@ -1441,7 +1467,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["50", "Ability granted: DeerSlash6", "", ""],
   ];
 </script>
-    <table id="skill31" class="display" cellspacing="0" width="100%">
+    <table id="skill31" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill60"><h1>Demon Anatomy</h1></a>
@@ -1477,7 +1503,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["25", "+1 Anatomy", "", ""],
   ];
 </script>
-    <table id="skill60" class="display" cellspacing="0" width="100%">
+    <table id="skill60" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill94"><h1>Demon Phrenology</h1></a>
@@ -1516,7 +1542,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["30", "Mentalism/Psychology critical hit chance: +1% (total 5%)", "", ""],
   ];
 </script>
-    <table id="skill94" class="display" cellspacing="0" width="100%">
+    <table id="skill94" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill61"><h1>Dinosaur Anatomy</h1></a>
@@ -1577,7 +1603,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["50", "Skinning yields a trophy skin: +1% (total 5%)", "", ""],
   ];
 </script>
-    <table id="skill61" class="display" cellspacing="0" width="100%">
+    <table id="skill61" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill101"><h1>Druid</h1></a>
@@ -1645,7 +1671,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["60", "Ability granted: HuntersStride4", "", ""],
   ];
 </script>
-    <table id="skill101" class="display" cellspacing="0" width="100%">
+    <table id="skill101" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill98"><h1>Dye Making</h1></a>
@@ -1674,7 +1700,7 @@ This skill covers only the creation of the dye; Textile Creation, Tanning, or Bl
     ["20", "+1 Textiles", "", ""],
   ];
 </script>
-    <table id="skill98" class="display" cellspacing="0" width="100%">
+    <table id="skill98" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill8"><h1>Dying</h1></a>
@@ -1701,7 +1727,7 @@ This skill covers only the creation of the dye; Textile Creation, Tanning, or Bl
     ["30", "+1 Necromancy", "", ""],
   ];
 </script>
-    <table id="skill8" class="display" cellspacing="0" width="100%">
+    <table id="skill8" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill55"><h1>Elemental Anatomy</h1></a>
@@ -1737,7 +1763,7 @@ This skill covers only the creation of the dye; Textile Creation, Tanning, or Bl
     ["25", "+1 Anatomy", "", ""],
   ];
 </script>
-    <table id="skill55" class="display" cellspacing="0" width="100%">
+    <table id="skill55" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill88"><h1>Elf Phrenology</h1></a>
@@ -1776,7 +1802,7 @@ This skill covers only the creation of the dye; Textile Creation, Tanning, or Bl
     ["30", "Mentalism/Psychology critical hit chance: +1% (total 5%)", "", ""],
   ];
 </script>
-    <table id="skill88" class="display" cellspacing="0" width="100%">
+    <table id="skill88" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill42"><h1>Elven Anatomy</h1></a>
@@ -1812,7 +1838,7 @@ This skill covers only the creation of the dye; Textile Creation, Tanning, or Bl
     ["25", "+1 Anatomy", "", ""],
   ];
 </script>
-    <table id="skill42" class="display" cellspacing="0" width="100%">
+    <table id="skill42" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill68"><h1>Endurance</h1></a>
@@ -1845,7 +1871,7 @@ This skill covers only the creation of the dye; Textile Creation, Tanning, or Bl
     ["30", "+1 Unarmed", "", ""],
   ];
 </script>
-    <table id="skill68" class="display" cellspacing="0" width="100%">
+    <table id="skill68" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill90"><h1>Fae Phrenology</h1></a>
@@ -1884,7 +1910,7 @@ This skill covers only the creation of the dye; Textile Creation, Tanning, or Bl
     ["30", "Mentalism/Psychology critical hit chance: +1% (total 5%)", "", ""],
   ];
 </script>
-    <table id="skill90" class="display" cellspacing="0" width="100%">
+    <table id="skill90" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill51"><h1>Fey Anatomy</h1></a>
@@ -1920,7 +1946,7 @@ This skill covers only the creation of the dye; Textile Creation, Tanning, or Bl
     ["25", "+1 Anatomy", "", ""],
   ];
 </script>
-    <table id="skill51" class="display" cellspacing="0" width="100%">
+    <table id="skill51" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill12"><h1>Fire Magic</h1></a>
@@ -1959,7 +1985,7 @@ This skill covers only the creation of the dye; Textile Creation, Tanning, or Bl
     ["30", "Access to new research recipe", "", ""],
   ];
 </script>
-    <table id="skill12" class="display" cellspacing="0" width="100%">
+    <table id="skill12" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill24"><h1>First Aid</h1></a>
@@ -1991,7 +2017,7 @@ This skill covers only the creation of the dye; Textile Creation, Tanning, or Bl
     ["30", "Ability granted: FirstAid4", "", ""],
   ];
 </script>
-    <table id="skill24" class="display" cellspacing="0" width="100%">
+    <table id="skill24" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill57"><h1>Fish and Snail Anatomy</h1></a>
@@ -2052,7 +2078,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["50", "Skinning yields a trophy skin: +1% (total 5%)", "", ""],
   ];
 </script>
-    <table id="skill57" class="display" cellspacing="0" width="100%">
+    <table id="skill57" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill3"><h1>Fishing</h1></a>
@@ -2085,7 +2111,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["30", "+1 Fish and Snail Anatomy", "", ""],
   ];
 </script>
-    <table id="skill3" class="display" cellspacing="0" width="100%">
+    <table id="skill3" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill64"><h1>Fletching</h1></a>
@@ -2151,7 +2177,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["50", "Can now maintain six Fletching Boxes at once", "", ""],
   ];
 </script>
-    <table id="skill64" class="display" cellspacing="0" width="100%">
+    <table id="skill64" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill29"><h1>Foraging</h1></a>
@@ -2185,7 +2211,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["30", "+1 Mycology", "", ""],
   ];
 </script>
-    <table id="skill29" class="display" cellspacing="0" width="100%">
+    <table id="skill29" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill58"><h1>Fungoid Anatomy</h1></a>
@@ -2221,7 +2247,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["25", "+1 Anatomy", "", ""],
   ];
 </script>
-    <table id="skill58" class="display" cellspacing="0" width="100%">
+    <table id="skill58" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill9"><h1>Gardening</h1></a>
@@ -2252,7 +2278,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["30", "+1 Cooking", "", ""],
   ];
 </script>
-    <table id="skill9" class="display" cellspacing="0" width="100%">
+    <table id="skill9" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill22"><h1>Gender Studies</h1></a>
@@ -2286,7 +2312,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["30", "+1 Psychology", "", ""],
   ];
 </script>
-    <table id="skill22" class="display" cellspacing="0" width="100%">
+    <table id="skill22" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill71"><h1>Geology</h1></a>
@@ -2315,7 +2341,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["30", "+1 Mining", "", ""],
   ];
 </script>
-    <table id="skill71" class="display" cellspacing="0" width="100%">
+    <table id="skill71" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill53"><h1>Giant Anatomy</h1></a>
@@ -2351,7 +2377,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["25", "+1 Anatomy", "", ""],
   ];
 </script>
-    <table id="skill53" class="display" cellspacing="0" width="100%">
+    <table id="skill53" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill125"><h1>Giant Bat</h1></a>
@@ -2412,7 +2438,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["51", "Ability granted: Rip6", "", ""],
   ];
 </script>
-    <table id="skill125" class="display" cellspacing="0" width="100%">
+    <table id="skill125" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill93"><h1>Giant Phrenology</h1></a>
@@ -2451,7 +2477,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["30", "Mentalism/Psychology critical hit chance: +1% (total 5%)", "", ""],
   ];
 </script>
-    <table id="skill93" class="display" cellspacing="0" width="100%">
+    <table id="skill93" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill50"><h1>Goblin Anatomy</h1></a>
@@ -2487,7 +2513,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["25", "+1 Anatomy", "", ""],
   ];
 </script>
-    <table id="skill50" class="display" cellspacing="0" width="100%">
+    <table id="skill50" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill91"><h1>Goblin Phrenology</h1></a>
@@ -2526,7 +2552,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["30", "Mentalism/Psychology critical hit chance: +1% (total 5%)", "", ""],
   ];
 </script>
-    <table id="skill91" class="display" cellspacing="0" width="100%">
+    <table id="skill91" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill76"><h1>Goblinese</h1></a>
@@ -2559,7 +2585,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["30", "+1 Goblin Anatomy", "", ""],
   ];
 </script>
-    <table id="skill76" class="display" cellspacing="0" width="100%">
+    <table id="skill76" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill13"><h1>Gourmand</h1></a>
@@ -2739,7 +2765,7 @@ Each food has a Gourmet Level, which caps your benefits from this skill. If you 
 +1 Health from instant-heal food", "", ""],
   ];
 </script>
-    <table id="skill13" class="display" cellspacing="0" width="100%">
+    <table id="skill13" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill100"><h1>Hammer</h1></a>
@@ -2796,7 +2822,7 @@ Each food has a Gourmet Level, which caps your benefits from this skill. If you 
     ["50", "Ability granted: LookAtMyHammer5", "", ""],
   ];
 </script>
-    <table id="skill100" class="display" cellspacing="0" width="100%">
+    <table id="skill100" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill99"><h1>Hoplology</h1></a>
@@ -2826,7 +2852,7 @@ As the skill increases, Staff users will find that their combat abilities also r
     ["30", "+1 Unarmed", "", ""],
   ];
 </script>
-    <table id="skill99" class="display" cellspacing="0" width="100%">
+    <table id="skill99" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill16"><h1>Howling</h1></a>
@@ -2881,7 +2907,7 @@ As the skill increases, Staff users will find that their combat abilities also r
     ["25", "+1 Anatomy", "", ""],
   ];
 </script>
-    <table id="skill73" class="display" cellspacing="0" width="100%">
+    <table id="skill73" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill87"><h1>Human Phrenology</h1></a>
@@ -2920,7 +2946,7 @@ As the skill increases, Staff users will find that their combat abilities also r
     ["30", "Mentalism/Psychology critical hit chance: +1% (total 5%)", "", ""],
   ];
 </script>
-    <table id="skill87" class="display" cellspacing="0" width="100%">
+    <table id="skill87" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill109"><h1>Ice Magic</h1></a>
@@ -2958,7 +2984,7 @@ As the skill increases, Staff users will find that their combat abilities also r
     ["30", "Access to new research recipe", "", ""],
   ];
 </script>
-    <table id="skill109" class="display" cellspacing="0" width="100%">
+    <table id="skill109" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill75"><h1>Incorporeal Creature Anatomy</h1></a>
@@ -2994,7 +3020,7 @@ As the skill increases, Staff users will find that their combat abilities also r
     ["25", "+1 Anatomy", "", ""],
   ];
 </script>
-    <table id="skill75" class="display" cellspacing="0" width="100%">
+    <table id="skill75" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill122"><h1>Industry</h1></a>
@@ -3021,7 +3047,7 @@ As the skill increases, Staff users will find that their combat abilities also r
     ["30", "+1 Toolcrafting", "", ""],
   ];
 </script>
-    <table id="skill122" class="display" cellspacing="0" width="100%">
+    <table id="skill122" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill80"><h1>Iocaine Resistance</h1></a>
@@ -3048,7 +3074,7 @@ As the skill increases, Staff users will find that their combat abilities also r
     ["20", "+1 Endurance", "", ""],
   ];
 </script>
-    <table id="skill80" class="display" cellspacing="0" width="100%">
+    <table id="skill80" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill118"><h1>Jewelry Augmentation</h1></a>
@@ -3073,7 +3099,7 @@ As the skill increases, Staff users will find that their combat abilities also r
     ["35", "+1 Alchemy", "", ""],
   ];
 </script>
-    <table id="skill118" class="display" cellspacing="0" width="100%">
+    <table id="skill118" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill65"><h1>Leatherworking</h1></a>
@@ -3100,7 +3126,7 @@ As the skill increases, Staff users will find that their combat abilities also r
     ["15", "+1 Skinning", "", ""],
   ];
 </script>
-    <table id="skill65" class="display" cellspacing="0" width="100%">
+    <table id="skill65" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill4"><h1>Lore</h1></a>
@@ -3128,7 +3154,7 @@ As the skill increases, Staff users will find that their combat abilities also r
     ["7", "WordOfPower4", "", ""],
   ];
 </script>
-    <table id="skill4" class="display" cellspacing="0" width="100%">
+    <table id="skill4" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill14"><h1>Lycanthropy</h1></a>
@@ -3169,7 +3195,7 @@ As the skill increases, Staff users will find that their combat abilities also r
     ["30", "Ability granted: WerewolfClaw3", "", ""],
   ];
 </script>
-    <table id="skill14" class="display" cellspacing="0" width="100%">
+    <table id="skill14" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill33"><h1>Meditation</h1></a>
@@ -3248,7 +3274,7 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
     ["51", "Meditation51", "", ""],
   ];
 </script>
-    <table id="skill33" class="display" cellspacing="0" width="100%">
+    <table id="skill33" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill41"><h1>Mentalism</h1></a>
@@ -3298,7 +3324,7 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
     ["50", "Ability granted: Mindreave4", "", ""],
   ];
 </script>
-    <table id="skill41" class="display" cellspacing="0" width="100%">
+    <table id="skill41" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill6"><h1>Mining</h1></a>
@@ -3324,7 +3350,7 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
     ["50", "+1 Geology", "", ""],
   ];
 </script>
-    <table id="skill6" class="display" cellspacing="0" width="100%">
+    <table id="skill6" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill7"><h1>Mushroom Farming</h1></a>
@@ -3371,7 +3397,7 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
     ["50", "+1 Pig", "", ""],
   ];
 </script>
-    <table id="skill2" class="display" cellspacing="0" width="100%">
+    <table id="skill2" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill28"><h1>Myconic</h1></a>
@@ -3398,7 +3424,7 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
     ["30", "+1 Mycology", "", ""],
   ];
 </script>
-    <table id="skill28" class="display" cellspacing="0" width="100%">
+    <table id="skill28" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill38"><h1>Necromancy</h1></a>
@@ -3466,7 +3492,7 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
     ["50", "Ability granted: LifeSteal3", "", ""],
   ];
 </script>
-    <table id="skill38" class="display" cellspacing="0" width="100%">
+    <table id="skill38" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill48"><h1>Non-Ruminant Ungulate Anatomy</h1></a>
@@ -3527,7 +3553,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["50", "Skinning yields a trophy skin: +1% (total 5%)", "", ""],
   ];
 </script>
-    <table id="skill48" class="display" cellspacing="0" width="100%">
+    <table id="skill48" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill72"><h1>Notoriety</h1></a>
@@ -3601,7 +3627,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["25", "+1 Anatomy", "", ""],
   ];
 </script>
-    <table id="skill52" class="display" cellspacing="0" width="100%">
+    <table id="skill52" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill92"><h1>Orc Phrenology</h1></a>
@@ -3640,7 +3666,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["30", "Mentalism/Psychology critical hit chance: +1% (total 5%)", "", ""],
   ];
 </script>
-    <table id="skill92" class="display" cellspacing="0" width="100%">
+    <table id="skill92" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill19"><h1>Pathology</h1></a>
@@ -3667,7 +3693,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["15", "+1 Alchemy", "", ""],
   ];
 </script>
-    <table id="skill19" class="display" cellspacing="0" width="100%">
+    <table id="skill19" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill113"><h1>Percussion Instruments</h1></a>
@@ -3707,7 +3733,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["20", "+1 Performance", "", ""],
   ];
 </script>
-    <table id="skill113" class="display" cellspacing="0" width="100%">
+    <table id="skill113" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill111"><h1>Performance</h1></a>
@@ -3753,7 +3779,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["15", "+1 Meditation", "", ""],
   ];
 </script>
-    <table id="skill86" class="display" cellspacing="0" width="100%">
+    <table id="skill86" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill30"><h1>Pig</h1></a>
@@ -3814,7 +3840,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["54", "Ability granted: PigRend3", "", ""],
   ];
 </script>
-    <table id="skill30" class="display" cellspacing="0" width="100%">
+    <table id="skill30" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill102"><h1>Plant Anatomy</h1></a>
@@ -3852,7 +3878,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["25", "+1 Anatomy", "", ""],
   ];
 </script>
-    <table id="skill102" class="display" cellspacing="0" width="100%">
+    <table id="skill102" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill21"><h1>Poetry Appreciation</h1></a>
@@ -3881,7 +3907,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["30", "+1 Vocabulary", "", ""],
   ];
 </script>
-    <table id="skill21" class="display" cellspacing="0" width="100%">
+    <table id="skill21" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill121"><h1>Productivity</h1></a>
@@ -3952,7 +3978,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["52", "Ability granted: Ridicule3", "", ""],
   ];
 </script>
-    <table id="skill27" class="display" cellspacing="0" width="100%">
+    <table id="skill27" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill43"><h1>Rakshasa Anatomy</h1></a>
@@ -3988,7 +4014,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["25", "+1 Anatomy", "", ""],
   ];
 </script>
-    <table id="skill43" class="display" cellspacing="0" width="100%">
+    <table id="skill43" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill89"><h1>Rakshasa Phrenology</h1></a>
@@ -4027,7 +4053,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["30", "Mentalism/Psychology critical hit chance: +1% (total 5%)", "", ""],
   ];
 </script>
-    <table id="skill89" class="display" cellspacing="0" width="100%">
+    <table id="skill89" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill110"><h1>Reptile Anatomy</h1></a>
@@ -4088,7 +4114,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["50", "Skinning yields a trophy skin: +1% (total 5%)", "", ""],
   ];
 </script>
-    <table id="skill110" class="display" cellspacing="0" width="100%">
+    <table id="skill110" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill59"><h1>Rodent Anatomy</h1></a>
@@ -4149,7 +4175,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["50", "Skinning yields a trophy skin: +1% (total 5%)", "", ""],
   ];
 </script>
-    <table id="skill59" class="display" cellspacing="0" width="100%">
+    <table id="skill59" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill47"><h1>Ruminant Anatomy</h1></a>
@@ -4210,7 +4236,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["50", "Skinning yields a trophy skin: +1% (total 5%)", "", ""],
   ];
 </script>
-    <table id="skill47" class="display" cellspacing="0" width="100%">
+    <table id="skill47" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill82"><h1>Shield</h1></a>
@@ -4267,7 +4293,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["50", "Ability granted: Reinforce5", "", ""],
   ];
 </script>
-    <table id="skill82" class="display" cellspacing="0" width="100%">
+    <table id="skill82" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill66"><h1>Sigil Scripting</h1></a>
@@ -4297,7 +4323,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["30", "+1 Calligraphy", "", ""],
   ];
 </script>
-    <table id="skill66" class="display" cellspacing="0" width="100%">
+    <table id="skill66" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill39"><h1>Skinning</h1></a>
@@ -4326,7 +4352,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["30", "+1 Tanning", "", ""],
   ];
 </script>
-    <table id="skill39" class="display" cellspacing="0" width="100%">
+    <table id="skill39" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill67"><h1>Spider</h1></a>
@@ -4378,7 +4404,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["50", "Ability granted: PlayerSpiderBite6", "", ""],
   ];
 </script>
-    <table id="skill67" class="display" cellspacing="0" width="100%">
+    <table id="skill67" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill37"><h1>Staff</h1></a>
@@ -4425,7 +4451,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["50", "Ability granted: StaffLunge3", "", ""],
   ];
 </script>
-    <table id="skill37" class="display" cellspacing="0" width="100%">
+    <table id="skill37" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill83"><h1>Stone Working</h1></a>
@@ -4476,7 +4502,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["10", "+1 Performance", "", ""],
   ];
 </script>
-    <table id="skill112" class="display" cellspacing="0" width="100%">
+    <table id="skill112" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill70"><h1>Surveying</h1></a>
@@ -4515,7 +4541,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["30", "MiningSurveyEltibule3", "", ""],
   ];
 </script>
-    <table id="skill70" class="display" cellspacing="0" width="100%">
+    <table id="skill70" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill5"><h1>Sword</h1></a>
@@ -4565,7 +4591,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["50", "Ability granted: FinishingBlow3", "", ""],
   ];
 </script>
-    <table id="skill5" class="display" cellspacing="0" width="100%">
+    <table id="skill5" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill81"><h1>Tailoring</h1></a>
@@ -4594,7 +4620,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["30", "+1 Artistry", "", ""],
   ];
 </script>
-    <table id="skill81" class="display" cellspacing="0" width="100%">
+    <table id="skill81" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill40"><h1>Tanning</h1></a>
@@ -4623,7 +4649,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["30", "+1 Textiles", "", ""],
   ];
 </script>
-    <table id="skill40" class="display" cellspacing="0" width="100%">
+    <table id="skill40" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill62"><h1>Teleportation</h1></a>
@@ -4652,7 +4678,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["30", "+1 Lore", "", ""],
   ];
 </script>
-    <table id="skill62" class="display" cellspacing="0" width="100%">
+    <table id="skill62" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill78"><h1>Textile Creation</h1></a>
@@ -4680,7 +4706,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["30", "+1 Tailoring", "", ""],
   ];
 </script>
-    <table id="skill78" class="display" cellspacing="0" width="100%">
+    <table id="skill78" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill103"><h1>Toolcrafting</h1></a>
@@ -4707,7 +4733,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["15", "+1 Blacksmithing", "", ""],
   ];
 </script>
-    <table id="skill103" class="display" cellspacing="0" width="100%">
+    <table id="skill103" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill123"><h1>Transmutation</h1></a>
@@ -4732,7 +4758,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["1", "DistillSimpleMagicalItem", "", ""],
   ];
 </script>
-    <table id="skill123" class="display" cellspacing="0" width="100%">
+    <table id="skill123" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill108"><h1>Treasure Cartography</h1></a>
@@ -4794,7 +4820,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["30", "Ability granted: HipThrow2", "", ""],
   ];
 </script>
-    <table id="skill1" class="display" cellspacing="0" width="100%">
+    <table id="skill1" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill74"><h1>Undead Anatomy</h1></a>
@@ -4830,7 +4856,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["25", "+1 Anatomy", "", ""],
   ];
 </script>
-    <table id="skill74" class="display" cellspacing="0" width="100%">
+    <table id="skill74" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill105"><h1>Vocabulary</h1></a>
@@ -4874,7 +4900,7 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["35", "+1 Alchemy", "", ""],
   ];
 </script>
-    <table id="skill116" class="display" cellspacing="0" width="100%">
+    <table id="skill116" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
 <a href="#skill114"><h1>Wind Instruments</h1></a>
@@ -4914,10 +4940,18 @@ Butchery yields extra bones: +2% (total 16%)", "", ""],
     ["20", "+1 Performance", "", ""],
   ];
 </script>
-    <table id="skill114" class="display" cellspacing="0" width="100%">
+    <table id="skill114" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
+    </div>
+    <footer class="ge-footer" role="contentinfo">
+      <div class="container">
+        <ul class="ge-footer-links">
+          <li><a href="https://github.com/dmnthia/gorgon">GitHub</a></li> <li><a href="/about.html">About</a></li>
+        </ul>
+          <p>Designed and built by <a href="https://github.com/dmnthia">dmnthia</a> (but mostly <a href="https://getbootstrap.com" target="_blank">Bootstrap</a>, <a href="https://datatables.net" target="_blank">DataTables</a> and <a href="http://qtip2.com" target="_blank">QTip2</a>)</p>
+          <p>Code licensed <a rel="license" href="https://github.com/dmnthia/gorgon/LICENSE" target="_blank">MIT</a>.</p>
+      </div>
+    </footer>
   </body>
 </html>
