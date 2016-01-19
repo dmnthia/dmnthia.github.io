@@ -10,21 +10,46 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.10/css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/s/bs/dt-1.10.10,fh-3.1.0,r-2.0.0/datatables.min.css"/>
+
     <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.css">
-    <link rel="stylesheet" type="text/css" href="/style.css">
-    <!-- Placed at the end of the document so the pages load faster -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.10/css/dataTables.bootstrap.min.css">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
-    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.10/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/s/bs/dt-1.10.10,fh-3.1.0,r-2.0.0/datatables.min.js"></script>
     <script type="text/javascript" charset="utf8" src="http://cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.1/jquery.qtip.min.js"></script>
-
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script>
+      $(document).ready(function() {
+        // Apply tooltips to any item in the page
+        $('.itemtooltip').on('mouseover', function(event) {
+            overwrite: false,
+            $(this).qtip({
+                content: {
+                      text: 'Loading...',
+                      ajax: {
+                          url: $(this).attr('rel')
+                      } 
+                },
+                show: {
+                    event: event.type,
+                    ready: true,
+                    solo: true
+                },
+                position: {viewport: $(window)},
+                style: {
+                  classes: "qtip-tipsy"
+                }
+            });
+        });
+      });
+    </script>
   </head>
   <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav id="navMenu" class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -33,7 +58,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">GORGON Browser</a>
+          <a class="navbar-brand" href="/">GorgonEye <span class="label label-danger">BETA</span></a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -42,6 +67,7 @@
             <li><a href="abilities.html">Abilities</a></li>
             <li><a href="powers.html">Mods</a></li>
             <li><a href="recipes.html">Recipes</a></li>
+            <li><a style="color: red; font-weight: bold" href="https://github.com/dmnthia/gorgon/issues">Report bug!</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -49,11 +75,23 @@
 
     <div class="container-fluid">
 
-
+<div class="page-header">
+  <h1>Recipes</h1>
+  <p class="lead">Use the recipes table to quickly find recipes of your interest. The search box on your right is your friend:
+  <ul>
+    <li>Type "Blacksmithing" on the search box to find all recipes of the Blacksmithing class or that contain the word</li>
+    <li>Type "Red Apple" to find all recipes you could craft with that <span class="itemtooltip" rel="items/item_5309.html">Red Apple</span> you just picked</li>
+  </ul>
+</div>
 <script>
+  // Generate the table
   $(document).ready(function() {
     $('#recipes').DataTable({
       data: dataSet,
+      dom: "<'row'<'col-sm-5'l><'col-sm-1'f><'col-sm-6'p>><'row'<'col-sm-12'tr>><'row'<'col-sm-5'i><'col-sm-7'p>>",
+      fixedHeader: {
+          headerOffset: $('#navMenu').outerHeight()
+      },
       columns: [
         { title: "Skill" },
         { title: "Level" },
@@ -85,7 +123,8 @@
               classes: "qtip-tipsy"
             }
         });
-    })
+    });
+
   });
 
   var dataSet = [
@@ -4892,9 +4931,17 @@
     ["Fishing", "18", "Ice Fishing Gear (30m)", "1 <a class=\"itemtooltip\" rel=\"items/item_13001.html\">Handsaw</a><br>1 <a class=\"itemtooltip\" rel=\"items/item_1161.html\">String</a><br>1 <a class=\"itemtooltip\" rel=\"items/item_5014.html\">Raw Chicken</a>", "1 <a class=\"itemtooltip\" rel=\"items/item_20402.html\">Ice Fishing Gear (30 min)</a>", "150 (750)"],
   ];
 </script>
-    <table id="recipes" class="display" cellspacing="0" width="100%">
+    <table id="recipes" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
     </table>
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
+    </div>
+    <footer class="ge-footer" role="contentinfo">
+      <div class="container">
+        <ul class="ge-footer-links">
+          <li><a href="https://github.com/dmnthia/gorgon">GitHub</a></li> <li><a href="/about.html">About</a></li>
+        </ul>
+          <p>Designed and built by <a href="https://github.com/dmnthia">dmnthia</a> (but mostly <a href="https://getbootstrap.com" target="_blank">Bootstrap</a>, <a href="https://datatables.net" target="_blank">DataTables</a> and <a href="http://qtip2.com" target="_blank">QTip2</a>)</p>
+          <p>Code licensed <a rel="license" href="https://github.com/dmnthia/gorgon/LICENSE" target="_blank">MIT</a>.</p>
+      </div>
+    </footer>
   </body>
 </html>

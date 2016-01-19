@@ -1,8 +1,3 @@
-table {
-  font-size: 13px;
-  font-family: Roboto, Trebuchet MS, Arial;
-}
-
 body {
   padding-top: 50px;
 }
@@ -73,4 +68,47 @@ body {
 
 .itemdescription .highlight {
   color: #00ffff;
+}
+
+tr.odd .beta-column {
+  background-color: #ecc
+}
+
+tr.even .beta-column {
+  background-color: #fdd
+}
+
+
+.ge-footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 50px;
+  color: #99979c;
+  text-align:center;
+  background-color: #2a2730
+}
+
+.ge-footer a {
+  color:#fff
+}
+
+.ge-footer-links{
+  padding-left:0;margin-bottom:20px}
+
+.ge-footer-links li {
+  display:inline-block
+}
+
+.ge-footer-links li+li {
+  margin-left:15px
+}
+
+@media (min-width:768px) {
+  .ge-footer { text-align: left }
+  .ge-footer p { margin-bottom: 0 }
+}
+
+a.navbar-brand {
+  font-weight: bold;
+  color: #fff;
 }
