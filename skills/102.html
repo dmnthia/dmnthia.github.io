@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/s/bs/dt-1.10.10,fh-3.1.0,r-2.0.0/datatables.min.css"/>
+
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.10/css/dataTables.bootstrap.min.css">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/s/bs/dt-1.10.10,fh-3.1.0,r-2.0.0/datatables.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="http://cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.1/jquery.qtip.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script>
+      $(document).ready(function() {
+        // Apply tooltips to any item in the page
+        $('.itemtooltip').on('mouseover', function(event) {
+            overwrite: false,
+            $(this).qtip({
+                content: {
+                      text: 'Loading...',
+                      ajax: {
+                          url: $(this).attr('rel')
+                      } 
+                },
+                show: {
+                    event: event.type,
+                    ready: true,
+                    solo: true
+                },
+                position: {viewport: $(window)},
+                style: {
+                  classes: "qtip-tipsy"
+                }
+            });
+        });
+      });
+    </script>
+  </head>
+  <body>
+
+    <nav id="navMenu" class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">GorgonEye <span class="label label-danger">BETA</span></a>
+        </div>
+
+
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/items.html" title="View and search all items">Items</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" title="Explore every skill">
+                    Skills <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                    <li class="dropdown-submenu">
+                        <a href="#">Combat</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/skills/35.html" title="The art of taming animals and teaching them to fight alongside you."">Animal Handling</a></li>
+                            <li><a href="/skills/63.html" title="Expertise with using bows to hunt and kill."">Archery</a></li>
+                            <li><a href="/skills/11.html" title="Axing people."">Axe</a></li>
+                            <li><a href="/skills/36.html" title="Using alchemical concoctions in the heat of battle. Not for the faint of heart, or the particularly sane, this combat style specializes in area-effects of all types. Advanced practitioners can also ingest their formulae directly to take on new combat personalities. Masters can even create homonculi to serve them in battle."">Battle Chemistry</a></li>
+                            <li><a href="/skills/32.html" title="The art of living and fighting as a cow."">Cow</a></li>
+                            <li><a href="/skills/31.html" title="The art of living and fighting as a deer."">Deer</a></li>
+                            <li><a href="/skills/101.html" title="Druidin'"">Druid</a></li>
+                            <li><a href="/skills/12.html" title="Using Fire to destroy your enemies. This is a very potent offensive skill, including long-range and area-effect attacks, and even some Cold attacks for versatility. However, there are drawbacks: Fire Magic is extremely Power-intensive; all creatures generate extra Rage when they are burned; and many creatures have some resistance to fire."">Fire Magic</a></li>
+                            <li><a href="/skills/125.html" title="Skill in living and fighting as a bat."">Giant Bat</a></li>
+                            <li><a href="/skills/100.html" title="Mastery of the use of hammers and clubs in combat. Power consumption is higher than average, but so is damage. Hammers excel at rapidly murdering enemies, no more and no less."">Hammer</a></li>
+                            <li><a href="/skills/109.html" title="A specialization of Fire Magic that focuses entirely upon lowering temperature instead of raising it. It has protective and controlling abilities as well as offensive abilities."">Ice Magic</a></li>
+                            <li><a href="/skills/14.html" title="Skill in fighting as a wolf beast. Also indicates your ability to control and suppress the beast mode."">Lycanthropy</a></li>
+                            <li><a href="/skills/41.html" title="The power of mind over matter: psychic powers! This combat skill focuses on recovery and restoration, but it also has multiple damaging abilities."">Mentalism</a></li>
+                            <li><a href="/skills/38.html" title="Necromancy is control over the undead, along with other powers that trifle with mortality. To use necromantic abilities, you must be wielding or wearing a necromancy gem. You can often find these on weapons, and less often on pieces of armor. (If you are in a beast form, necromancy gems in weapons won't work, but ones in armor will.)"">Necromancy</a></li>
+                            <li><a href="/skills/30.html" title="The art of living and fighting as a pig."">Pig</a></li>
+                            <li><a href="/skills/27.html" title="Understanding the mind of sentient creatures. Also, using that knowledge in combat and other stressful situations."">Psychology</a></li>
+                            <li><a href="/skills/82.html" title="Expertise in the use of a shield, both as a weapon and as a defensive tool."">Shield</a></li>
+                            <li><a href="/skills/67.html" title="The art of living and fighting as a spider."">Spider</a></li>
+                            <li><a href="/skills/37.html" title="Mastery of the staff as a martial weapon. Staff fighting has a mix of both offensive and defensive abilities."">Staff</a></li>
+                            <li><a href="/skills/5.html" title="Expertise with swords, rapiers, and the like. Swords are very damaging, and can reduce an opponent's Rage."">Sword</a></li>
+                            <li><a href="/skills/1.html" title="Mastery of the martial arts. Not especially damaging, but with great controlling and stunning abilities. Generally requires one or both hands to be empty, although you can use kicks even with other items wielded."">Unarmed</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a href="#">Crafting</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/skills/34.html" title="The art of combining esoteric things together to make potions and poisons."">Alchemy</a></li>
+                            <li><a href="/skills/104.html" title="Skill in the visual arts, including painting, sculpting, and mosaic creation."">Artistry</a></li>
+                            <li><a href="/skills/69.html" title="Making and enhancing metal equipment. Blacksmiths don't create armor directly, but they can buttress metal armor's effectiveness. They also create metal parts for many other skills."">Blacksmithing</a></li>
+                            <li><a href="/skills/26.html" title="Preparing and treating lumber, and making things out of wood."">Carpentry</a></li>
+                            <li><a href="/skills/77.html" title="Making cheese, butter, and other dairy products. But mostly: cheese."">Cheesemaking</a></li>
+                            <li><a href="/skills/10.html" title="Skill in preparing food for consumption."">Cooking</a></li>
+                            <li><a href="/skills/98.html" title="Skill in producing dye. These dyes can be used to color armor.
+
+This skill covers only the creation of the dye; Textile Creation, Tanning, or Blacksmithing is used to apply the dye, depending on what the armor is made of."">Dye Making</a></li>
+                            <li><a href="/skills/64.html" title="The craft of arrow-making. Most fletching recipes require elements obtained from Carpentry, so it's often handy to know both skills well. At higher level, fletchers also need various Alchemy components."">Fletching</a></li>
+                            <li><a href="/skills/65.html" title="Turning leathers into armor and goods."">Leatherworking</a></li>
+                            <li><a href="/skills/2.html" title="Mastery of fungus in all its forms."">Mycology</a></li>
+                            <li><a href="/skills/81.html" title="Tailoring has two aspects: first, you use it to turn textiles into clothing. Second, you can use tailoring to make clothing and leather armor more cofortable, more useful, or more stylish."">Tailoring</a></li>
+                            <li><a href="/skills/40.html" title="The craft of turning disgusting animal skins, furs, and hides into leather, fleece, and other material ready to be used in clothing and armor."">Tanning</a></li>
+                            <li><a href="/skills/78.html" title="The craft of turning raw ingredients into cloth. Textile creation includes cotton, wool, silk, and many other fiber types. Cloth made from animal hides (e.g. leather) comes from the Tanning skill instead."">Textile Creation</a></li>
+                            <li><a href="/skills/103.html" title="Skill in the creation of advanced tools and unusual equipment. Far more than just creating hand tools, an expert Toolcrafter is a master of repurposing found materials, and can create belts, armors, and even weapons from unusual materials. This equipment is usually designed to meet very specialized needs."">Toolcrafting</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a href="#">Foraging</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/skills/79.html" title="Skill in the act of removing meat and useful body organs from a corpse. You need to be carrying a Butcher Knife in order to butcher a corpse. Corpses of sentient creatures, such as goblins and humans, can't be butchered."">Butchering</a></li>
+                            <li><a href="/skills/3.html" title="The art of collecting fish."">Fishing</a></li>
+                            <li><a href="/skills/29.html" title="The art of picking things up. Except mushrooms, those are special for some reason. Experts at Foraging are also experts at tracking down stationary items and locations (such as many Quest Objectives)."">Foraging</a></li>
+                            <li><a href="/skills/71.html" title="Digging crystals out of the ground, and knowing what they do."">Geology</a></li>
+                            <li><a href="/skills/6.html" title="Digging metals and ores out of the ground."">Mining</a></li>
+                            <li><a href="/skills/70.html" title="Analyzing the land to locate valuable resources or important locations. Surveying has many uses, but is most commonly used to make resource maps for Geology and Mining."">Surveying</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a href="#">Other (A..M)</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/skills/18.html" title="Knowledge of the physiology of creatures in general. This is an umbrella skill that encompasses a vast suite of sub-skills for particular types of creatures. This skill represents generalized knowledge that applies to all creatures in the world."">Anatomy</a></li>
+                            <li><a href="/skills/25.html" title="The ability to use repair kits to fix up your armor."">Armor Patching</a></li>
+                            <li><a href="/skills/20.html" title="Understanding of the rich history of art in Alharth. This skill can help you identify valuable artwork, but more importantly, it helps you to be a well-rounded individual."">Art History</a></li>
+                            <li><a href="/skills/120.html" title="Skill in determining things about somebody based on their visible appearance. A high Assessment skill lets you see more information about other players when you examine them."">Assessment</a></li>
+                            <li><a href="/skills/124.html" title="Skill in creating magical augments. This is an umbrella skill representing your overall knowledge of augmentation."">Augmentation</a></li>
+                            <li><a href="/skills/23.html" title="The art of writing things. Handy for... writing things. It's also a valuable art for swordsmen and other warriors, who can infuse their art with potent additional effects."">Calligraphy</a></li>
+                            <li><a href="/skills/106.html" title="Umbrella skill for map-related activities."">Cartography</a></li>
+                            <li><a href="/skills/119.html" title="Represents your willingness to tackle the small, mundane tasks in your community, and your understanding of why that's important. This skill is especially valued by humans."">Civic Pride</a></li>
+                            <li><a href="/skills/85.html" title="The ability to feel empathy, even for creatures not at all like yourself."">Compassion</a></li>
+                            <li><a href="/skills/8.html" title="The art of dying."">Dying</a></li>
+                            <li><a href="/skills/68.html" title="The ability to endure heavy loads and uncomfortable situations without getting tired. Your Endurance increases the speed of your armor regeneration between fights, among other things.
+
+(The most common way to raise Endurance is simply to take armor damage in combat.)"">Endurance</a></li>
+                            <li><a href="/skills/24.html" title="The ability to use first aid kits to heal yourself or others."">First Aid</a></li>
+                            <li><a href="/skills/9.html" title="Growing things in a garden: herbs, food, and flowers."">Gardening</a></li>
+                            <li><a href="/skills/22.html" title="A careful exploration of gender roles and sexuality, focusing on Human, Elven, and Raksasha cultures. This knowledge is not directly applicable to combat or crafting, but it helps you to be a well-rounded individual."">Gender Studies</a></li>
+                            <li><a href="/skills/76.html" title="Fluency in the language of goblins."">Goblinese</a></li>
+                            <li><a href="/skills/13.html" title="The art of appreciating what you eat. A high gourmand skill allows you to get more benefits from fancier foods.
+
+Each food has a Gourmet Level, which caps your benefits from this skill. If you eat a food with a Gourmet Level lower than your Gourmand skill, you will get benefits as if your skill was the food's Gourmet Level."">Gourmand</a></li>
+                            <li><a href="/skills/99.html" title="The study of weapons and armor, with a focus on the benefits and weaknesses of different kinds of equipment.
+
+As the skill increases, Staff users will find that their combat abilities also restore Armor."">Hoplology</a></li>
+                            <li><a href="/skills/122.html" title="Competence in completing tasks to specification. Highly industrious workers can juggle more tasks at once, and earn slightly higher rewards for their hard work."">Industry</a></li>
+                            <li><a href="/skills/80.html" title="Practiced resistance to the deadly mushroom poison known as Iocaine. (Each point of this skill reduces the damage from Iocaine-based poisons by 1%.)"">Iocaine Resistance</a></li>
+                            <li><a href="/skills/4.html" title="Mastery of ancient knowledge."">Lore</a></li>
+                            <li><a href="/skills/33.html" title="Skill in centering yourself and creating inner focus. This is especially helpful when using Unarmed combat skill.
+
+To meditate, you must be near a Meditation Pillar. Each meditation also requires a simple focus item, such as a fruit or flower."">Meditation</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <a href="#">Other (N..Z)</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/skills/72.html" title="A measure of your renown. You earn Notoriety the first time you defeat certain enemies (typically any monster with a proper name), and for completing particularly difficult quests."">Notoriety</a></li>
+                            <li><a href="/skills/84.html" title="The ability to speak in public in a way that moves your audience."">Oratory</a></li>
+                            <li><a href="/skills/19.html" title="Skill in figuring out how someone or something died. Higher skill allows more details to be determined and more difficult organisms to be examined."">Pathology</a></li>
+                            <li><a href="/skills/111.html" title="This umbrella skill represents your ability to entertain with performances of music, acrobatics, dance, art, recitals, and so on."">Performance</a></li>
+                            <li><a href="/skills/86.html" title="An understanding of how sentient creatures think and feel, based on careful study of the shape of their skulls. This base skill represents your overall Phrenological prowess. (Phrenology skills provide critical-hit chances to all Psychology and Mentalism attacks against the corresponding type of creature. Phrenology also has more esoteric uses.)"">Phrenology</a></li>
+                            <li><a href="/skills/21.html" title="Skill in finding the meaning of poems, especially difficult and tedious ones."">Poetry Appreciation</a></li>
+                            <li><a href="/skills/121.html" title="(unused)"">Productivity</a></li>
+                            <li><a href="/skills/66.html" title="Using magical inks and arcane rituals to create areas of power."">Sigil Scripting</a></li>
+                            <li><a href="/skills/39.html" title="Skill in the act of removing fur or skin from an animal. You need to be carrying a Skinning Knife in order to skin a corpse. Corpses of sentient creatures, such as goblins and humans, can't be skinned."">Skinning</a></li>
+                            <li><a href="/skills/83.html" title="The use of stone in construction and decoration."">Stone Working</a></li>
+                            <li><a href="/skills/62.html" title="The magical art of suddenly being somewhere else."">Teleportation</a></li>
+                            <li><a href="/skills/108.html" title="Experience creating maps from old clues. The maps can lead to treasure... or tragedy."">Treasure Cartography</a></li>
+                            <li><a href="/skills/105.html" title="Knowledge of many words in the common language."">Vocabulary</a></li>
+                        </ul>
+                    </li>                </ul>
+            </li>
+            <li><a href="/abilities.html">Abilities</a></li>
+            <li><a href="/powers.html">Mods</a></li>
+            <li><a href="/recipes.html">Recipes</a></li>
+            <li><a style="color: red; font-weight: bold" href="https://github.com/dmnthia/gorgon/issues">Report bug!</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+
+
+
+<a href="#skill102"><h1>Plant Anatomy</h1></a>
+<p>Knowledge of the physiology of monstrous plants.</p>
+<script>
+  $(document).ready(function() {
+    $('#skill102').DataTable({
+      paging: false,
+      info: false,
+      data: dataSet102,
+      columns: [
+        { title: "Level" },
+        { title: "Reward" },
+        { title: "Description" },
+        { title: "Details" },
+      ],
+    })
+  });
+
+  var dataSet102 = [
+
+    ["32", "Archery chance of critical hit: +1% (total 4%)", "", ""],
+    ["16", "Archery chance of critical hit: +1% (total 2%)", "", ""],
+    ["5", "More Combat Info Shown", "", ""],
+    ["1", "+1 Anatomy", "", ""],
+    ["1", "Basic Combat Info Shown", "", ""],
+    ["40", "Archery chance of critical hit: +1% (total 5%)", "", ""],
+    ["10", "+1 Carpentry", "", ""],
+    ["45", "+1 Anatomy", "", ""],
+    ["15", "+1 Anatomy", "", ""],
+    ["48", "Archery chance of critical hit: +1% (total 6%)", "", ""],
+    ["8", "Archery chance of critical hit: +1%", "", ""],
+    ["50", "+1 Carpentry", "", ""],
+    ["24", "Archery chance of critical hit: +1% (total 3%)", "", ""],
+    ["25", "+1 Anatomy", "", ""],
+  ];
+</script>
+    <table id="skill102" class="display compact table table-striped table-bordered" cellspacing="0" width="100%">
+    </table>
+
+
+    </div>
+    <footer class="ge-footer" role="contentinfo">
+      <div class="container">
+        <ul class="ge-footer-links">
+          <li><a href="https://github.com/dmnthia/gorgon">GitHub</a></li> <li><a href="/about.html">About</a></li>
+        </ul>
+          <p>Designed and built by <a href="https://github.com/dmnthia">dmnthia</a> (but mostly <a href="https://getbootstrap.com" target="_blank">Bootstrap</a>, <a href="https://datatables.net" target="_blank">DataTables</a> and <a href="http://qtip2.com" target="_blank">QTip2</a>)</p>
+          <p>Code licensed <a rel="license" href="https://github.com/dmnthia/gorgon/LICENSE" target="_blank">MIT</a>.</p>
+      </div>
+    </footer>
+  </body>
+</html>
