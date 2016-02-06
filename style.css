@@ -2,14 +2,46 @@ body {
   padding-top: 50px;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:focus {
+    text-decoration: underline;
+}
+
 .ui-tooltip, .qtip {
   max-width: 400px;
 }
 
 .itemtooltip {
-  text-decoration: underline;
   text-decoration-color: #636363;
   -moz-text-decoration-color: #636363; /* Code for Firefox */
+}
+
+
+.itemtooltip a {
+  color: #660;
+}
+
+.itemtooltip:hover {
+  text-decoration: none;
+}
+
+a.itemtooltip:focus {
+  text-decoration: none;
+}
+
+a.itemtooltip[href]:hover {
+  text-decoration: underline;
+}
+
+a.itemtooltip[href]:focus {
+  text-decoration: underline;
 }
 
 .itemdescription {
@@ -71,6 +103,26 @@ body {
     color: #fff;
 }
 
+.itemdescription #sellers {
+    padding-top: 0.4em;
+    border-top: solid 1px #b09066;
+    margin-top: 0.6em;
+}
+
+.itemdescription #sellers ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline;
+}
+
+.itemdescription #sellerss ul li {
+    display: inline;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    color: #f66;
+}
+
 .itemdescription .footer {
   margin-top: 1em;
   position: relative;
@@ -92,6 +144,22 @@ body {
 }
 
 
+#matching-items {
+    padding: 0;
+    margin: 0;
+}
+
+#matching-items ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#matching-items ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
 tr.odd .beta-column {
   background-color: #ecc
@@ -185,3 +253,50 @@ a.navbar-brand {
 }
 
 
+.skill-table .reward-name {
+}
+
+.skill-table .reward-name .automatic {
+    color: #393;
+}
+
+.skill-table thead .reward-name {
+    color: black;
+}
+
+.soldbymerchant {
+    color: #393;
+}
+
+.soldbymerchant:hover {
+    color: #262;
+}
+
+.last-update {
+    float:right;
+    color: white;
+    font-size: 0.9em;
+    font-style: italic;
+    margin-right: 4em;
+    margin-top: 2em;
+}
+
+tfoot {
+    display: table-row-group;
+}
+
+tfoot input {
+    width: 100%;
+}
+
+td img.loading {
+    margin-bottom: 2px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.8);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.8);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.8);
+}
+
+.container-fluid {
+    margin-right: 5%;
+    margin-left: 5%;
+}
