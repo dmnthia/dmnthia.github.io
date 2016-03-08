@@ -50,7 +50,7 @@
   <body>
 
     <nav id="navMenu" class="navbar navbar-inverse navbar-fixed-top">
-      <div class="last-update">Last updated: 2016-02-07</div>
+      <div class="last-update">Last updated: 2016-03-07</div>
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -147,12 +147,14 @@ This skill covers only the creation of the dye; Textile Creation, Tanning, or Bl
 
 (The most common way to raise Endurance is simply to take armor damage in combat.)">Endurance</a></li>
                             <li><a href="/skills/24.html" title="The ability to use first aid kits to heal yourself or others.">First Aid</a></li>
+                            <li><a href="/skills/128.html" title="The ability to create elaborate contraptions that automate complex tasks.">Gadgeteering</a></li>
                             <li><a href="/skills/9.html" title="Growing things in a garden: herbs, food, and flowers.">Gardening</a></li>
                             <li><a href="/skills/22.html" title="A careful exploration of gender roles and sexuality, focusing on Human, Elven, and Raksasha cultures. This knowledge is not directly applicable to combat or crafting, but it helps you to be a well-rounded individual.">Gender Studies</a></li>
                             <li><a href="/skills/76.html" title="Fluency in the language of goblins.">Goblinese</a></li>
                             <li><a href="/skills/13.html" title="The art of appreciating what you eat. A high gourmand skill allows you to get more benefits from fancier foods.
 
 Each food has a Gourmet Level, which caps your benefits from this skill. If you eat a food with a Gourmet Level lower than your Gourmand skill, you will get benefits as if your skill was the food's Gourmet Level.">Gourmand</a></li>
+                            <li><a href="/skills/129.html" title="An approach to health that involves taking into account factors beyond the obvious. Some critics claim that any benefits are due to the placebo effect, and they may be right. But if it works, who cares?">Holistic Wellness</a></li>
                             <li><a href="/skills/99.html" title="The study of weapons and armor, with a focus on the benefits and weaknesses of different kinds of equipment.
 
 As the skill increases, Staff users will find that their combat abilities also restore Armor.">Hoplology</a></li>
@@ -192,6 +194,7 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
                     Updates <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
+                    <li><a href="/changes/248_to_249.html">Update 249</a></li>
                     <li><a href="/changes/247_to_248.html">Update 248</a></li>
                     <li><a href="/changes/246_to_247.html">Update 247</a></li>
                     <li><a href="/changes/245_to_246.html">Update 246</a></li>
@@ -230,27 +233,32 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
 
   var dataSet66 = [
 
-    ["0", "ABILITY: Explosion Sigil", "Create a dangerous symbol that explodes when an enemy gets near. Consumes one Basic Volatile Ink."],
-    ["20", "ABILITY: Explosion Sigil 2", "Create a dangerous symbol that explodes when an enemy gets near. Consumes one Advanced Volatile Ink."],
-    ["40", "ABILITY: Explosion Sigil 3", "Create a dangerous symbol that explodes when an enemy gets near. Consumes one Expert Volatile Ink."],
-    ["50", "ABILITY: Explosion Sigil 4", "Create a dangerous symbol that explodes when an enemy gets near. Consumes one Expert Volatile Ink."],
+    ["0", "ABILITY: Explosion Sigil", "Create a dangerous symbol that explodes when an enemy gets near. Requres one Basic Volatile Ink, with a 50% chance to consume it."],
+    ["20", "ABILITY: Explosion Sigil 2", "Create a dangerous symbol that explodes when an enemy gets near. Requires one Advanced Volatile Ink, with a 50% chance to consume it."],
+    ["40", "ABILITY: Explosion Sigil 3", "Create a dangerous symbol that explodes when an enemy gets near. Requires one Expert Volatile Ink, with a 33% chance to consume it."],
+    ["50", "ABILITY: Explosion Sigil 4", "Create a dangerous symbol that explodes when an enemy gets near. Requires one Expert Volatile Ink, with a 50% chance to consume it."],
+    ["60", "ABILITY: Explosion Sigil 5", "Create a dangerous symbol that explodes when an enemy gets near. Requires one Amazingly Volatile Ink, with a 33% chance to consume it."],
     ["10", "ABILITY: Restorative Sigil", "Create a symbol of health that heals nearby allies when danger is nearby. Lasts 60 seconds. Consumes one Basic Holistic Ink."],
     ["25", "ABILITY: Restorative Sigil 2", "Create a symbol of health that heals nearby allies when danger is nearby. Lasts 90 seconds. Consumes one Advanced Holistic Ink."],
     ["45", "ABILITY: Restorative Sigil 3", "Create a symbol of health that heals nearby allies when danger is nearby. Lasts 120 seconds. Consumes one Expert Holistic Ink."],
+    ["55", "ABILITY: Restorative Sigil 4", "Create a symbol of health that heals nearby allies when danger is nearby. Lasts 120 seconds. Consumes one Amazing Holistic Ink."],
     ["35", "ABILITY: Repulsion Barrier", "Create a symbol of repulsion; enemies that enter it will be flung away. Lasts 30 seconds. Consumes one Advanced Holistic Ink."],
-    ["5", "ABILITY: Electricity Sigil", "Create a symbol of power that shocks any creature that gets too close. Lasts 60 seconds. Consumes one Basic Volatile Ink."],
-    ["25", "ABILITY: Electricity Sigil 2", "Create a symbol of power that shocks any creature that gets too close. Lasts 90 seconds. Consumes one Advanced Volatile Ink."],
-    ["50", "ABILITY: Electricity Sigil 3", "Create a symbol of power that shocks any creature that gets too close. Lasts 120 seconds. Consumes one Expert Volatile Ink."],
+    ["5", "ABILITY: Electricity Sigil", "Create a symbol of power that shocks all creatures that get too close. Lasts 60 seconds. Consumes one Basic Volatile Ink."],
+    ["25", "ABILITY: Electricity Sigil 2", "Create a symbol of power that shocks all creatures that get too close. Lasts 90 seconds. Consumes one Advanced Volatile Ink."],
+    ["50", "ABILITY: Electricity Sigil 3", "Create a symbol of power that shocks all creatures that get too close. Lasts 120 seconds. Consumes one Expert Volatile Ink."],
+    ["53", "ABILITY: Electricity Sigil 4", "Create a symbol of power that shocks all creatures that get too close. Lasts 120 seconds. Consumes one Amazingly Volatile Ink."],
     ["15", "ABILITY: Acid Sigil", "Create a symbol of bile that flings armor-destroying acid at targets. Lasts 60 seconds. Consumes one Basic Caustic Ink."],
     ["35", "ABILITY: Acid Sigil 2", "Create a symbol of bile that flings armor-destroying acid at targets. Lasts 90 seconds. Consumes one Advanced Caustic Ink."],
     ["50", "ABILITY: Acid Sigil 3", "Create a symbol of bile that flings armor-destroying acid at targets. Lasts 120 seconds. Consumes one Expert Caustic Ink."],
+    ["58", "ABILITY: Acid Sigil 4", "Create a symbol of bile that flings armor-destroying acid at targets. Lasts 120 seconds. Consumes one Amazingly Caustic Ink."],
+    ["60", "ABILITY: Teleportation Sigil", "Create a symbol of movement that can be used by you and your allies (if they wish). Lasts 5 minutes. Consumes two Amazing Holistic Inks."],
     ["25", "RECIPE: Spider Inscription", "Etch the magical rune for spiders onto a malachite, so that it is attuned to only that species when used in crafting recipes."],
     ["25", "RECIPE: First Aid Inscription", "Etch the magical rune for first aid onto a garnet, so that it is attuned to that skill when used in crafting recipes."],
     ["25", "RECIPE: Armor Patching Inscription", "Etch the magical rune for armor patching onto an onyx, so that it is attuned to that skill when used in crafting recipes."],
+    ["25", "RECIPE: Cow Inscription", "Etch the magical rune for cattle onto a malachite, so that it is attuned to only that species when used in crafting recipes."],
     ["25", "RECIPE: Bat Inscription", "Etch the magical rune for bats onto a malachite, so that it is attuned to only that species when used in crafting recipes."],
     ["25", "RECIPE: Deer Inscription", "Etch the magical rune for deer onto a malachite, so that it is attuned to only that species when used in crafting recipes."],
     ["25", "RECIPE: Pig Inscription", "Etch the magical rune for pigs onto a malachite, so that it is attuned to only that species when used in crafting recipes."],
-    ["25", "RECIPE: Cow Inscription", "Etch the magical rune for cattle onto a malachite, so that it is attuned to only that species when used in crafting recipes."],
     ["40", "<span class=\"automatic\">+1 Leatherworking</span>", "Turning leathers into armor and goods."],
     ["10", "<span class=\"automatic\">+1 Calligraphy</span>", "The art of writing things. Handy for... writing things. It's also a valuable art for swordsmen and other warriors, who can infuse their art with potent additional effects."],
     ["45", "<span class=\"automatic\">+1 Toolcrafting</span>", "Skill in the creation of advanced tools and unusual equipment. Far more than just creating hand tools, an expert Toolcrafter is a master of repurposing found materials, and can create belts, armors, and even weapons from unusual materials. This equipment is usually designed to meet very specialized needs."],

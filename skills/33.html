@@ -50,7 +50,7 @@
   <body>
 
     <nav id="navMenu" class="navbar navbar-inverse navbar-fixed-top">
-      <div class="last-update">Last updated: 2016-02-07</div>
+      <div class="last-update">Last updated: 2016-03-07</div>
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -147,12 +147,14 @@ This skill covers only the creation of the dye; Textile Creation, Tanning, or Bl
 
 (The most common way to raise Endurance is simply to take armor damage in combat.)">Endurance</a></li>
                             <li><a href="/skills/24.html" title="The ability to use first aid kits to heal yourself or others.">First Aid</a></li>
+                            <li><a href="/skills/128.html" title="The ability to create elaborate contraptions that automate complex tasks.">Gadgeteering</a></li>
                             <li><a href="/skills/9.html" title="Growing things in a garden: herbs, food, and flowers.">Gardening</a></li>
                             <li><a href="/skills/22.html" title="A careful exploration of gender roles and sexuality, focusing on Human, Elven, and Raksasha cultures. This knowledge is not directly applicable to combat or crafting, but it helps you to be a well-rounded individual.">Gender Studies</a></li>
                             <li><a href="/skills/76.html" title="Fluency in the language of goblins.">Goblinese</a></li>
                             <li><a href="/skills/13.html" title="The art of appreciating what you eat. A high gourmand skill allows you to get more benefits from fancier foods.
 
 Each food has a Gourmet Level, which caps your benefits from this skill. If you eat a food with a Gourmet Level lower than your Gourmand skill, you will get benefits as if your skill was the food's Gourmet Level.">Gourmand</a></li>
+                            <li><a href="/skills/129.html" title="An approach to health that involves taking into account factors beyond the obvious. Some critics claim that any benefits are due to the placebo effect, and they may be right. But if it works, who cares?">Holistic Wellness</a></li>
                             <li><a href="/skills/99.html" title="The study of weapons and armor, with a focus on the benefits and weaknesses of different kinds of equipment.
 
 As the skill increases, Staff users will find that their combat abilities also restore Armor.">Hoplology</a></li>
@@ -192,6 +194,7 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
                     Updates <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
+                    <li><a href="/changes/248_to_249.html">Update 249</a></li>
                     <li><a href="/changes/247_to_248.html">Update 248</a></li>
                     <li><a href="/changes/246_to_247.html">Update 247</a></li>
                     <li><a href="/changes/245_to_246.html">Update 246</a></li>
@@ -233,15 +236,17 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
   var dataSet33 = [
 
     ["51", "<span class=\"automatic\">RECIPE: Meditation #51</span>", "MeditationVulnPsi25"],
+    ["56", "RECIPE: Meditation #56", "Meditation31"],
+    ["58", "RECIPE: Meditation #58", "Meditation32"],
     ["50", "<span class=\"automatic\">RECIPE: Meditation #50</span>", "Meditation28"],
     ["11", "<span class=\"automatic\">RECIPE: Meditation #11</span>", "MeditationBreath3"],
-    ["2", "<span class=\"automatic\">RECIPE: Meditation #2</span>", "Meditation2"],
-    ["3", "<span class=\"automatic\">RECIPE: Meditation #3</span>", "Meditation3"],
-    ["4", "<span class=\"automatic\">RECIPE: Meditation #4</span>", "Meditation4"],
-    ["5", "<span class=\"automatic\">RECIPE: Meditation #5</span>", "Meditation5"],
-    ["6", "<span class=\"automatic\">RECIPE: Meditation #6</span>", "Meditation6"],
-    ["7", "<span class=\"automatic\">RECIPE: Meditation #7</span>", "MeditationHealth5"],
-    ["8", "<span class=\"automatic\">RECIPE: Meditation #8</span>", "Meditation7"],
+    ["2", "<span class=\"automatic\">RECIPE: Meditation #02</span>", "Meditation2"],
+    ["3", "<span class=\"automatic\">RECIPE: Meditation #03</span>", "Meditation3"],
+    ["4", "<span class=\"automatic\">RECIPE: Meditation #04</span>", "Meditation4"],
+    ["5", "<span class=\"automatic\">RECIPE: Meditation #05</span>", "Meditation5"],
+    ["6", "<span class=\"automatic\">RECIPE: Meditation #06</span>", "Meditation6"],
+    ["7", "<span class=\"automatic\">RECIPE: Meditation #07</span>", "MeditationHealth5"],
+    ["8", "<span class=\"automatic\">RECIPE: Meditation #08</span>", "Meditation7"],
     ["13", "<span class=\"automatic\">RECIPE: Meditation #13</span>", "MeditationVulnPsi5"],
     ["14", "<span class=\"automatic\">RECIPE: Meditation #14</span>", "Meditation10"],
     ["18", "<span class=\"automatic\">RECIPE: Meditation #18</span>", "Meditation12"],
@@ -275,14 +280,26 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
     ["46", "<span class=\"automatic\">RECIPE: Meditation #46</span>", "Meditation26"],
     ["48", "<span class=\"automatic\">RECIPE: Meditation #48</span>", "Meditation27"],
     ["49", "<span class=\"automatic\">RECIPE: Meditation #49</span>", "MeditationPower25"],
-    ["16", "<span class=\"automatic\">RECIPE: Meditation #16</span>", "Meditation11"],
-    ["1", "<span class=\"automatic\">RECIPE: Meditation #1</span>", "Meditation1"],
-    ["9", "<span class=\"automatic\">RECIPE: Meditation #9</span>", "MeditationPower5"],
+    ["62", "RECIPE: Meditation #62", "Meditation34"],
+    ["63", "RECIPE: Meditation #63", "MeditationVulnDarkness25"],
+    ["64", "RECIPE: Meditation #64", "Meditation35"],
+    ["53", "RECIPE: Meditation #53", "MeditationIndirect5"],
     ["12", "<span class=\"automatic\">RECIPE: Meditation #12</span>", "Meditation9"],
+    ["16", "<span class=\"automatic\">RECIPE: Meditation #16</span>", "Meditation11"],
+    ["1", "<span class=\"automatic\">RECIPE: Meditation #01</span>", "Meditation1"],
+    ["9", "<span class=\"automatic\">RECIPE: Meditation #09</span>", "MeditationPower5"],
     ["15", "<span class=\"automatic\">RECIPE: Meditation #15</span>", "MeditationPower10"],
     ["17", "<span class=\"automatic\">RECIPE: Meditation #17</span>", "MeditationVulnCold10"],
     ["10", "<span class=\"automatic\">RECIPE: Meditation #10</span>", "Meditation8"],
     ["47", "<span class=\"automatic\">RECIPE: Meditation #47</span>", "MeditationVulnCold20"],
+    ["52", "RECIPE: Meditation #52", "Meditation29"],
+    ["54", "RECIPE: Meditation #54", "Meditation30"],
+    ["55", "RECIPE: Meditation #55", "MeditationVulnNature20"],
+    ["57", "RECIPE: Meditation #57", "MeditationVulnElectricity20"],
+    ["59", "RECIPE: Meditation #59", "MeditationHealth25"],
+    ["60", "RECIPE: Meditation #60", "Meditation33"],
+    ["61", "RECIPE: Meditation #61", "MeditationVulnPsi30"],
+    ["65", "RECIPE: Meditation #65", "MeditationHealth30"],
     ["20", "<span class=\"automatic\">+1 Psychology</span>", "Understanding the mind of sentient creatures. Also, using that knowledge in combat and other stressful situations."],
     ["40", "<span class=\"automatic\">+1 Mentalism</span>", "The power of mind over matter: psychic powers! This combat skill focuses on recovery and restoration, but it also has multiple damaging abilities."],
   ];

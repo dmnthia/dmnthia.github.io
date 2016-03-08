@@ -50,7 +50,7 @@
   <body>
 
     <nav id="navMenu" class="navbar navbar-inverse navbar-fixed-top">
-      <div class="last-update">Last updated: 2016-02-07</div>
+      <div class="last-update">Last updated: 2016-03-07</div>
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -147,12 +147,14 @@ This skill covers only the creation of the dye; Textile Creation, Tanning, or Bl
 
 (The most common way to raise Endurance is simply to take armor damage in combat.)">Endurance</a></li>
                             <li><a href="/skills/24.html" title="The ability to use first aid kits to heal yourself or others.">First Aid</a></li>
+                            <li><a href="/skills/128.html" title="The ability to create elaborate contraptions that automate complex tasks.">Gadgeteering</a></li>
                             <li><a href="/skills/9.html" title="Growing things in a garden: herbs, food, and flowers.">Gardening</a></li>
                             <li><a href="/skills/22.html" title="A careful exploration of gender roles and sexuality, focusing on Human, Elven, and Raksasha cultures. This knowledge is not directly applicable to combat or crafting, but it helps you to be a well-rounded individual.">Gender Studies</a></li>
                             <li><a href="/skills/76.html" title="Fluency in the language of goblins.">Goblinese</a></li>
                             <li><a href="/skills/13.html" title="The art of appreciating what you eat. A high gourmand skill allows you to get more benefits from fancier foods.
 
 Each food has a Gourmet Level, which caps your benefits from this skill. If you eat a food with a Gourmet Level lower than your Gourmand skill, you will get benefits as if your skill was the food's Gourmet Level.">Gourmand</a></li>
+                            <li><a href="/skills/129.html" title="An approach to health that involves taking into account factors beyond the obvious. Some critics claim that any benefits are due to the placebo effect, and they may be right. But if it works, who cares?">Holistic Wellness</a></li>
                             <li><a href="/skills/99.html" title="The study of weapons and armor, with a focus on the benefits and weaknesses of different kinds of equipment.
 
 As the skill increases, Staff users will find that their combat abilities also restore Armor.">Hoplology</a></li>
@@ -192,6 +194,7 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
                     Updates <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
+                    <li><a href="/changes/248_to_249.html">Update 249</a></li>
                     <li><a href="/changes/247_to_248.html">Update 248</a></li>
                     <li><a href="/changes/246_to_247.html">Update 247</a></li>
                     <li><a href="/changes/245_to_246.html">Update 246</a></li>
@@ -247,7 +250,6 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
     ["25", "RECIPE: Blood Mushroom Powder", "Creates a pile of powdered Blood mushrooms."],
     ["30", "RECIPE: Coral Mushroom Powder", "Creates a pile of powdered Coral mushrooms."],
     ["30", "RECIPE: Iocaine Powder", "Creates a pile of powdered iocaine mushroom, an incredibly deadly toxin. It's cut with blusher mushrooms to perfectly mask its taste and odor, making it a deadly food additive."],
-    ["35", "RECIPE: Iocaine Practice Dose", "Creates a carefully tuned version of iocaine powder that's designed to make you very ill without killing you outright, allowing the body to build up resistance to the deadly toxin."],
     ["35", "RECIPE: Poisoned Glazed Beets", "Poisons a beet dish with deadly iocaine powder."],
     ["37", "RECIPE: Poisoned Banana Bread", "Poisons a tasty bread with deadly iocaine powder."],
     ["39", "RECIPE: Poisoned Apple Juice", "Poisons apple juice with deadly iocaine powder."],
@@ -261,9 +263,10 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
     ["30", "RECIPE: Pungent Rennet", "Create a sweet brown cheese made with sour cream. (Requires a stove or fire pit.)<br><br>Cheese Type:Whey"],
     ["20", "RECIPE: Thunderclap Potion", "75% chance to boost Electricity damage by 10 for 15 minutes. 25% chance to ground you, making your Electricity attacks deal 0 damage for 15 minutes."],
     ["10", "RECIPE: Boletus Mushroom Smoothie", "Create a \"flavorful\" mushroom concoction. Some people have even learned to appreciate the taste."],
-    ["2", "RECIPE: Basic Spore Bomb", "Concoct an explosive fungal bomb. The result is dangerous to most creatures, but especially to those that are momentarily Vulnerable."],
+    ["35", "RECIPE: Iocaine Practice Dose", "Creates a carefully tuned version of iocaine powder that's designed to make you very ill without killing you outright, allowing the body to build up resistance to the deadly toxin."],
     ["45", "RECIPE: Horrific Spore Bomb", "Concoct an explosive fungal bomb. The result is dangerous to most creatures, but especially to those that are momentarily Vulnerable."],
-    ["10", "RECIPE: Dimensional Folder", "50% chance to increase maximum inventory size by 1 for an hour. 25% chance to increase maximum inventory size by 3 for an hour. 25% chance to reduce maximum inventory size by 5 for an hour. You can drink this potion multiple times, with stacking effects."],
+    ["2", "RECIPE: Basic Spore Bomb", "Concoct an explosive fungal bomb. The result is dangerous to most creatures, but especially to those that are momentarily Vulnerable."],
+    ["0", "RECIPE: Lycanspore Bomb", "Concoct an explosive fungal bomb. The is quite deadly to those vulnerable to fungus or wolfsbane."],
     ["0", "RECIPE: Parasol Mushroom Smoothie", "Create a \"flavorful\" mushroom concoction. Some people have even learned to appreciate the taste."],
     ["15", "RECIPE: Potent Spore Bomb", "Concoct an explosive fungal bomb. The result is dangerous to most creatures, but especially to those that are momentarily Vulnerable."],
     ["20", "RECIPE: Myconutmeg", "Create a distilled-mushroom drink."],
@@ -272,11 +275,11 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
     ["20", "RECIPE: Life Or Death Potion", "50% chance to restore 200 Health; 50% chance to deal 200 Health damage instead. Best consumed when you have nothing left to lose."],
     ["40", "RECIPE: Healing Potion Omega", "Creates disposable potions that restore 100 Health."],
     ["15", "RECIPE: Field Mushroom Smoothie", "Create a \"flavorful\" mushroom concoction. Some people have even learned to appreciate the taste."],
-    ["0", "RECIPE: Lycanspore Bomb", "Concoct an explosive fungal bomb. The is quite deadly to those vulnerable to fungus or wolfsbane."],
     ["20", "RECIPE: Blusher Mushroom Smoothie", "Create a \"flavorful\" mushroom concoction. Some people have even learned to appreciate the taste."],
     ["25", "RECIPE: Milk Cap Mushroom Smoothie", "Create a \"flavorful\" mushroom concoction. Some people have even learned to appreciate the taste."],
     ["40", "RECIPE: Iocaine Milk Smoothie", "Creates a delicious but deadly mushroom smoothie that happens to look exactly like a Milk Cap Smoothie. Don't confuse them!"],
     ["35", "RECIPE: Coral Mushroom Smoothie", "Creates a disgusting but healthful mushroom concoction."],
+    ["10", "RECIPE: Dimensional Folder", "50% chance to increase maximum inventory size by 1 for an hour. 25% chance to increase maximum inventory size by 3 for an hour. 25% chance to reduce maximum inventory size by 5 for an hour. You can drink this potion multiple times, with stacking effects."],
     ["40", "<span class=\"automatic\">+1 Alchemy</span>", "The art of combining esoteric things together to make potions and poisons."],
     ["10", "<span class=\"automatic\">+1 Alchemy</span>", "The art of combining esoteric things together to make potions and poisons."],
     ["20", "<span class=\"automatic\">+1 Pig</span>", "The art of living and fighting as a pig."],

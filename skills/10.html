@@ -50,7 +50,7 @@
   <body>
 
     <nav id="navMenu" class="navbar navbar-inverse navbar-fixed-top">
-      <div class="last-update">Last updated: 2016-02-07</div>
+      <div class="last-update">Last updated: 2016-03-07</div>
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -147,12 +147,14 @@ This skill covers only the creation of the dye; Textile Creation, Tanning, or Bl
 
 (The most common way to raise Endurance is simply to take armor damage in combat.)">Endurance</a></li>
                             <li><a href="/skills/24.html" title="The ability to use first aid kits to heal yourself or others.">First Aid</a></li>
+                            <li><a href="/skills/128.html" title="The ability to create elaborate contraptions that automate complex tasks.">Gadgeteering</a></li>
                             <li><a href="/skills/9.html" title="Growing things in a garden: herbs, food, and flowers.">Gardening</a></li>
                             <li><a href="/skills/22.html" title="A careful exploration of gender roles and sexuality, focusing on Human, Elven, and Raksasha cultures. This knowledge is not directly applicable to combat or crafting, but it helps you to be a well-rounded individual.">Gender Studies</a></li>
                             <li><a href="/skills/76.html" title="Fluency in the language of goblins.">Goblinese</a></li>
                             <li><a href="/skills/13.html" title="The art of appreciating what you eat. A high gourmand skill allows you to get more benefits from fancier foods.
 
 Each food has a Gourmet Level, which caps your benefits from this skill. If you eat a food with a Gourmet Level lower than your Gourmand skill, you will get benefits as if your skill was the food's Gourmet Level.">Gourmand</a></li>
+                            <li><a href="/skills/129.html" title="An approach to health that involves taking into account factors beyond the obvious. Some critics claim that any benefits are due to the placebo effect, and they may be right. But if it works, who cares?">Holistic Wellness</a></li>
                             <li><a href="/skills/99.html" title="The study of weapons and armor, with a focus on the benefits and weaknesses of different kinds of equipment.
 
 As the skill increases, Staff users will find that their combat abilities also restore Armor.">Hoplology</a></li>
@@ -192,6 +194,7 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
                     Updates <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
+                    <li><a href="/changes/248_to_249.html">Update 249</a></li>
                     <li><a href="/changes/247_to_248.html">Update 248</a></li>
                     <li><a href="/changes/246_to_247.html">Update 247</a></li>
                     <li><a href="/changes/245_to_246.html">Update 246</a></li>
@@ -233,10 +236,8 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
     ["0", "RECIPE: Potato Cubes", "Creates a pile of raw potato cubes, useful for other recipes."],
     ["5", "RECIPE: Onion Cubes", "Creates a pile of raw onion cubes, useful for other recipes."],
     ["5", "RECIPE: Onion Slices", "Creates a pile of raw onion slices, useful for other recipes."],
-    ["25", "RECIPE: Glazed Beets", "Creates a simple dish of baked beets in a tasty glaze. Requires a stove or fire pit."],
     ["0", "RECIPE: Fried Clownfish", "Cooks a nice fried clownfish. Requires a stove or fire pit."],
     ["0", "RECIPE: Boiled Crab", "Prepares raw crab meat for eating. Requires a stove or fire pit."],
-    ["10", "RECIPE: Grapefish Steak", "Prepares a simple grapefish steak. Requires a stove or fire pit."],
     ["5", "RECIPE: Bacon", "Creates delicious bacon. Requires a stove or fire pit. Unlike most food, bacon does not give a long-term regeneration effect. Instead, it is an instant-heal item."],
     ["5", "RECIPE: Onion Rings", "Creates a batch of battered onion rings. Requires a stove or fire pit."],
     ["0", "RECIPE: Potato Wedges", "Creates a batch of fried battered potato wedges. Requires a stove or fire pit."],
@@ -244,12 +245,10 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
     ["10", "RECIPE: Semi-Loaded Baked Potato", "Creates a baked potato with all the toppings... except sour cream and bacon. Requires a stove or fire pit."],
     ["5", "RECIPE: Hash Browns", "Creates delicious fried hash browns with onion. Requires a stove or fire pit."],
     ["5", "RECIPE: Onion Blossom", "Create a bloom of greasy fried onion. Requires a stove or fire pit."],
-    ["10", "RECIPE: Boiled Cabbage", "Creates a simple dish of boiled cabbage. Requires a stove or fire pit."],
     ["20", "RECIPE: Baked Beets", "Creates a simple dish of moist, delicious baked beets. Requires a stove or fire pit."],
     ["30", "RECIPE: Squash Soup", "Creates a basic soup of squash and onions. Requires a stove or fire pit."],
     ["40", "RECIPE: Broccoli Florets", "Prepares broccoli florets with the *perfect* amount of salt. Requires a stove or fire pit."],
     ["50", "RECIPE: Maple Carrots", "Steams carrots with sugar. A maple-wood fire emphasizes the overwhelming sweetness. Requires a stove or fire pit."],
-    ["30", "RECIPE: Stuffed Squash", "Creates a tasty and visually appealing meal of squash stuffed with venison. Requires a stove or fire pit."],
     ["20", "RECIPE: Breaded Perch with Onions", "Prepares a nice perch dish. Requires a stove or fire pit."],
     ["30", "RECIPE: Eel Stir-Fry", "Stir fry sliced eel with juicy cabbage. Requires a stove or fire pit."],
     ["40", "RECIPE: Maple-Smoked Shark", "Season a shark fillet and cook it over maple to make a truly excellent steak with a sweet smoky flavor. Requires a stove or fire pit."],
@@ -264,8 +263,6 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
     ["15", "RECIPE: Venison Roast", "Creates a perfectly roasted venison roast. Requires a stove or fire pit."],
     ["15", "RECIPE: Sausage", "Creates pork and venison sausage."],
     ["40", "RECIPE: BBQ Ribs", "Creates sweet and juicy BBQ ribs. Requires a stove or fire pit."],
-    ["15", "RECIPE: Cabbage Soup", "Prepares a simplistic version of Cabbage Soup. Requires a stove or fire pit."],
-    ["35", "RECIPE: Ur-Bacon", "Creates bacon infused with ancient spirits of evil. Requires a stove or fire pit."],
     ["5", "RECIPE: Bland Baked Chicken", "Creates a dry bland chicken dish. Requires a stove or fire pit."],
     ["15", "RECIPE: Chicken Drumstick", "Creates a tasty snack. Requires a stove or fire pit."],
     ["25", "RECIPE: Grilled Chicken", "Prepares a delicious meal. Requires a stove or fire pit."],
@@ -298,6 +295,8 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
     ["10", "RECIPE: Sun Vale Tea", "Creates a pleasant drink."],
     ["30", "RECIPE: Pumpkin Smoothie", "Creates a thick seasonal drink. Filling!"],
     ["50", "RECIPE: Basic Pumpkin Pie", "Creates a delicious dessert. Or a full meal any time. You're an adult, you decide when to eat pie. Requires a stove or fire pit."],
+    ["53", "RECIPE: Stuffed Bell Pepper", "Creates a meal that's really very meaty for something that purports to be a vegetable dish. Requires a stove or fire pit."],
+    ["56", "RECIPE: Vegetable Masterpiece", "Creates a hearty vegetarian stir-fry. Requires a stove or fire pit."],
     ["51", "RECIPE: Mountain Mutton", "Creates a hearty meal. Serves two. Requires a stove or fire pit."],
     ["52", "RECIPE: Shark Chew", "Creates a chewy snack. Requires a stove or fire pit."],
     ["55", "RECIPE: Shroom Feast", "Creates a delicious vegetarian dish. Requires a stove or fire pit."],
@@ -315,20 +314,30 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
     ["50", "RECIPE: Furpot", "Creates an odorous stew meal. Requires a stove or fire pit."],
     ["55", "RECIPE: Pumpkin Spice Tea", "Creates a delicious seasonal drink. Requires a stove or fire pit."],
     ["60", "RECIPE: Fancy Pumpkin Pie", "Creates a wonderful meal pie. (A pie so good that you should just eat it by itself as a meal.) Requires a stove or fire pit."],
+    ["30", "RECIPE: Stuffed Squash", "Creates a tasty and visually appealing meal of squash stuffed with venison. Requires a stove or fire pit."],
     ["35", "RECIPE: Guava Beet Muffin", "These muffins sound strange but they are actually quite sweet. Requires a stove or fire pit."],
     ["45", "RECIPE: Beef and Broccoli", "Creates a classic beef and broccoli dish. Requires a stove or fire pit."],
     ["25", "RECIPE: Orange Perch", "Cooking perch over an oak fire really brings out the subtle flavor of the fish. A garnish of orange add a sweet piquant taste. Requires a stove or fire pit."],
     ["50", "RECIPE: Candied Lemon", "Creates a sweet tart treat from the tart fruit. Requires a stove or fire pit."],
+    ["35", "RECIPE: Ur-Bacon", "Creates bacon infused with ancient spirits of evil. Requires a stove or fire pit."],
     ["5", "RECIPE: Buttered Baked Potato", "Creates a baked potato with fresh butter. Requires a stove or fire pit."],
+    ["25", "RECIPE: Glazed Beets", "Creates a simple dish of baked beets in a tasty glaze. Requires a stove or fire pit."],
+    ["15", "RECIPE: Cabbage Soup", "Prepares a simplistic version of Cabbage Soup. Requires a stove or fire pit."],
     ["0", "RECIPE: Plain Porridge", "Creates bland but filling gruel."],
+    ["1", "RECIPE: Hard-Boiled Egg", "Creates a simple meal. Requires a stove or fire pit."],
+    ["7", "RECIPE: Soft-Boiled Egg", "Creates a simple meal. Requires a stove or fire pit."],
+    ["15", "RECIPE: Poached Egg", "Creates a simple meal. Requires a stove or fire pit."],
+    ["3", "RECIPE: Raw Egg Blend", "Creates a ... drink."],
+    ["13", "RECIPE: Bacon Basket", "Creates a simple meal. Requires a stove or fire pit."],
+    ["14", "RECIPE: Scrambled Egg", "Creates a simple meal. Requires a stove or fire pit."],
+    ["10", "RECIPE: Grapefish Steak", "Prepares a simple grapefish steak. Requires a stove or fire pit."],
     ["20", "RECIPE: Orange Juice", "Creates a pleasant drink."],
     ["30", "RECIPE: Fruity Mushy", "Creates a sweet, thick blended drink."],
     ["40", "RECIPE: Lemonade", "Creates a seemingly simple drink."],
     ["35", "RECIPE: Pumpkin Soup", "Creates a simple meal. Serves 2. Requires a stove or fire pit."],
-    ["53", "RECIPE: Stuffed Bell Pepper", "Creates a meal that's really very meaty for something that purports to be a vegetable dish. Requires a stove or fire pit."],
-    ["56", "RECIPE: Vegetable Masterpiece", "Creates a hearty vegetarian stir-fry. Requires a stove or fire pit."],
-    ["35", "RECIPE: Fried Spider Leg", "Creates an interesting fried dish from the most common part of the spider. Requires a stove or fire pit."],
+    ["10", "RECIPE: Boiled Cabbage", "Creates a simple dish of boiled cabbage. Requires a stove or fire pit."],
     ["45", "RECIPE: Mantis-Stuffed Mushroom", "Creates mushrooms stuffed with delicious mantis meat. Requires a stove or fire pit."],
+    ["35", "RECIPE: Fried Spider Leg", "Creates an interesting fried dish from the most common part of the spider. Requires a stove or fire pit."],
     ["40", "<span class=\"automatic\">+1 Foraging</span>", "The art of picking things up. Except mushrooms, those are special for some reason. Experts at Foraging are also experts at tracking down stationary items and locations (such as many Quest Objectives)."],
     ["50", "<span class=\"automatic\">+1 Fire Magic</span>", "Using Fire to destroy your enemies. This is a very potent offensive skill, including long-range and area-effect attacks, and even some Cold attacks for versatility. However, there are drawbacks: Fire Magic is extremely Power-intensive; all creatures generate extra Rage when they are burned; and many creatures have some resistance to fire."],
     ["20", "<span class=\"automatic\">+1 Gardening</span>", "Growing things in a garden: herbs, food, and flowers."],
