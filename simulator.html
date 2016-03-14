@@ -212,39 +212,250 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
     </nav>
 
     <div class="container-fluid">
-
-
-
-<a href="#skill6"><h1>Mining</h1></a>
-<p>Digging metals and ores out of the ground.</p>
-<script>
-  $(document).ready(function() {
-    $('#skill6').DataTable({
-      paging: false,
-      info: false,
-      data: dataSet6,
-      columns: [
-        { title: "Level" },
-        { title: "Reward", className: "reward-name" },
-        { title: "Description" },
-      ],
-    })
-    .order([[0, "asc"]])
-  });
-
-  var dataSet6 = [
-
-    ["25", "<span class=\"automatic\">+1 Foraging</span>", "The art of picking things up. Except mushrooms, those are special for some reason. Experts at Foraging are also experts at tracking down stationary items and locations (such as many Quest Objectives)."],
-    ["50", "<span class=\"automatic\">+1 Geology</span>", "Digging crystals out of the ground, and knowing what they do."],
-    ["35", "<span class=\"automatic\">+1 Surveying</span>", "Analyzing the land to locate valuable resources or important locations. Surveying has many uses, but is most commonly used to make resource maps for Geology and Mining."],
-    ["15", "<span class=\"automatic\">+1 Surveying</span>", "Analyzing the land to locate valuable resources or important locations. Surveying has many uses, but is most commonly used to make resource maps for Geology and Mining."],
-  ];
-</script>
-    <table id="skill6" class="display compact table table-striped table-bordered skill-table" cellspacing="0" width="100%">
-    </table>
-
-
+    <div class="page-header">
+        <h1>Build simulator <span class="label label-danger">ALPHA</span></h1>
+        <p>Start by choosing your skill combo and then apply all mods. When you're done, share your amazing build by copying the URL at the top!. </p>
     </div>
+    <h2>Equipment & Mods</h2>
+    <div class="builder">
+        <div class="skill">
+            Pick your skill combination: <select id="firstskill" onchange="Simulator.onSetFirstSkill($(this));"></select> <select id="secondskill" onchange="Simulator.onSetSecondSkill($(this));"></select>
+        </div>
+        <div class="slots">
+
+            <div class="row ">
+                <div class="slot Head col-md-3">
+                    <div class="itemdescription">
+                        <div class="header">
+                            <div class="icon"></div>
+                            <div class="title normal">Head</div>
+                            <div class="desc">Placeholder Head slot.</div>
+                        </div>
+                        <div class="main">
+                            <div id="Head"></div>
+                        </div>
+                        <div class="footer">
+                            <div class="value">Value: $$$</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <p>Select the mods below.</p>
+                    <select id="Head-1" onchange="Simulator.onSetSlotMod('Head', 1, $(this));"></select>
+                    <select id="Head-2" onchange="Simulator.onSetSlotMod('Head', 2, $(this));"></select>
+                    <select id="Head-3" onchange="Simulator.onSetSlotMod('Head', 3, $(this));"></select>
+                    <select id="Head-4" onchange="Simulator.onSetSlotMod('Head', 4, $(this));"></select>
+                    <select id="Head-5" onchange="Simulator.onSetSlotMod('Head', 5, $(this));"></select>
+                    <select id="Head-6" onchange="Simulator.onSetSlotMod('Head', 6, $(this));"></select>
+                </div>
+                <div class="slot Necklace col-md-3">
+                    <div class="itemdescription">
+                        <div class="header">
+                            <div class="icon"></div>
+                            <div class="title normal">Necklace</div>
+                            <div class="desc">Placeholder Necklace slot.</div>
+                        </div>
+                        <div class="main">
+                            <div id="Necklace"></div>
+                        </div>
+                        <div class="footer">
+                            <div class="value">Value: $$$</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <p>Select the mods below.</p>
+                    <select id="Necklace-1" onchange="Simulator.onSetSlotMod('Necklace', 1, $(this));"></select>
+                    <select id="Necklace-2" onchange="Simulator.onSetSlotMod('Necklace', 2, $(this));"></select>
+                    <select id="Necklace-3" onchange="Simulator.onSetSlotMod('Necklace', 3, $(this));"></select>
+                    <select id="Necklace-4" onchange="Simulator.onSetSlotMod('Necklace', 4, $(this));"></select>
+                    <select id="Necklace-5" onchange="Simulator.onSetSlotMod('Necklace', 5, $(this));"></select>
+                    <select id="Necklace-6" onchange="Simulator.onSetSlotMod('Necklace', 6, $(this));"></select>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="slot Chest col-md-3">
+                    <div class="itemdescription">
+                        <div class="header">
+                            <div class="icon"></div>
+                            <div class="title normal">Chest</div>
+                            <div class="desc">Placeholder Chest slot.</div>
+                        </div>
+                        <div class="main">
+                            <div id="Chest"></div>
+                        </div>
+                        <div class="footer">
+                            <div class="value">Value: $$$</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <p>Select the mods below.</p>
+                    <select id="Chest-1" onchange="Simulator.onSetSlotMod('Chest', 1, $(this));"></select>
+                    <select id="Chest-2" onchange="Simulator.onSetSlotMod('Chest', 2, $(this));"></select>
+                    <select id="Chest-3" onchange="Simulator.onSetSlotMod('Chest', 3, $(this));"></select>
+                    <select id="Chest-4" onchange="Simulator.onSetSlotMod('Chest', 4, $(this));"></select>
+                    <select id="Chest-5" onchange="Simulator.onSetSlotMod('Chest', 5, $(this));"></select>
+                    <select id="Chest-6" onchange="Simulator.onSetSlotMod('Chest', 6, $(this));"></select>
+                </div>
+                <div class="slot Hands col-md-3">
+                    <div class="itemdescription">
+                        <div class="header">
+                            <div class="icon"></div>
+                            <div class="title normal">Hands</div>
+                            <div class="desc">Placeholder Hands slot.</div>
+                        </div>
+                        <div class="main">
+                            <div id="Hands"></div>
+                        </div>
+                        <div class="footer">
+                            <div class="value">Value: $$$</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <p>Select the mods below.</p>
+                    <select id="Hands-1" onchange="Simulator.onSetSlotMod('Hands', 1, $(this));"></select>
+                    <select id="Hands-2" onchange="Simulator.onSetSlotMod('Hands', 2, $(this));"></select>
+                    <select id="Hands-3" onchange="Simulator.onSetSlotMod('Hands', 3, $(this));"></select>
+                    <select id="Hands-4" onchange="Simulator.onSetSlotMod('Hands', 4, $(this));"></select>
+                    <select id="Hands-5" onchange="Simulator.onSetSlotMod('Hands', 5, $(this));"></select>
+                    <select id="Hands-6" onchange="Simulator.onSetSlotMod('Hands', 6, $(this));"></select>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="slot Ring col-md-3">
+                    <div class="itemdescription">
+                        <div class="header">
+                            <div class="icon"></div>
+                            <div class="title normal">Ring</div>
+                            <div class="desc">Placeholder Ring slot.</div>
+                        </div>
+                        <div class="main">
+                            <div id="Ring"></div>
+                        </div>
+                        <div class="footer">
+                            <div class="value">Value: $$$</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <p>Select the mods below.</p>
+                    <select id="Ring-1" onchange="Simulator.onSetSlotMod('Ring', 1, $(this));"></select>
+                    <select id="Ring-2" onchange="Simulator.onSetSlotMod('Ring', 2, $(this));"></select>
+                    <select id="Ring-3" onchange="Simulator.onSetSlotMod('Ring', 3, $(this));"></select>
+                    <select id="Ring-4" onchange="Simulator.onSetSlotMod('Ring', 4, $(this));"></select>
+                    <select id="Ring-5" onchange="Simulator.onSetSlotMod('Ring', 5, $(this));"></select>
+                    <select id="Ring-6" onchange="Simulator.onSetSlotMod('Ring', 6, $(this));"></select>
+                </div>
+                <div class="slot MainHand col-md-3">
+                    <div class="itemdescription">
+                        <div class="header">
+                            <div class="icon"></div>
+                            <div class="title normal">MainHand</div>
+                            <div class="desc">Placeholder MainHand slot.</div>
+                        </div>
+                        <div class="main">
+                            <div id="MainHand"></div>
+                        </div>
+                        <div class="footer">
+                            <div class="value">Value: $$$</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <p>Select the mods below.</p>
+                    <select id="MainHand-1" onchange="Simulator.onSetSlotMod('MainHand', 1, $(this));"></select>
+                    <select id="MainHand-2" onchange="Simulator.onSetSlotMod('MainHand', 2, $(this));"></select>
+                    <select id="MainHand-3" onchange="Simulator.onSetSlotMod('MainHand', 3, $(this));"></select>
+                    <select id="MainHand-4" onchange="Simulator.onSetSlotMod('MainHand', 4, $(this));"></select>
+                    <select id="MainHand-5" onchange="Simulator.onSetSlotMod('MainHand', 5, $(this));"></select>
+                    <select id="MainHand-6" onchange="Simulator.onSetSlotMod('MainHand', 6, $(this));"></select>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="slot OffHand col-md-3">
+                    <div class="itemdescription">
+                        <div class="header">
+                            <div class="icon"></div>
+                            <div class="title normal">OffHand</div>
+                            <div class="desc">Placeholder OffHand slot.</div>
+                        </div>
+                        <div class="main">
+                            <div id="OffHand"></div>
+                        </div>
+                        <div class="footer">
+                            <div class="value">Value: $$$</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <p>Select the mods below.</p>
+                    <select id="OffHand-1" onchange="Simulator.onSetSlotMod('OffHand', 1, $(this));"></select>
+                    <select id="OffHand-2" onchange="Simulator.onSetSlotMod('OffHand', 2, $(this));"></select>
+                    <select id="OffHand-3" onchange="Simulator.onSetSlotMod('OffHand', 3, $(this));"></select>
+                    <select id="OffHand-4" onchange="Simulator.onSetSlotMod('OffHand', 4, $(this));"></select>
+                    <select id="OffHand-5" onchange="Simulator.onSetSlotMod('OffHand', 5, $(this));"></select>
+                    <select id="OffHand-6" onchange="Simulator.onSetSlotMod('OffHand', 6, $(this));"></select>
+                </div>
+                <div class="slot Legs col-md-3">
+                    <div class="itemdescription">
+                        <div class="header">
+                            <div class="icon"></div>
+                            <div class="title normal">Legs</div>
+                            <div class="desc">Placeholder Legs slot.</div>
+                        </div>
+                        <div class="main">
+                            <div id="Legs"></div>
+                        </div>
+                        <div class="footer">
+                            <div class="value">Value: $$$</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <p>Select the mods below.</p>
+                    <select id="Legs-1" onchange="Simulator.onSetSlotMod('Legs', 1, $(this));"></select>
+                    <select id="Legs-2" onchange="Simulator.onSetSlotMod('Legs', 2, $(this));"></select>
+                    <select id="Legs-3" onchange="Simulator.onSetSlotMod('Legs', 3, $(this));"></select>
+                    <select id="Legs-4" onchange="Simulator.onSetSlotMod('Legs', 4, $(this));"></select>
+                    <select id="Legs-5" onchange="Simulator.onSetSlotMod('Legs', 5, $(this));"></select>
+                    <select id="Legs-6" onchange="Simulator.onSetSlotMod('Legs', 6, $(this));"></select>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="slot Feet col-md-3">
+                    <div class="itemdescription">
+                        <div class="header">
+                            <div class="icon"></div>
+                            <div class="title normal">Feet</div>
+                            <div class="desc">Placeholder Feet slot.</div>
+                        </div>
+                        <div class="main">
+                            <div id="Feet"></div>
+                        </div>
+                        <div class="footer">
+                            <div class="value">Value: $$$</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <p>Select the mods below.</p>
+                    <select id="Feet-1" onchange="Simulator.onSetSlotMod('Feet', 1, $(this));"></select>
+                    <select id="Feet-2" onchange="Simulator.onSetSlotMod('Feet', 2, $(this));"></select>
+                    <select id="Feet-3" onchange="Simulator.onSetSlotMod('Feet', 3, $(this));"></select>
+                    <select id="Feet-4" onchange="Simulator.onSetSlotMod('Feet', 4, $(this));"></select>
+                    <select id="Feet-5" onchange="Simulator.onSetSlotMod('Feet', 5, $(this));"></select>
+                    <select id="Feet-6" onchange="Simulator.onSetSlotMod('Feet', 6, $(this));"></select>
+                </div>
+        </div>
+    </div>
+    <script src="generated_powers.js"></script>
+    <script src="builder.js"></script>
+    <script>
+        var Simulator = new GorgonBuildSimulator();
+        Simulator.Initialize(mods);
+    </script>    </div>
     <footer class="ge-footer" role="contentinfo">
       <div class="container">
         <ul class="ge-footer-links">

@@ -45,13 +45,23 @@ a.itemtooltip[href]:focus {
 }
 
 .itemdescription {
-  min-width: 300px;
+  min-width: 20em;
   padding: 10px;
   background: black;
   color: #b09066;
   font-size: 1.1em;
   position: relative;
   font-weight: normal;
+}
+
+.slots .itemdescription {
+ font-size: 0.9em;
+ max-width: 40%;
+}
+
+.slots .effects {
+ min-height: 5em;
+ line-height: 1.2em;
 }
 
 .itemdescription .icon {
@@ -64,8 +74,9 @@ a.itemtooltip[href]:focus {
 }
 
 .itemdescription .desc {
-  margin-top: 0.3em;
-  margin-left: 3em;
+  padding-top: 0.3em;
+  padding-left: 3em;
+  line-height: 2em;
   position: relative;
 }
 
@@ -76,6 +87,26 @@ a.itemtooltip[href]:focus {
   font-size: 1.5em;
   font-weight: bold;
   color: white;
+}
+
+.itemdescription .uncommon {
+  color: #0F0;
+}
+
+.itemdescription .rare {
+  color: #00E7E7;
+}
+
+.itemdescription .less-epic {
+  color: #D0D;
+}
+
+.itemdescription .epic {
+  color: #F0F;
+}
+
+.itemdescription .legendary {
+  color: yellow;
 }
 
 .itemdescription .effects {
@@ -128,8 +159,7 @@ a.itemtooltip[href]:focus {
   position: relative;
 }
 
-.itemdescriptoin .value {
-  position: absolute;
+.itemdescription .value {
   left: 0;
 }
 
@@ -299,4 +329,20 @@ td img.loading {
 .container-fluid {
     margin-right: 5%;
     margin-left: 5%;
+}
+
+.slots .row {
+    padding-top: 1em;
+}
+.slots select {
+    max-width: 90%;
+    clear: both;
+    display: block;
+}
+.skills select {
+    max-width: 20%;
+}
+
+.col-center{
+  margin:0 auto;
 }

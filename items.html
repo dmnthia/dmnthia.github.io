@@ -50,7 +50,7 @@
   <body>
 
     <nav id="navMenu" class="navbar navbar-inverse navbar-fixed-top">
-      <div class="last-update">Last updated: 2016-03-07</div>
+      <div class="last-update">Last updated: 2016-03-13</div>
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -59,7 +59,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">GorgonEye <span class="label label-danger">BETA</span></a>
+          <a class="navbar-brand" href="/">GorgonEye <span class="label label-info">GAMMA</span></a>
         </div>
 
 
@@ -189,6 +189,7 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
             <li><a href="/abilities.html">Abilities</a></li>
             <li><a href="/powers.html">Mods</a></li>
             <li><a href="/recipes.html">Recipes</a></li>
+            <li><a href="/simulator.html">Build simulator <span class="label label-danger">ALPHA</span></a></li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" title="Explore changes for every update">
                     Updates <span class="caret"></span>
@@ -549,7 +550,7 @@ $(document).ready(function() {
 
     ["", "<img class=\"loading\" orig=\"http://cdn.projectgorgon.com/v249/icons/icon_4003.png\" width=\"32\" height=\"32\"> <a class=\"itemtooltip\" rel=\"/items/item_32910.html\">Work Order for Rough Werewolf Foreguards (Blacksmithing)</a>", 20, "This recent work order requests the following:<br>Deliver 10 Rough Werewolf Foreguards to Sheyna in Rahu. Reward: 961 councils.", "", "Book<br>Document<br>WorkOrder" ],
 
-    ["", "<img class=\"loading\" orig=\"http://cdn.projectgorgon.com/v249/icons/icon_4003.png\" width=\"32\" height=\"32\"> <a class=\"itemtooltip\" rel=\"/items/item_32911.html\">Work Order for Crude Werewolf Foreguards (Blacksmithing)</a>", 35, "This recent work order requests the following:<br>Deliver 10 Crude Werewolf Foreguards to Sheyna in Rahu. Reward: 2091 councils.", "", "Book<br>Document<br>WorkOrder" ],
+    ["", "<img class=\"loading\" orig=\"http://cdn.projectgorgon.com/v249/icons/icon_4003.png\" width=\"32\" height=\"32\"> <a class=\"itemtooltip\" rel=\"/items/item_16527.html\">Golem Ability: Doom Admixture 2</a>", 500, "Teaches you a new ability to give to your alchemical golems: throw a potent darkness bomb at an enemy. Very slow (30 sec) reset time.", "", "Document<br>GolemAbility<br>Recipe<br>Scroll" ],
 
     ["", "<img class=\"loading\" orig=\"http://cdn.projectgorgon.com/v249/icons/icon_4003.png\" width=\"32\" height=\"32\"> <a class=\"itemtooltip\" rel=\"/items/item_32912.html\">Work Order for Decent Werewolf Foreguards (Blacksmithing)</a>", 50, "This recent work order requests the following:<br>Deliver 10 Decent Werewolf Foreguards to Sheyna in Rahu. Reward: 12436 councils.", "", "Book<br>Document<br>WorkOrder" ],
 
@@ -1871,7 +1872,7 @@ $(document).ready(function() {
 
     ["", "<img class=\"loading\" orig=\"http://cdn.projectgorgon.com/v249/icons/icon_5419.png\" width=\"32\" height=\"32\"> <a class=\"itemtooltip\" rel=\"/items/item_1204.html\">Small Green Dragon Scale</a>", 150, "A scale from a dragon! Hmm, it'd be a pretty small dragon... or, more likely, some dragon-kin creature.", "", "CorpseTrophy<br>DragonScale=300" ],
 
-    ["Chest", "<img class=\"loading\" orig=\"http://cdn.projectgorgon.com/v249/icons/icon_12021.png\" width=\"32\" height=\"32\"> <a class=\"itemtooltip\" rel=\"/items/item_42165.html\">Nice Evasion Shirt</a>", 168, "You feel nice wearing a leather shirt like this. Nice enough to be able to dodge arrows.", "Max Armor +74<br>Chance to Evade Projectiles  +9%<br>Bonus Power from Combat Refresh +5", "Armor<br>ArmorOrShield<br>Chest<br>Crafted<br>Equipment<br>LeatherArmor<br>LeatherDyeableArmor<br>LeatherShirt<br>Loot<br>Ugly" ],
+    ["", "<img class=\"loading\" orig=\"http://cdn.projectgorgon.com/v249/icons/icon_5420.png\" width=\"32\" height=\"32\"> <a class=\"itemtooltip\" rel=\"/items/item_1205.html\">Small Blue Dragon Scale</a>", 200, "A scale from a dragon! Hmm, it'd be a pretty small dragon... or, more likely, some dragon-kin creature.", "", "CorpseTrophy<br>DragonScale=400" ],
 
     ["Chest", "<img class=\"loading\" orig=\"http://cdn.projectgorgon.com/v249/icons/icon_12015.png\" width=\"32\" height=\"32\"> <a class=\"itemtooltip\" rel=\"/items/item_42166.html\">Quality Evasion Shirt</a>", 210, "A pro made this leather armor, and aside from some unusual choices in tailoring, there's not much to complain about.", "Max Armor +98<br>Chance to Evade Projectiles  +9%<br>Bonus Power from Combat Refresh +6", "Armor<br>ArmorOrShield<br>Chest<br>Crafted<br>Equipment<br>LeatherArmor<br>LeatherDyeableArmor<br>LeatherShirt<br>Loot" ],
 
@@ -3287,8 +3288,6 @@ $(document).ready(function() {
 
     ["MainHand", "<img class=\"loading\" orig=\"http://cdn.projectgorgon.com/v249/icons/icon_18001.png\" width=\"32\" height=\"32\"> <a class=\"itemtooltip\" rel=\"/items/item_47033.html\">Battle Hardened Staff</a>", 131, "It's charred and black from tossing hundreds of fireballs over the years, but it's still really comfortable to use.", "Power Regeneration +8", "Equipment<br>FireStaff<br>Loot<br>MainHand<br>Staff<br>Weapon<br>Wooden" ],
 
-    ["Legs", "<img class=\"loading\" orig=\"http://cdn.projectgorgon.com/v249/icons/icon_11001.png\" width=\"32\" height=\"32\"> <a class=\"itemtooltip\" rel=\"/items/item_56161.html\">ThorianPlatemailLegs</a>", 1, "-", "", "Armor<br>ClothArmor<br>ClothDyeableArmor<br>Clothing<br>Equipment<br>LeatherArmor<br>LeatherDyeableArmor<br>Legs<br>Lint_NotObtainable<br>MetalArmor<br>MetalDyeableArmor" ],
-
     ["", "<img class=\"loading\" orig=\"http://cdn.projectgorgon.com/v249/icons/icon_4003.png\" width=\"32\" height=\"32\"> <a class=\"itemtooltip\" rel=\"/items/item_3446.html\">Tailoring: Camouflaged Nice Pants (Max-Enchanted)</a>", 1500, "Teaches you how to make a pair of pants that make the wearer less conspicuous, with extra enchantments.", "", "Document<br>Recipe<br>TailoringRecipe" ],
 
     ["MainHand", "<img class=\"loading\" orig=\"http://cdn.projectgorgon.com/v249/icons/icon_15001.png\" width=\"32\" height=\"32\"> <a class=\"itemtooltip\" rel=\"/items/item_56035.html\">PretendSword1</a>", 1, "-", "", "Equipment<br>Lint_NotObtainable<br>MainHand<br>Weapon" ],
@@ -4273,6 +4272,8 @@ $(document).ready(function() {
 
     ["", "<img class=\"loading\" orig=\"http://cdn.projectgorgon.com/v249/icons/icon_5305.png\" width=\"32\" height=\"32\"> <a class=\"itemtooltip\" rel=\"/items/item_21083.html\">Kur Mountains Good Metal Motherlode Map</a>", 43, "Collects some information about a large supply of metal in or around Kur Mountains.", "", "Document<br>MiningSurvey<br>MotherlodeMap" ],
 
+    ["Chest", "<img class=\"loading\" orig=\"http://cdn.projectgorgon.com/v249/icons/icon_12021.png\" width=\"32\" height=\"32\"> <a class=\"itemtooltip\" rel=\"/items/item_42165.html\">Nice Evasion Shirt</a>", 168, "You feel nice wearing a leather shirt like this. Nice enough to be able to dodge arrows.", "Max Armor +74<br>Chance to Evade Projectiles  +9%<br>Bonus Power from Combat Refresh +5", "Armor<br>ArmorOrShield<br>Chest<br>Crafted<br>Equipment<br>LeatherArmor<br>LeatherDyeableArmor<br>LeatherShirt<br>Loot<br>Ugly" ],
+
     ["", "<img class=\"loading\" orig=\"http://cdn.projectgorgon.com/v249/icons/icon_4003.png\" width=\"32\" height=\"32\"> <a class=\"itemtooltip\" rel=\"/items/item_32874.html\">Work Order for Huge Silver Gryphon Statues (Blacksmithing)</a>", 50, "This recent work order requests the following:<br>Deliver 10 Huge Silver Gryphon Statues to Viedesi in Sun Vale. Reward: 16958 councils.", "", "Book<br>Document<br>WorkOrder" ],
 
     ["", "<img class=\"loading\" orig=\"http://cdn.projectgorgon.com/v249/icons/icon_5305.png\" width=\"32\" height=\"32\"> <a class=\"itemtooltip\" rel=\"/items/item_21101.html\">South Serbule Simple Mining Survey</a>", 10, "Records the location of metal that can be mined somewhere in South Serbule.", "", "Document<br>MiningSurvey" ],
@@ -4312,8 +4313,6 @@ $(document).ready(function() {
     ["", "<img class=\"loading\" orig=\"http://cdn.projectgorgon.com/v249/icons/icon_5096.png\" width=\"32\" height=\"32\"> <a class=\"itemtooltip soldbymerchant\" rel=\"/items/item_13002.html\">Simple Nails</a>", 5, "A handful of wood nails.", "", "Carpentry<br>SkillConsumable" ],
 
     ["", "<img class=\"loading\" orig=\"http://cdn.projectgorgon.com/v249/icons/icon_5096.png\" width=\"32\" height=\"32\"> <a class=\"itemtooltip soldbymerchant\" rel=\"/items/item_13003.html\">Strong Nails</a>", 20, "A handful of long wood nails.", "", "Carpentry<br>SkillConsumable" ],
-
-    ["", "<img class=\"loading\" orig=\"http://cdn.projectgorgon.com/v249/icons/icon_4003.png\" width=\"32\" height=\"32\"> <a class=\"itemtooltip\" rel=\"/items/item_16527.html\">Golem Ability: Doom Admixture 2</a>", 500, "Teaches you a new ability to give to your alchemical golems: throw a potent darkness bomb at an enemy. Very slow (30 sec) reset time.", "", "Document<br>GolemAbility<br>Recipe<br>Scroll" ],
 
     ["", "<img class=\"loading\" orig=\"http://cdn.projectgorgon.com/v249/icons/icon_4003.png\" width=\"32\" height=\"32\"> <a class=\"itemtooltip\" rel=\"/items/item_32894.html\">Work Order for Shoddy Werewolf Hindguards (Blacksmithing)</a>", 3, "This recent work order requests the following:<br>Deliver 10 Shoddy Werewolf Hindguards to Sheyna in Rahu. Reward: 434 councils.", "", "Book<br>Document<br>WorkOrder" ],
 
@@ -4784,6 +4783,8 @@ $(document).ready(function() {
     ["", "<img class=\"loading\" orig=\"http://cdn.projectgorgon.com/v249/icons/icon_5513.png\" width=\"32\" height=\"32\"> <a class=\"itemtooltip\" rel=\"/items/item_13514.html\">Large-Capacity Item Vendor</a>", 250, "An elaborate contraption that can dispense items and collect currency. This model can sell up to 1000 of a single kind of item.", "", "" ],
 
     ["", "<img class=\"loading\" orig=\"http://cdn.projectgorgon.com/v249/icons/icon_5513.png\" width=\"32\" height=\"32\"> <a class=\"itemtooltip\" rel=\"/items/item_13515.html\">Fancy Item Vendor</a>", 300, "An elaborate contraption that can dispense items and collect currency. This model can sell up to 1000 of a single kind of item and has a place for a custom message that all users will see.", "", "" ],
+
+    ["", "<img class=\"loading\" orig=\"http://cdn.projectgorgon.com/v249/icons/icon_4003.png\" width=\"32\" height=\"32\"> <a class=\"itemtooltip\" rel=\"/items/item_32911.html\">Work Order for Crude Werewolf Foreguards (Blacksmithing)</a>", 35, "This recent work order requests the following:<br>Deliver 10 Crude Werewolf Foreguards to Sheyna in Rahu. Reward: 2091 councils.", "", "Book<br>Document<br>WorkOrder" ],
 
     ["MainHand", "<img class=\"loading\" orig=\"http://cdn.projectgorgon.com/v249/icons/icon_21001.png\" width=\"32\" height=\"32\"> <a class=\"itemtooltip\" rel=\"/items/item_55501.html\">Crude Club</a>", 19, "Well, this is a stick.", "", "Club<br>Equipment<br>Hammer<br>Loot<br>MainHand<br>Weapon<br>Wooden" ],
 
@@ -6787,7 +6788,7 @@ $(document).ready(function() {
 
     ["Chest", "<img class=\"loading\" orig=\"http://cdn.projectgorgon.com/v249/icons/icon_12029.png\" width=\"32\" height=\"32\"> <a class=\"itemtooltip\" rel=\"/items/item_42164.html\">Decent Evasion Shirt</a>", 126, "This is incredibly light leather chest armor. You can really move around in this baby. Pity about the stitching. And the color. And the design.", "Max Armor +53<br>Chance to Evade Projectiles  +8%<br>Bonus Power from Combat Refresh +4", "Armor<br>ArmorOrShield<br>Chest<br>Crafted<br>Equipment<br>Hideous<br>LeatherArmor<br>LeatherDyeableArmor<br>LeatherShirt<br>Loot<br>Ugly" ],
 
-    ["", "<img class=\"loading\" orig=\"http://cdn.projectgorgon.com/v249/icons/icon_5420.png\" width=\"32\" height=\"32\"> <a class=\"itemtooltip\" rel=\"/items/item_1205.html\">Small Blue Dragon Scale</a>", 200, "A scale from a dragon! Hmm, it'd be a pretty small dragon... or, more likely, some dragon-kin creature.", "", "CorpseTrophy<br>DragonScale=400" ],
+    ["Legs", "<img class=\"loading\" orig=\"http://cdn.projectgorgon.com/v249/icons/icon_11001.png\" width=\"32\" height=\"32\"> <a class=\"itemtooltip\" rel=\"/items/item_56161.html\">ThorianPlatemailLegs</a>", 1, "-", "", "Armor<br>ClothArmor<br>ClothDyeableArmor<br>Clothing<br>Equipment<br>LeatherArmor<br>LeatherDyeableArmor<br>Legs<br>Lint_NotObtainable<br>MetalArmor<br>MetalDyeableArmor" ],
 
     ["Feet", "<img class=\"loading\" orig=\"http://cdn.projectgorgon.com/v249/icons/icon_10011.png\" width=\"32\" height=\"32\"> <a class=\"itemtooltip\" rel=\"/items/item_40001.html\">Moldy Ancient Shoes</a>", 15, "Smelly old shoes.", "Max Armor +7<br>Bonus Power from Combat Refresh +1", "Armor<br>ArmorOrShield<br>Clothing<br>Equipment<br>Feet<br>Hideous<br>LeatherArmor<br>LeatherBoots<br>LeatherDyeableArmor<br>Loot<br>Ugly" ],
 
