@@ -50,7 +50,7 @@
   <body>
 
     <nav id="navMenu" class="navbar navbar-inverse navbar-fixed-top">
-      <div class="last-update">Last updated: 2016-03-13</div>
+      <div class="last-update">Last updated: 2016-03-23</div>
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -147,6 +147,7 @@ This skill covers only the creation of the dye; Textile Creation, Tanning, or Bl
 
 (The most common way to raise Endurance is simply to take armor damage in combat.)">Endurance</a></li>
                             <li><a href="/skills/24.html" title="The ability to use first aid kits to heal yourself or others.">First Aid</a></li>
+                            <li><a href="/skills/131.html" title="The art of arranging flowers so that they evoke strong emotions.">Flower Arrangement</a></li>
                             <li><a href="/skills/128.html" title="The ability to create elaborate contraptions that automate complex tasks.">Gadgeteering</a></li>
                             <li><a href="/skills/9.html" title="Growing things in a garden: herbs, food, and flowers.">Gardening</a></li>
                             <li><a href="/skills/22.html" title="A careful exploration of gender roles and sexuality, focusing on Human, Elven, and Raksasha cultures. This knowledge is not directly applicable to combat or crafting, but it helps you to be a well-rounded individual.">Gender Studies</a></li>
@@ -169,6 +170,7 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
                     <li class="dropdown-submenu">
                         <a href="#">Other (N..Z)</a>
                         <ul class="dropdown-menu">
+                            <li><a href="/skills/132.html" title="The ability to study nature and find inner peace and contentment. Even the most hardened warriors need the ability to appreciate nature.">Nature Appreciation</a></li>
                             <li><a href="/skills/72.html" title="A measure of your renown. You earn Notoriety the first time you defeat certain enemies (typically any monster with a proper name), and for completing particularly difficult quests.">Notoriety</a></li>
                             <li><a href="/skills/84.html" title="The ability to speak in public in a way that moves your audience.">Oratory</a></li>
                             <li><a href="/skills/19.html" title="Skill in figuring out how someone or something died. Higher skill allows more details to be determined and more difficult organisms to be examined.">Pathology</a></li>
@@ -189,12 +191,13 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
             <li><a href="/abilities.html">Abilities</a></li>
             <li><a href="/powers.html">Mods</a></li>
             <li><a href="/recipes.html">Recipes</a></li>
-            <li><a href="/simulator.html">Build simulator <span class="label label-danger">ALPHA</span></a></li>
+            <li><a href="/simulator.html">Build planner <span class="label label-danger">ALPHA</span></a></li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" title="Explore changes for every update">
                     Updates <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
+                    <li><a href="/changes/249_to_250.html">Update 250</a></li>
                     <li><a href="/changes/248_to_249.html">Update 249</a></li>
                     <li><a href="/changes/247_to_248.html">Update 248</a></li>
                     <li><a href="/changes/246_to_247.html">Update 247</a></li>
@@ -242,18 +245,21 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
     ["50", "ABILITY: Wolfsbane Blade 3", "Jab a Heinous Wolfsbaned Knife into your target, dealing instant Poison damage, and additional damage to wolves and lycanthropes."],
     ["10", "<span class=\"automatic\">ABILITY: Poison Blade</span>", "Jab a Weak Poisoned Knife into your target, dealing instant Poison damage."],
     ["20", "<span class=\"automatic\">ABILITY: Poison Blade 2</span>", "Jab a Modest Poisoned Knife into your target, dealing instant Poison damage."],
-    ["25", "RECIPE: Keep-Me-Alive Juice", "Boosts maximum health by +30 for 30 minutes."],
-    ["25", "RECIPE: Weak Infusion Oil", "A thin fluid used to create augmentation oils (for level 30 effects). Creates five doses. NOTE: this legacy recipe is no longer used by augmentation!"],
-    ["35", "RECIPE: Reasonable Infusion Oil", "A thin fluid used to create augmentation oils (for level 50 effects). Creates five doses. NOTE: this legacy recipe is no longer used by augmentation!"],
-    ["40", "RECIPE: Potent Poisoned Knife", "A small sharp blade coated in a thick black goo. This item is used by the Poison Blade 4 ability."],
-    ["5", "RECIPE: Cranium Powder", "Powdered brains of psychic creatures. A choice drug for psychics."],
-    ["15", "RECIPE: Pure Cranium Powder", "Powdered brains of psychic creatures. A choice drug for psychics. This batch is 99% pure frontal cortex."],
     ["0", "RECIPE: Pick-Me-Up Juice", "Helps you see the positive side of any situation. Great for depressed people! (Caution: may be addictive.) Also boosts maximum health by +10 for 30 minutes."],
     ["0", "RECIPE: Poison Resistance", "For 15 minutes, all poison damage is reduced by 5, potentially suppressing the poison entirely."],
     ["10", "RECIPE: Make-Me-Strong Juice", "Boosts maximum health by +20 for 30 minutes."],
     ["5", "RECIPE: Bleeding Speed Potion", "A thick blue paste that accelerates the leg muscles beyond their natural capacity."],
+    ["20", "RECIPE: Agonizing Speed Potion", "A super-thick blue paste that accelerates the leg muscles far beyond their natural capacity."],
+    ["20", "RECIPE: Hulking Gel", "This smelly gel will hyper-accelerate your heart. What could go wrong?"],
+    ["30", "RECIPE: Willpower Gel", "This smelly gel will overclock your brain. What could go wrong?"],
+    ["0", "RECIPE: Thin Cranium Lotion", "Rub this lotion into your scalp to increase your brainpower."],
+    ["15", "RECIPE: Thick Cranium Lotion", "Rub this lotion into your scalp to increase your brainpower."],
+    ["10", "RECIPE: Weak Poisoned Knife", "A small sharp blade coated in a thick black goo. This item is used by the Poison Blade ability."],
+    ["20", "RECIPE: Modest Poisoned Knife", "A small sharp blade coated in a thick black goo. This item is used by the Poison Blade 2 ability."],
+    ["30", "RECIPE: Dangerous Poisoned Knife", "A small sharp blade coated in a thick black goo. This item is used by the Poison Blade 3 ability."],
+    ["40", "RECIPE: Potent Poisoned Knife", "A small sharp blade coated in a thick black goo. This item is used by the Poison Blade 4 ability."],
     ["50", "RECIPE: Deadly Poisoned Knife", "A small sharp blade coated in a thick black goo. This item is used by the Poison Blade 5 ability."],
-    ["40", "RECIPE: Never-Die Juice", "Boosts maximum health by +40 for 30 minutes."],
+    ["0", "RECIPE: Rotten Strawberry", "Turn a perfectly good strawberry into a perfectly bad one. Magic? No! It's alchemy!"],
     ["5", "RECIPE: Fire Resistance", "For 15 minutes, all fire damage is reduced by 5, potentially eliminating the damage entirely."],
     ["10", "RECIPE: Cold Resistance", "For 15 minutes, all cold damage is reduced by 5, potentially eliminating the damage entirely."],
     ["10", "RECIPE: Electricity Resistance", "For 15 minutes, all electricity damage is reduced by 5, potentially eliminating the damage entirely."],
@@ -279,12 +285,18 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
     ["10", "RECIPE: Perfect Memory Inhibitor", "For 2 hours, all earned combat XP will be reduced to zero."],
     ["20", "RECIPE: Myconian Resistance Lager", "For 15 minutes, all Nature damage is reduced by 5, potentially eliminating the damage entirely."],
     ["25", "RECIPE: Acid Resist Potion", "For 15 minutes, all acid damage is reduced by 5, potentially eliminating the damage entirely."],
+    ["30", "RECIPE: Acid Shield Potion", "For 15 minutes, all acid damage is reduced by 5, potentially eliminating the damage entirely. In addition, any enemies that strike you take 5 acid damage."],
     ["19", "RECIPE: Aiming Potion", "For 15 minutes, any critical hits deal +10% damage."],
     ["25", "RECIPE: Persona Reducer Potion", "For 15 minutes, all your attacks will seem to do 10% less damage to the target for purposes of determining who the target chooses to attack. (As a result, it may choose to attack someone else, unless nobody else is around.)"],
     ["35", "RECIPE: Persona Minimizer Potion", "For 15 minutes, all your attacks will seem to do 25% less damage to the target for purposes of determining who the target chooses to attack. (As a result, it may choose to attack someone else, unless nobody else is around.)"],
     ["25", "RECIPE: Strong Electricity Resistance", "For 15 minutes, all electricity damage is reduced by 10, potentially eliminating the damage entirely."],
+    ["35", "RECIPE: Strong Acid Resistance", "For 15 minutes, all acid damage is reduced by 10, potentially eliminating the damage entirely."],
     ["20", "RECIPE: Ferocity Juice", "For 15 minutes, all your attacks will deal +10 damage, but your Max Power will be reduced by 50."],
     ["35", "RECIPE: Sanguinizer", "For 15 minutes, all your Lycanthropy attacks will deal +10% damage. The secret ingredient: your own cursed saliva."],
+    ["45", "RECIPE: Blood Seeker Ointment", "For 15 minutes, all your Lycanthropy attacks will deal +20% damage. This advanced version of the so-called Sanguinizer potion can only be made during the full moon."],
+    ["25", "RECIPE: Keep-Me-Alive Juice", "Boosts maximum health by +30 for 30 minutes."],
+    ["40", "RECIPE: Never-Die Juice", "Boosts maximum health by +40 for 30 minutes."],
+    ["40", "RECIPE: Gur-Horta", "Boosts maximum sidebar slots by +1 for 2 hours."],
     ["25", "RECIPE: Gruesome Spooky Punch", "Create a horrific concoction that is the life of any party."],
     ["15", "RECIPE: Psychic Resistance Potion", "Creates a potion that reduces Psychic damage by 5 for 15 minutes."],
     ["20", "RECIPE: Acid Boost Potion", "Creates a potion that boosts your acid attacks by 5 for 15 minutes."],
@@ -303,17 +315,12 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
     ["25", "RECIPE: Weak Acidic Cleanser (Mineral Recipe)", "A jar of acid. Use it to clean a gem before cutting it, or to scrub armor clean. You can also drink it, or bathe in it, but that would be pretty damned stupid.<br><br>NOTE: unlike most Alchemy potions, you can't reuse the glass bottle that acid is stored in. The bottle is ruined by the acid when the acid is used."],
     ["30", "RECIPE: Potent Acidic Cleanser (Mineral Recipe)", "A jar of acid. Use it to clean feathers for archery, or other weird things. You can also drink it, or bathe in it, but that would be pretty damned stupid.<br><br>NOTE: unlike most Alchemy potions, you can't reuse the glass bottle that acid is stored in. The bottle is ruined by the acid when the acid is used."],
     ["35", "RECIPE: Ultimate Acidic Cleanser (Mineral Recipe)", "A jar of acid. Use it to clean a gem before cutting it, or to scrub armor clean. You can also drink it, or bathe in it, but that would be pretty damned stupid.<br><br>NOTE: unlike most Alchemy potions, you can't reuse the glass bottle that acid is stored in. The bottle is ruined by the acid when the acid is used."],
-    ["20", "RECIPE: Hulking Gel", "This smelly gel will hyper-accelerate your heart. What could go wrong?"],
-    ["30", "RECIPE: Willpower Gel", "This smelly gel will overclock your brain. What could go wrong?"],
+    ["25", "RECIPE: Weak Infusion Oil", "A thin fluid used to create augmentation oils (for level 30 effects). Creates five doses. NOTE: this legacy recipe is no longer used by augmentation!"],
     ["30", "RECIPE: Modest Infusion Oil", "A thin fluid used to create augmentation oils (for level 40 effects). Creates five doses. NOTE: this legacy recipe is no longer used by augmentation!"],
-    ["0", "RECIPE: Thin Cranium Lotion", "Rub this lotion into your scalp to increase your brainpower."],
+    ["35", "RECIPE: Reasonable Infusion Oil", "A thin fluid used to create augmentation oils (for level 50 effects). Creates five doses. NOTE: this legacy recipe is no longer used by augmentation!"],
     ["40", "RECIPE: Potent Infusion Oil", "A thin fluid used to create augmentation oils (for level 60 effects). Creates five doses. NOTE: this legacy recipe is no longer used by augmentation!"],
-    ["15", "RECIPE: Thick Cranium Lotion", "Rub this lotion into your scalp to increase your brainpower."],
-    ["10", "RECIPE: Weak Poisoned Knife", "A small sharp blade coated in a thick black goo. This item is used by the Poison Blade ability."],
-    ["20", "RECIPE: Modest Poisoned Knife", "A small sharp blade coated in a thick black goo. This item is used by the Poison Blade 2 ability."],
-    ["30", "RECIPE: Dangerous Poisoned Knife", "A small sharp blade coated in a thick black goo. This item is used by the Poison Blade 3 ability."],
-    ["0", "RECIPE: Rotten Strawberry", "Turn a perfectly good strawberry into a perfectly bad one. Magic? No! It's alchemy!"],
-    ["45", "RECIPE: Blood Seeker Ointment", "For 15 minutes, all your Lycanthropy attacks will deal +20% damage. This advanced version of the so-called Sanguinizer potion can only be made during the full moon."],
+    ["5", "RECIPE: Cranium Powder", "Powdered brains of psychic creatures. A choice drug for psychics."],
+    ["15", "RECIPE: Pure Cranium Powder", "Powdered brains of psychic creatures. A choice drug for psychics. This batch is 99% pure frontal cortex."],
     ["25", "RECIPE: Enhanced Cranium Powder", "Powdered brains of psychic creatures. A choice drug for psychics. This batch has been enhanced with secret chemicals."],
     ["40", "RECIPE: Cranium Balm", "A substance made of cranium powder, mixed with chemicals that alter its effect."],
     ["10", "RECIPE: Pineal Juice", "The enchanted and ground-up pineal glands of intelligent creatures, in a sweet syrupy liquid."],
@@ -324,22 +331,18 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
     ["24", "RECIPE: Northern Bounceweed", "A packet of strange chemicals wrapped in a leaf. It's said that some sentient animals find this drug irresistible."],
     ["36", "RECIPE: Pure Bounceweed", "A packet of strange chemicals wrapped in a leaf. It's said that some sentient animals find this drug irresistible."],
     ["48", "RECIPE: Augmented Bounceweed", "A packet of strange chemicals wrapped in a leaf. It's said that some sentient animals find this drug irresistible."],
+    ["5", "RECIPE: Basic Volatile Ink", "Ink infused with fiery chemicals. Used by sigil scripters to create deadly runes. (Creates 5 doses.)"],
     ["15", "RECIPE: Advanced Volatile Ink", "Ink infused with fiery chemicals. Used by sigil scripters to create deadly runes. (Creates 5 doses.)"],
     ["25", "RECIPE: Expert Volatile Ink", "Ink infused with fiery chemicals. Used by sigil scripters to create deadly runes. (Creates 5 doses.)"],
     ["7", "RECIPE: Basic Holistic Ink", "Ink infused with many chemicals. It has many uses, but is most prominently used by sigil scripters to create restorative runes. (Creates 3 doses.)"],
     ["17", "RECIPE: Advanced Holistic Ink", "Ink infused with many chemicals. It has many uses, but is most prominently used by sigil scripters to create restorative runes. (Creates 3 doses.)"],
     ["27", "RECIPE: Expert Holistic Ink", "Ink infused with many chemicals. It has many uses, but is most prominently used by sigil scripters to create restorative runes. (Creates 3 doses.)"],
     ["9", "RECIPE: Basic Caustic Ink", "Ink infused with deadly chemicals. It has several uses, but is most commonly used by sigil scripters to create destructive runes. (Creates 5 doses.)"],
+    ["19", "RECIPE: Advanced Caustic Ink", "Ink infused with deadly chemicals. It has several uses, but is most commonly used by sigil scripters to create destructive runes. (Creates 5 doses.)"],
     ["29", "RECIPE: Expert Caustic Ink", "Ink infused with deadly chemicals. It has several uses, but is most commonly used by sigil scripters to create destructive runes. (Creates 5 doses.)"],
     ["31", "RECIPE: Amazingly Volatile Ink", "Ink infused with fiery chemicals. Used by sigil scripters to create deadly runes. (Creates 5 doses.)"],
     ["35", "RECIPE: Amazing Holistic Ink", "Ink infused with many chemicals. It has many uses, but is most prominently used by sigil scripters to create restorative runes. (Creates 3 doses.)"],
     ["40", "RECIPE: Amazing Caustic Ink", "Ink infused with deadly chemicals. It has several uses, but is most commonly used by sigil scripters to create destructive runes. (Creates 5 doses.)"],
-    ["30", "RECIPE: Acid Shield Potion", "For 15 minutes, all acid damage is reduced by 5, potentially eliminating the damage entirely. In addition, any enemies that strike you take 5 acid damage."],
-    ["35", "RECIPE: Strong Acid Resistance", "For 15 minutes, all acid damage is reduced by 10, potentially eliminating the damage entirely."],
-    ["40", "RECIPE: Gur-Horta", "Boosts maximum sidebar slots by +1 for 2 hours."],
-    ["5", "RECIPE: Basic Volatile Ink", "Ink infused with fiery chemicals. Used by sigil scripters to create deadly runes. (Creates 5 doses.)"],
-    ["19", "RECIPE: Advanced Caustic Ink", "Ink infused with deadly chemicals. It has several uses, but is most commonly used by sigil scripters to create destructive runes. (Creates 5 doses.)"],
-    ["20", "RECIPE: Agonizing Speed Potion", "A super-thick blue paste that accelerates the leg muscles far beyond their natural capacity."],
     ["45", "<span class=\"automatic\">+1 Battle Chemistry</span>", "Using alchemical concoctions in the heat of battle. Not for the faint of heart, or the particularly sane, this combat style specializes in area-effects of all types. Advanced practitioners can also ingest their formulae directly to take on new combat personalities. Masters can even create homonculi to serve them in battle."],
     ["15", "<span class=\"automatic\">+1 Mycology</span>", "Mastery of fungus in all its forms."],
     ["25", "<span class=\"automatic\">+1 Battle Chemistry</span>", "Using alchemical concoctions in the heat of battle. Not for the faint of heart, or the particularly sane, this combat style specializes in area-effects of all types. Advanced practitioners can also ingest their formulae directly to take on new combat personalities. Masters can even create homonculi to serve them in battle."],
@@ -371,13 +374,13 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
   var dataSet123 = [
 
     ["1", "<span class=\"automatic\">RECIPE: Distill Simple Magical Item</span>", "DecomposeItemIntoPhlogiston", ""],
+    ["15", "RECIPE: Distill Rare Magical Item", "DecomposeItemIntoPhlogiston", ""],
     ["25", "RECIPE: Distill Incredible Magical Item", "DecomposeItemIntoPhlogiston", ""],
     ["10", "RECIPE: Repair Transmutation Damage 1", "RepairItemDurability(0.05,0.1,12)", ""],
     ["20", "RECIPE: Repair Transmutation Damage 2", "RepairItemDurability(0.1,0.2,34)", ""],
     ["30", "RECIPE: Repair Transmutation Damage 3", "RepairItemDurability(0.3,0.6,94)", ""],
     ["40", "RECIPE: Repair Transmutation Damage 4", "RepairItemDurability(0.6,1.0,140)", ""],
     ["50", "RECIPE: Repair Transmutation Damage 5", "RepairItemDurability(1,2,164)", ""],
-    ["15", "RECIPE: Distill Rare Magical Item", "DecomposeItemIntoPhlogiston", ""],
 
   ];
 </script>

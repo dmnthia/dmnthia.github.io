@@ -50,7 +50,7 @@
   <body>
 
     <nav id="navMenu" class="navbar navbar-inverse navbar-fixed-top">
-      <div class="last-update">Last updated: 2016-03-13</div>
+      <div class="last-update">Last updated: 2016-03-23</div>
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -147,6 +147,7 @@ This skill covers only the creation of the dye; Textile Creation, Tanning, or Bl
 
 (The most common way to raise Endurance is simply to take armor damage in combat.)">Endurance</a></li>
                             <li><a href="/skills/24.html" title="The ability to use first aid kits to heal yourself or others.">First Aid</a></li>
+                            <li><a href="/skills/131.html" title="The art of arranging flowers so that they evoke strong emotions.">Flower Arrangement</a></li>
                             <li><a href="/skills/128.html" title="The ability to create elaborate contraptions that automate complex tasks.">Gadgeteering</a></li>
                             <li><a href="/skills/9.html" title="Growing things in a garden: herbs, food, and flowers.">Gardening</a></li>
                             <li><a href="/skills/22.html" title="A careful exploration of gender roles and sexuality, focusing on Human, Elven, and Raksasha cultures. This knowledge is not directly applicable to combat or crafting, but it helps you to be a well-rounded individual.">Gender Studies</a></li>
@@ -169,6 +170,7 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
                     <li class="dropdown-submenu">
                         <a href="#">Other (N..Z)</a>
                         <ul class="dropdown-menu">
+                            <li><a href="/skills/132.html" title="The ability to study nature and find inner peace and contentment. Even the most hardened warriors need the ability to appreciate nature.">Nature Appreciation</a></li>
                             <li><a href="/skills/72.html" title="A measure of your renown. You earn Notoriety the first time you defeat certain enemies (typically any monster with a proper name), and for completing particularly difficult quests.">Notoriety</a></li>
                             <li><a href="/skills/84.html" title="The ability to speak in public in a way that moves your audience.">Oratory</a></li>
                             <li><a href="/skills/19.html" title="Skill in figuring out how someone or something died. Higher skill allows more details to be determined and more difficult organisms to be examined.">Pathology</a></li>
@@ -189,12 +191,13 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
             <li><a href="/abilities.html">Abilities</a></li>
             <li><a href="/powers.html">Mods</a></li>
             <li><a href="/recipes.html">Recipes</a></li>
-            <li><a href="/simulator.html">Build simulator <span class="label label-danger">ALPHA</span></a></li>
+            <li><a href="/simulator.html">Build planner <span class="label label-danger">ALPHA</span></a></li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" title="Explore changes for every update">
                     Updates <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
+                    <li><a href="/changes/249_to_250.html">Update 250</a></li>
                     <li><a href="/changes/248_to_249.html">Update 249</a></li>
                     <li><a href="/changes/247_to_248.html">Update 248</a></li>
                     <li><a href="/changes/246_to_247.html">Update 247</a></li>
@@ -234,6 +237,63 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
 
   var dataSet81 = [
 
+    ["5", "RECIPE: Add Pockets To Cloth Pants", "CraftingEnhanceItemPockets(2,12)"],
+    ["10", "RECIPE: Add Pockets To Cloth Shirt", "CraftingEnhanceItemPockets(2,12)"],
+    ["15", "RECIPE: Add Pockets To Leather Pants", "CraftingEnhanceItemPockets(1,12)"],
+    ["20", "RECIPE: Add Pockets To Leather Shirt", "CraftingEnhanceItemPockets(1,12)"],
+    ["18", "RECIPE: Enhance Darkness Damage of Cloth Pants", "CraftingEnhanceItemDarknessMod(0.01,20)"],
+    ["23", "RECIPE: Enhance Darkness Damage of Cloth Shirt", "CraftingEnhanceItemDarknessMod(0.01,20)"],
+    ["25", "RECIPE: Enhance Fire Damage of Cloth Pants", "CraftingEnhanceItemFireMod(0.01,20)"],
+    ["30", "RECIPE: Enhance Fire Damage of Cloth Shirt", "CraftingEnhanceItemFireMod(0.01,20)"],
+    ["28", "RECIPE: Enhance Cold Damage of Cloth Pants", "CraftingEnhanceItemColdMod(0.01,20)"],
+    ["33", "RECIPE: Enhance Cold Damage of Cloth Shirt", "CraftingEnhanceItemColdMod(0.01,20)"],
+    ["35", "RECIPE: Enhance Electricity Damage of Cloth Pants", "CraftingEnhanceItemElectricityMod(0.01,20)"],
+    ["40", "RECIPE: Enhance Electricity Damage of Cloth Shirt", "CraftingEnhanceItemElectricityMod(0.01,20)"],
+    ["38", "RECIPE: Enhance Psychic Damage of Cloth Pants", "CraftingEnhanceItemPsychicMod(0.01,20)"],
+    ["43", "RECIPE: Enhance Psychic Damage of Cloth Shirt", "CraftingEnhanceItemPsychicMod(0.01,20)"],
+    ["45", "RECIPE: Enhance Nature Damage of Cloth Pants", "CraftingEnhanceItemNatureMod(0.01,20)"],
+    ["50", "RECIPE: Enhance Nature Damage of Cloth Shirt", "CraftingEnhanceItemNatureMod(0.01,20)"],
+    ["0", "RECIPE: Beginner's Tailoring Practice (Yarn)", "Practice tailoring with yarn. The resulting items are junk, but it's good practice."],
+    ["5", "RECIPE: Neophyte's Tailoring Practice", "Practice tailoring on a bolt of cloth. The resulting items are junk, but it's good practice."],
+    ["10", "RECIPE: Novice's Tailoring Practice", "Practice tailoring on cloth. The resulting items are not particularly useful, but it's good practice."],
+    ["4", "RECIPE: Beginner's Tailoring Practice (Spider Silk)", "Practice tailoring with spider silk. The resulting items are junk, but it's good practice."],
+    ["25", "RECIPE: Camouflaged Crude Shirt", ""],
+    ["45", "RECIPE: Camouflaged Nice Shirt", ""],
+    ["55", "RECIPE: Camouflaged Quality Shirt", ""],
+    ["50", "RECIPE: Quality Cloth Shirt", ""],
+    ["60", "RECIPE: Great Cloth Shirt", ""],
+    ["1", "RECIPE: Shoddy Cloth Pants", "Level 5 pants. Not to be worn in public. (Must be near a tanning rack, for some reason.)"],
+    ["3", "RECIPE: Shoddy Cloth Pants (Enchanted)", ""],
+    ["10", "RECIPE: Rough Cloth Pants", "Level 10 pants. (Must be near a tanning rack, for some reason.)"],
+    ["13", "RECIPE: Rough Cloth Pants (Enchanted)", ""],
+    ["20", "RECIPE: Crude Cloth Pants", "Level 20 pants. (Must be near a tanning rack, for some reason.)"],
+    ["23", "RECIPE: Crude Cloth Pants (Enchanted)", ""],
+    ["30", "RECIPE: Decent Cloth Pants", ""],
+    ["40", "RECIPE: Nice Cloth Pants", ""],
+    ["50", "RECIPE: Quality Cloth Pants", ""],
+    ["60", "RECIPE: Great Cloth Pants", ""],
+    ["40", "RECIPE: Nice Cloth Pants (Max-Enchanted)", "(Max-Enchanted)"],
+    ["50", "RECIPE: Quality Cloth Pants (Max-Enchanted)", "(Max-Enchanted)"],
+    ["60", "RECIPE: Great Cloth Pants (Max-Enchanted)", "(Max-Enchanted)"],
+    ["22", "RECIPE: Camouflaged Crude Pants", ""],
+    ["32", "RECIPE: Camouflaged Decent Pants", ""],
+    ["42", "RECIPE: Camouflaged Nice Pants", ""],
+    ["52", "RECIPE: Camouflaged Quality Pants", ""],
+    ["62", "RECIPE: Camouflaged Great Pants", ""],
+    ["34", "RECIPE: Camouflaged Decent Pants (Max-Enchanted)", "(Max-Enchanted)"],
+    ["44", "RECIPE: Camouflaged Nice Pants (Max-Enchanted)", "(Max-Enchanted)"],
+    ["54", "RECIPE: Camouflaged Quality Pants (Max-Enchanted)", "(Max-Enchanted)"],
+    ["64", "RECIPE: Camouflaged Great Pants (Max-Enchanted)", "(Max-Enchanted)"],
+    ["1", "RECIPE: Shoddy Cloth Shirt", "Level 5 shirt. Not to be worn in public. (Must be near a tanning rack, for some reason.)"],
+    ["3", "RECIPE: Shoddy Cloth Shirt (Enchanted)", ""],
+    ["10", "RECIPE: Rough Cloth Shirt", "Level 10 shirt. (Must be near a tanning rack, for some reason.)"],
+    ["13", "RECIPE: Rough Cloth Shirt (Enchanted)", ""],
+    ["20", "RECIPE: Crude Cloth Shirt", "Level 20 shirt. (Must be near a tanning rack, for some reason.)"],
+    ["23", "RECIPE: Crude Cloth Shirt (Enchanted)", ""],
+    ["30", "RECIPE: Decent Cloth Shirt", ""],
+    ["40", "RECIPE: Nice Cloth Shirt", ""],
+    ["35", "RECIPE: Camouflaged Decent Shirt", ""],
+    ["65", "RECIPE: Camouflaged Great Shirt", ""],
     ["40", "RECIPE: Nice Cloth Shirt (Max-Enchanted)", "(Max-Enchanted)"],
     ["50", "RECIPE: Quality Cloth Shirt (Max-Enchanted)", "(Max-Enchanted)"],
     ["60", "RECIPE: Quality Great Shirt (Max-Enchanted)", "(Max-Enchanted)"],
@@ -253,63 +313,6 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
     ["42", "RECIPE: Nice Spider Casing (Max-Enchanted)", "(Max-Enchanted) (Restriction: Spider)"],
     ["52", "RECIPE: Quality Spider Casing (Max-Enchanted)", "(Max-Enchanted) (Restriction: Spider)"],
     ["62", "RECIPE: Great Spider Casing (Max-Enchanted)", "(Max-Enchanted) (Restriction: Spider)"],
-    ["50", "RECIPE: Quality Cloth Shirt", ""],
-    ["13", "RECIPE: Rough Cloth Pants (Enchanted)", ""],
-    ["50", "RECIPE: Quality Cloth Pants", ""],
-    ["3", "RECIPE: Shoddy Cloth Pants (Enchanted)", ""],
-    ["10", "RECIPE: Rough Cloth Pants", "Level 10 pants. (Must be near a tanning rack, for some reason.)"],
-    ["20", "RECIPE: Crude Cloth Pants", "Level 20 pants. (Must be near a tanning rack, for some reason.)"],
-    ["23", "RECIPE: Crude Cloth Pants (Enchanted)", ""],
-    ["30", "RECIPE: Decent Cloth Pants", ""],
-    ["60", "RECIPE: Great Cloth Pants", ""],
-    ["40", "RECIPE: Nice Cloth Pants (Max-Enchanted)", "(Max-Enchanted)"],
-    ["50", "RECIPE: Quality Cloth Pants (Max-Enchanted)", "(Max-Enchanted)"],
-    ["60", "RECIPE: Great Cloth Pants (Max-Enchanted)", "(Max-Enchanted)"],
-    ["0", "RECIPE: Beginner's Tailoring Practice (Yarn)", "Practice tailoring with yarn. The resulting items are junk, but it's good practice."],
-    ["5", "RECIPE: Neophyte's Tailoring Practice", "Practice tailoring on a bolt of cloth. The resulting items are junk, but it's good practice."],
-    ["10", "RECIPE: Novice's Tailoring Practice", "Practice tailoring on cloth. The resulting items are not particularly useful, but it's good practice."],
-    ["4", "RECIPE: Beginner's Tailoring Practice (Spider Silk)", "Practice tailoring with spider silk. The resulting items are junk, but it's good practice."],
-    ["22", "RECIPE: Camouflaged Crude Pants", ""],
-    ["32", "RECIPE: Camouflaged Decent Pants", ""],
-    ["42", "RECIPE: Camouflaged Nice Pants", ""],
-    ["52", "RECIPE: Camouflaged Quality Pants", ""],
-    ["62", "RECIPE: Camouflaged Great Pants", ""],
-    ["34", "RECIPE: Camouflaged Decent Pants (Max-Enchanted)", "(Max-Enchanted)"],
-    ["44", "RECIPE: Camouflaged Nice Pants (Max-Enchanted)", "(Max-Enchanted)"],
-    ["54", "RECIPE: Camouflaged Quality Pants (Max-Enchanted)", "(Max-Enchanted)"],
-    ["64", "RECIPE: Camouflaged Great Pants (Max-Enchanted)", "(Max-Enchanted)"],
-    ["1", "RECIPE: Shoddy Cloth Pants", "Level 5 pants. Not to be worn in public. (Must be near a tanning rack, for some reason.)"],
-    ["1", "RECIPE: Shoddy Cloth Shirt", "Level 5 shirt. Not to be worn in public. (Must be near a tanning rack, for some reason.)"],
-    ["45", "RECIPE: Enhance Nature Damage of Cloth Pants", "CraftingEnhanceItemNatureMod(0.01,20)"],
-    ["5", "RECIPE: Add Pockets To Cloth Pants", "CraftingEnhanceItemPockets(2,12)"],
-    ["10", "RECIPE: Add Pockets To Cloth Shirt", "CraftingEnhanceItemPockets(2,12)"],
-    ["15", "RECIPE: Add Pockets To Leather Pants", "CraftingEnhanceItemPockets(1,12)"],
-    ["20", "RECIPE: Add Pockets To Leather Shirt", "CraftingEnhanceItemPockets(1,12)"],
-    ["18", "RECIPE: Enhance Darkness Damage of Cloth Pants", "CraftingEnhanceItemDarknessMod(0.01,20)"],
-    ["23", "RECIPE: Enhance Darkness Damage of Cloth Shirt", "CraftingEnhanceItemDarknessMod(0.01,20)"],
-    ["25", "RECIPE: Enhance Fire Damage of Cloth Pants", "CraftingEnhanceItemFireMod(0.01,20)"],
-    ["30", "RECIPE: Enhance Fire Damage of Cloth Shirt", "CraftingEnhanceItemFireMod(0.01,20)"],
-    ["28", "RECIPE: Enhance Cold Damage of Cloth Pants", "CraftingEnhanceItemColdMod(0.01,20)"],
-    ["33", "RECIPE: Enhance Cold Damage of Cloth Shirt", "CraftingEnhanceItemColdMod(0.01,20)"],
-    ["35", "RECIPE: Enhance Electricity Damage of Cloth Pants", "CraftingEnhanceItemElectricityMod(0.01,20)"],
-    ["40", "RECIPE: Enhance Electricity Damage of Cloth Shirt", "CraftingEnhanceItemElectricityMod(0.01,20)"],
-    ["38", "RECIPE: Enhance Psychic Damage of Cloth Pants", "CraftingEnhanceItemPsychicMod(0.01,20)"],
-    ["43", "RECIPE: Enhance Psychic Damage of Cloth Shirt", "CraftingEnhanceItemPsychicMod(0.01,20)"],
-    ["50", "RECIPE: Enhance Nature Damage of Cloth Shirt", "CraftingEnhanceItemNatureMod(0.01,20)"],
-    ["40", "RECIPE: Nice Cloth Shirt", ""],
-    ["45", "RECIPE: Camouflaged Nice Shirt", ""],
-    ["40", "RECIPE: Nice Cloth Pants", ""],
-    ["25", "RECIPE: Camouflaged Crude Shirt", ""],
-    ["65", "RECIPE: Camouflaged Great Shirt", ""],
-    ["3", "RECIPE: Shoddy Cloth Shirt (Enchanted)", ""],
-    ["10", "RECIPE: Rough Cloth Shirt", "Level 10 shirt. (Must be near a tanning rack, for some reason.)"],
-    ["13", "RECIPE: Rough Cloth Shirt (Enchanted)", ""],
-    ["20", "RECIPE: Crude Cloth Shirt", "Level 20 shirt. (Must be near a tanning rack, for some reason.)"],
-    ["23", "RECIPE: Crude Cloth Shirt (Enchanted)", ""],
-    ["30", "RECIPE: Decent Cloth Shirt", ""],
-    ["35", "RECIPE: Camouflaged Decent Shirt", ""],
-    ["55", "RECIPE: Camouflaged Quality Shirt", ""],
-    ["60", "RECIPE: Great Cloth Shirt", ""],
     ["40", "<span class=\"automatic\">+1 Leatherworking</span>", "Turning leathers into armor and goods."],
     ["10", "<span class=\"automatic\">+1 Textile Creation</span>", "The craft of turning raw ingredients into cloth. Textile creation includes cotton, wool, silk, and many other fiber types. Cloth made from animal hides (e.g. leather) comes from the Tanning skill instead."],
     ["20", "<span class=\"automatic\">+1 Leatherworking</span>", "Turning leathers into armor and goods."],

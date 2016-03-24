@@ -50,7 +50,7 @@
   <body>
 
     <nav id="navMenu" class="navbar navbar-inverse navbar-fixed-top">
-      <div class="last-update">Last updated: 2016-03-13</div>
+      <div class="last-update">Last updated: 2016-03-23</div>
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -147,6 +147,7 @@ This skill covers only the creation of the dye; Textile Creation, Tanning, or Bl
 
 (The most common way to raise Endurance is simply to take armor damage in combat.)">Endurance</a></li>
                             <li><a href="/skills/24.html" title="The ability to use first aid kits to heal yourself or others.">First Aid</a></li>
+                            <li><a href="/skills/131.html" title="The art of arranging flowers so that they evoke strong emotions.">Flower Arrangement</a></li>
                             <li><a href="/skills/128.html" title="The ability to create elaborate contraptions that automate complex tasks.">Gadgeteering</a></li>
                             <li><a href="/skills/9.html" title="Growing things in a garden: herbs, food, and flowers.">Gardening</a></li>
                             <li><a href="/skills/22.html" title="A careful exploration of gender roles and sexuality, focusing on Human, Elven, and Raksasha cultures. This knowledge is not directly applicable to combat or crafting, but it helps you to be a well-rounded individual.">Gender Studies</a></li>
@@ -169,6 +170,7 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
                     <li class="dropdown-submenu">
                         <a href="#">Other (N..Z)</a>
                         <ul class="dropdown-menu">
+                            <li><a href="/skills/132.html" title="The ability to study nature and find inner peace and contentment. Even the most hardened warriors need the ability to appreciate nature.">Nature Appreciation</a></li>
                             <li><a href="/skills/72.html" title="A measure of your renown. You earn Notoriety the first time you defeat certain enemies (typically any monster with a proper name), and for completing particularly difficult quests.">Notoriety</a></li>
                             <li><a href="/skills/84.html" title="The ability to speak in public in a way that moves your audience.">Oratory</a></li>
                             <li><a href="/skills/19.html" title="Skill in figuring out how someone or something died. Higher skill allows more details to be determined and more difficult organisms to be examined.">Pathology</a></li>
@@ -189,12 +191,13 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
             <li><a href="/abilities.html">Abilities</a></li>
             <li><a href="/powers.html">Mods</a></li>
             <li><a href="/recipes.html">Recipes</a></li>
-            <li><a href="/simulator.html">Build simulator <span class="label label-danger">ALPHA</span></a></li>
+            <li><a href="/simulator.html">Build planner <span class="label label-danger">ALPHA</span></a></li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" title="Explore changes for every update">
                     Updates <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
+                    <li><a href="/changes/249_to_250.html">Update 250</a></li>
                     <li><a href="/changes/248_to_249.html">Update 249</a></li>
                     <li><a href="/changes/247_to_248.html">Update 248</a></li>
                     <li><a href="/changes/246_to_247.html">Update 247</a></li>
@@ -437,63 +440,19 @@ $(document).ready(function() {
             </thead>
             <tbody>
 
-                <tr><td class="ability-name">Leatherworking: Quality Evasion Shirt (Max-Enchanted)</td><td class="attribute-name">description</td><td>Teaches you how to make swift and elegant leather chest armor, with extra enchantments..</td><td class="arrows">&#x21c9;</td><td>Teaches you how to make swift and elegant leather chest armor, with extra enchantments.</td></tr>
+                <tr><td class="ability-name">Sword: Riposte</td><td class="attribute-name">name</td><td>Sword Technique: Riposte</td><td class="arrows">&#x21c9;</td><td>Sword: Riposte</td></tr>
 
-                <tr><td class="ability-name">Sword: Decapitate 3</td><td class="attribute-name">name</td><td>Sword Technique: Decapitate 3</td><td class="arrows">&#x21c9;</td><td>Sword: Decapitate 3</td></tr>
+                <tr><td class="ability-name">Sword: Precision Pierce</td><td class="attribute-name">name</td><td>Sword Technique: Precision Pierce</td><td class="arrows">&#x21c9;</td><td>Sword: Precision Pierce</td></tr>
 
-                <tr><td class="ability-name">Werewolf: Pouncing Rend 3+</td><td class="attribute-name">name</td><td>Werewolf Technique: Pouncing Rend 3+</td><td class="arrows">&#x21c9;</td><td>Werewolf: Pouncing Rend 3+</td></tr>
-
-                <tr><td class="ability-name">Bat: Smouldering Gaze 3</td><td class="attribute-name">name</td><td>Bat Technique: Smouldering Gaze 3</td><td class="arrows">&#x21c9;</td><td>Bat: Smouldering Gaze 3</td></tr>
-
-                <tr><td class="ability-name">Sword: Precision Pierce 3</td><td class="attribute-name">name</td><td>Sword Technique: Precision Pierce 3</td><td class="arrows">&#x21c9;</td><td>Sword: Precision Pierce 3</td></tr>
-
-                <tr><td class="ability-name">Sword: Precision Pierce 2</td><td class="attribute-name">name</td><td>Sword Technique: Precision Pierce 2</td><td class="arrows">&#x21c9;</td><td>Sword: Precision Pierce 2</td></tr>
+                <tr><td class="ability-name">Werewolf: Pouncing Rend 3</td><td class="attribute-name">name</td><td>Werewolf Technique: Pouncing Rend 3</td><td class="arrows">&#x21c9;</td><td>Werewolf: Pouncing Rend 3</td></tr>
 
                 <tr><td class="ability-name">Fist of the Green Man</td><td class="attribute-name">effects</td><td>Unarmed Damage +2<br/>Crushing Damage +1</td><td class="arrows">&#x21c9;</td><td>Unarmed Damage +4<br/>Crushing Damage +1</td></tr>
 
                 <tr><td class="ability-name">Fist of the Green Man</td><td class="attribute-name">value</td><td>150</td><td class="arrows">&#x21c9;</td><td>175</td></tr>
 
-                <tr><td class="ability-name">Staff: Pin 2</td><td class="attribute-name">name</td><td>Staff Technique: Pin 2</td><td class="arrows">&#x21c9;</td><td>Staff: Pin 2</td></tr>
-
-                <tr><td class="ability-name">Sword: Riposte 4</td><td class="attribute-name">name</td><td>Sword Technique: Riposte 4</td><td class="arrows">&#x21c9;</td><td>Sword: Riposte 4</td></tr>
-
-                <tr><td class="ability-name">Staff: Pin</td><td class="attribute-name">name</td><td>Staff Technique: Pin</td><td class="arrows">&#x21c9;</td><td>Staff: Pin</td></tr>
-
-                <tr><td class="ability-name">Leatherworking: Quality Evasion Boots (Max-Enchanted)</td><td class="attribute-name">description</td><td>Teaches you how to make nimble boots, with extra enchantments..</td><td class="arrows">&#x21c9;</td><td>Teaches you how to make nimble boots, with extra enchantments.</td></tr>
-
-                <tr><td class="ability-name">Wolfen Speed Juice</td><td class="attribute-name">effects</td><td>For five minutes, sprint speed is increased by 4 and sprint power cost is doubled</td><td class="arrows">&#x21c9;</td><td>For five minutes, sprint speed is increased by 4</td></tr>
-
-                <tr><td class="ability-name">Sword: Riposte 2</td><td class="attribute-name">name</td><td>Sword Technique: Riposte 2</td><td class="arrows">&#x21c9;</td><td>Sword: Riposte 2</td></tr>
-
-                <tr><td class="ability-name">Simple Armor Stake</td><td class="attribute-name">name</td><td>Amazing Armor Stake</td><td class="arrows">&#x21c9;</td><td>Simple Armor Stake</td></tr>
-
-                <tr><td class="ability-name">Simple Armor Stake</td><td class="attribute-name">internal_name</td><td>ArmorStake6</td><td class="arrows">&#x21c9;</td><td>ArmorStake1</td></tr>
-
-                <tr><td class="ability-name">Simple Armor Stake</td><td class="attribute-name">value</td><td>500</td><td class="arrows">&#x21c9;</td><td>20</td></tr>
-
-                <tr><td class="ability-name">Simple Armor Stake</td><td class="attribute-name">icon</td><td><img src="http://cdn.projectgorgon.com/v245/icons/icon_5570.png" /></td><td class="arrows">&#x21c9;</td><td><img src="http://cdn.projectgorgon.com/v246/icons/icon_5564.png" /></td></tr>
-
-                <tr><td class="ability-name">Leatherworking: Nice Evasion Shirt (Max-Enchanted)</td><td class="attribute-name">description</td><td>Teaches you how to make swift and elegant leather chest armor, with extra enchantments..</td><td class="arrows">&#x21c9;</td><td>Teaches you how to make swift and elegant leather chest armor, with extra enchantments.</td></tr>
-
-                <tr><td class="ability-name">Sword: Riposte</td><td class="attribute-name">name</td><td>Sword Technique: Riposte</td><td class="arrows">&#x21c9;</td><td>Sword: Riposte</td></tr>
-
-                <tr><td class="ability-name">Sword: Decapitate</td><td class="attribute-name">name</td><td>Sword Technique: Decapitate</td><td class="arrows">&#x21c9;</td><td>Sword: Decapitate</td></tr>
-
                 <tr><td class="ability-name">Bat: Screech 4</td><td class="attribute-name">name</td><td>Bat Technique: Screech 4</td><td class="arrows">&#x21c9;</td><td>Bat: Screech 4</td></tr>
 
-                <tr><td class="ability-name">Staff: Pin 3</td><td class="attribute-name">name</td><td>Staff Technique: Pin 3</td><td class="arrows">&#x21c9;</td><td>Staff: Pin 3</td></tr>
-
-                <tr><td class="ability-name">Concentrated Wolfen Speed Juice</td><td class="attribute-name">effects</td><td>For five minutes, sprint speed is increased by 6 and sprint power cost is doubled</td><td class="arrows">&#x21c9;</td><td>For five minutes, sprint speed is increased by 6</td></tr>
-
-                <tr><td class="ability-name">Tailoring: Camouflaged Nice Pants (Max-Enchanted)</td><td class="attribute-name">description</td><td>Teaches you how to make a pair of pants that make the wearer less conspicuous, with extra enchantments..</td><td class="arrows">&#x21c9;</td><td>Teaches you how to make a pair of pants that make the wearer less conspicuous, with extra enchantments.</td></tr>
-
-                <tr><td class="ability-name">Bat: Smouldering Gaze</td><td class="attribute-name">name</td><td>Bat Technique: Smouldering Gaze</td><td class="arrows">&#x21c9;</td><td>Bat: Smouldering Gaze</td></tr>
-
-                <tr><td class="ability-name">Sword: Riposte 3</td><td class="attribute-name">name</td><td>Sword Technique: Riposte 3</td><td class="arrows">&#x21c9;</td><td>Sword: Riposte 3</td></tr>
-
-                <tr><td class="ability-name">Bat: Smouldering Gaze 2</td><td class="attribute-name">name</td><td>Bat Technique: Smouldering Gaze 2</td><td class="arrows">&#x21c9;</td><td>Bat: Smouldering Gaze 2</td></tr>
-
-                <tr><td class="ability-name">Bat: Screech</td><td class="attribute-name">name</td><td>Bat Technique: Screech</td><td class="arrows">&#x21c9;</td><td>Bat: Screech</td></tr>
+                <tr><td class="ability-name">Bat: Screech 3</td><td class="attribute-name">name</td><td>Bat Technique: Screech 3</td><td class="arrows">&#x21c9;</td><td>Bat: Screech 3</td></tr>
 
                 <tr><td class="ability-name">Slightly Rusty Gauntlets</td><td class="attribute-name">name</td><td>Gauntlets</td><td class="arrows">&#x21c9;</td><td>Slightly Rusty Gauntlets</td></tr>
 
@@ -505,31 +464,75 @@ $(document).ready(function() {
 
                 <tr><td class="ability-name">Werewolf: Pouncing Rend 2</td><td class="attribute-name">name</td><td>Werewolf Technique: Pouncing Rend 2</td><td class="arrows">&#x21c9;</td><td>Werewolf: Pouncing Rend 2</td></tr>
 
-                <tr><td class="ability-name">Werewolf: Pouncing Rend</td><td class="attribute-name">name</td><td>Werewolf Technique: Pouncing Rend</td><td class="arrows">&#x21c9;</td><td>Werewolf: Pouncing Rend</td></tr>
+                <tr><td class="ability-name">Bat: Smouldering Gaze 3</td><td class="attribute-name">name</td><td>Bat Technique: Smouldering Gaze 3</td><td class="arrows">&#x21c9;</td><td>Bat: Smouldering Gaze 3</td></tr>
 
-                <tr><td class="ability-name">Sword: Precision Pierce 4</td><td class="attribute-name">name</td><td>Sword Technique: Precision Pierce 4</td><td class="arrows">&#x21c9;</td><td>Sword: Precision Pierce 4</td></tr>
+                <tr><td class="ability-name">Sword: Precision Pierce 3</td><td class="attribute-name">name</td><td>Sword Technique: Precision Pierce 3</td><td class="arrows">&#x21c9;</td><td>Sword: Precision Pierce 3</td></tr>
 
                 <tr><td class="ability-name">Sword: Decapitate 2</td><td class="attribute-name">name</td><td>Sword Technique: Decapitate 2</td><td class="arrows">&#x21c9;</td><td>Sword: Decapitate 2</td></tr>
 
-                <tr><td class="ability-name">Tailoring: Camouflaged Nice Shirt (Max-Enchanted)</td><td class="attribute-name">description</td><td>Teaches you how to make a shirt that blends into the surroundings, with extra enchantments..</td><td class="arrows">&#x21c9;</td><td>Teaches you how to make a shirt that blends into the surroundings, with extra enchantments.</td></tr>
+                <tr><td class="ability-name">Staff: Pin 2</td><td class="attribute-name">name</td><td>Staff Technique: Pin 2</td><td class="arrows">&#x21c9;</td><td>Staff: Pin 2</td></tr>
 
-                <tr><td class="ability-name">Sword: Precision Pierce</td><td class="attribute-name">name</td><td>Sword Technique: Precision Pierce</td><td class="arrows">&#x21c9;</td><td>Sword: Precision Pierce</td></tr>
+                <tr><td class="ability-name">Simple Armor Stake</td><td class="attribute-name">name</td><td>Amazing Armor Stake</td><td class="arrows">&#x21c9;</td><td>Simple Armor Stake</td></tr>
 
-                <tr><td class="ability-name">Werewolf: Pouncing Rend 3</td><td class="attribute-name">name</td><td>Werewolf Technique: Pouncing Rend 3</td><td class="arrows">&#x21c9;</td><td>Werewolf: Pouncing Rend 3</td></tr>
+                <tr><td class="ability-name">Simple Armor Stake</td><td class="attribute-name">internal_name</td><td>ArmorStake6</td><td class="arrows">&#x21c9;</td><td>ArmorStake1</td></tr>
+
+                <tr><td class="ability-name">Simple Armor Stake</td><td class="attribute-name">value</td><td>500</td><td class="arrows">&#x21c9;</td><td>20</td></tr>
+
+                <tr><td class="ability-name">Simple Armor Stake</td><td class="attribute-name">icon</td><td><img src="http://cdn.projectgorgon.com/v245/icons/icon_5570.png" /></td><td class="arrows">&#x21c9;</td><td><img src="http://cdn.projectgorgon.com/v246/icons/icon_5564.png" /></td></tr>
+
+                <tr><td class="ability-name">Concentrated Wolfen Speed Juice</td><td class="attribute-name">effects</td><td>For five minutes, sprint speed is increased by 6 and sprint power cost is doubled</td><td class="arrows">&#x21c9;</td><td>For five minutes, sprint speed is increased by 6</td></tr>
+
+                <tr><td class="ability-name">Bat: Screech</td><td class="attribute-name">name</td><td>Bat Technique: Screech</td><td class="arrows">&#x21c9;</td><td>Bat: Screech</td></tr>
+
+                <tr><td class="ability-name">Leatherworking: Quality Evasion Shirt (Max-Enchanted)</td><td class="attribute-name">description</td><td>Teaches you how to make swift and elegant leather chest armor, with extra enchantments..</td><td class="arrows">&#x21c9;</td><td>Teaches you how to make swift and elegant leather chest armor, with extra enchantments.</td></tr>
+
+                <tr><td class="ability-name">Leatherworking: Quality Evasion Boots (Max-Enchanted)</td><td class="attribute-name">description</td><td>Teaches you how to make nimble boots, with extra enchantments..</td><td class="arrows">&#x21c9;</td><td>Teaches you how to make nimble boots, with extra enchantments.</td></tr>
+
+                <tr><td class="ability-name">Leatherworking: Nice Evasion Shirt (Max-Enchanted)</td><td class="attribute-name">description</td><td>Teaches you how to make swift and elegant leather chest armor, with extra enchantments..</td><td class="arrows">&#x21c9;</td><td>Teaches you how to make swift and elegant leather chest armor, with extra enchantments.</td></tr>
+
+                <tr><td class="ability-name">Bat: Smouldering Gaze 2</td><td class="attribute-name">name</td><td>Bat Technique: Smouldering Gaze 2</td><td class="arrows">&#x21c9;</td><td>Bat: Smouldering Gaze 2</td></tr>
+
+                <tr><td class="ability-name">Bat: Screech 2</td><td class="attribute-name">name</td><td>Bat Technique: Screech 2</td><td class="arrows">&#x21c9;</td><td>Bat: Screech 2</td></tr>
+
+                <tr><td class="ability-name">Sword: Decapitate</td><td class="attribute-name">name</td><td>Sword Technique: Decapitate</td><td class="arrows">&#x21c9;</td><td>Sword: Decapitate</td></tr>
+
+                <tr><td class="ability-name">Staff: Pin</td><td class="attribute-name">name</td><td>Staff Technique: Pin</td><td class="arrows">&#x21c9;</td><td>Staff: Pin</td></tr>
 
                 <tr><td class="ability-name">Leatherworking: Nice Evasion Pants (Max-Enchanted)</td><td class="attribute-name">description</td><td>Teaches you how to make agile pants, with extra enchantments..</td><td class="arrows">&#x21c9;</td><td>Teaches you how to make agile pants, with extra enchantments.</td></tr>
 
-                <tr><td class="ability-name">Bat: Screech 3</td><td class="attribute-name">name</td><td>Bat Technique: Screech 3</td><td class="arrows">&#x21c9;</td><td>Bat: Screech 3</td></tr>
+                <tr><td class="ability-name">Sword: Decapitate 3</td><td class="attribute-name">name</td><td>Sword Technique: Decapitate 3</td><td class="arrows">&#x21c9;</td><td>Sword: Decapitate 3</td></tr>
 
-                <tr><td class="ability-name">Leatherworking: Quality Evasion Pants (Max-Enchanted)</td><td class="attribute-name">description</td><td>Teaches you how to make agile pants, with extra enchantments..</td><td class="arrows">&#x21c9;</td><td>Teaches you how to make agile pants, with extra enchantments.</td></tr>
-
-                <tr><td class="ability-name">Bat: Screech 5</td><td class="attribute-name">name</td><td>Bat Technique: Screech 5</td><td class="arrows">&#x21c9;</td><td>Bat: Screech 5</td></tr>
+                <tr><td class="ability-name">Wolfen Speed Juice</td><td class="attribute-name">effects</td><td>For five minutes, sprint speed is increased by 4 and sprint power cost is doubled</td><td class="arrows">&#x21c9;</td><td>For five minutes, sprint speed is increased by 4</td></tr>
 
                 <tr><td class="ability-name">Nightmare Pants</td><td class="attribute-name">effects</td><td>Max Armor +42<br/>Psychic Damage Reduction +4<br/>Bonus Power from Combat Refresh +3</td><td class="arrows">&#x21c9;</td><td>Max Armor +62<br/>Psychic Damage Reduction +4<br/>Bonus Power from Combat Refresh +4</td></tr>
 
                 <tr><td class="ability-name">Nightmare Pants</td><td class="attribute-name">value</td><td>125</td><td class="arrows">&#x21c9;</td><td>175</td></tr>
 
-                <tr><td class="ability-name">Bat: Screech 2</td><td class="attribute-name">name</td><td>Bat Technique: Screech 2</td><td class="arrows">&#x21c9;</td><td>Bat: Screech 2</td></tr>
+                <tr><td class="ability-name">Werewolf: Pouncing Rend 3+</td><td class="attribute-name">name</td><td>Werewolf Technique: Pouncing Rend 3+</td><td class="arrows">&#x21c9;</td><td>Werewolf: Pouncing Rend 3+</td></tr>
+
+                <tr><td class="ability-name">Staff: Pin 3</td><td class="attribute-name">name</td><td>Staff Technique: Pin 3</td><td class="arrows">&#x21c9;</td><td>Staff: Pin 3</td></tr>
+
+                <tr><td class="ability-name">Sword: Precision Pierce 4</td><td class="attribute-name">name</td><td>Sword Technique: Precision Pierce 4</td><td class="arrows">&#x21c9;</td><td>Sword: Precision Pierce 4</td></tr>
+
+                <tr><td class="ability-name">Tailoring: Camouflaged Nice Pants (Max-Enchanted)</td><td class="attribute-name">description</td><td>Teaches you how to make a pair of pants that make the wearer less conspicuous, with extra enchantments..</td><td class="arrows">&#x21c9;</td><td>Teaches you how to make a pair of pants that make the wearer less conspicuous, with extra enchantments.</td></tr>
+
+                <tr><td class="ability-name">Bat: Smouldering Gaze</td><td class="attribute-name">name</td><td>Bat Technique: Smouldering Gaze</td><td class="arrows">&#x21c9;</td><td>Bat: Smouldering Gaze</td></tr>
+
+                <tr><td class="ability-name">Sword: Riposte 3</td><td class="attribute-name">name</td><td>Sword Technique: Riposte 3</td><td class="arrows">&#x21c9;</td><td>Sword: Riposte 3</td></tr>
+
+                <tr><td class="ability-name">Bat: Screech 5</td><td class="attribute-name">name</td><td>Bat Technique: Screech 5</td><td class="arrows">&#x21c9;</td><td>Bat: Screech 5</td></tr>
+
+                <tr><td class="ability-name">Werewolf: Pouncing Rend</td><td class="attribute-name">name</td><td>Werewolf Technique: Pouncing Rend</td><td class="arrows">&#x21c9;</td><td>Werewolf: Pouncing Rend</td></tr>
+
+                <tr><td class="ability-name">Tailoring: Camouflaged Nice Shirt (Max-Enchanted)</td><td class="attribute-name">description</td><td>Teaches you how to make a shirt that blends into the surroundings, with extra enchantments..</td><td class="arrows">&#x21c9;</td><td>Teaches you how to make a shirt that blends into the surroundings, with extra enchantments.</td></tr>
+
+                <tr><td class="ability-name">Sword: Precision Pierce 2</td><td class="attribute-name">name</td><td>Sword Technique: Precision Pierce 2</td><td class="arrows">&#x21c9;</td><td>Sword: Precision Pierce 2</td></tr>
+
+                <tr><td class="ability-name">Sword: Riposte 4</td><td class="attribute-name">name</td><td>Sword Technique: Riposte 4</td><td class="arrows">&#x21c9;</td><td>Sword: Riposte 4</td></tr>
+
+                <tr><td class="ability-name">Sword: Riposte 2</td><td class="attribute-name">name</td><td>Sword Technique: Riposte 2</td><td class="arrows">&#x21c9;</td><td>Sword: Riposte 2</td></tr>
+
+                <tr><td class="ability-name">Leatherworking: Quality Evasion Pants (Max-Enchanted)</td><td class="attribute-name">description</td><td>Teaches you how to make agile pants, with extra enchantments..</td><td class="arrows">&#x21c9;</td><td>Teaches you how to make agile pants, with extra enchantments.</td></tr>
             </tbody>
         </table>
     </div>
@@ -601,9 +604,9 @@ Every 10 seconds, Flare Fireball gives you a Combat Refresh that restores 20 Pow
 
                 <tr><td class="ability-name">None</td><td class="attribute-name">tiers</td><td>1: Psi Power Wave and Mind Armor Wave instantly restores 6 power to you<br/>2: Psi Power Wave and Mind Armor Wave instantly restores 12 power to you<br/>3: Psi Power Wave and Mind Armor Wave instantly restores 18 power to you<br/>4: Psi Power Wave and Mind Armor Wave instantly restores 24 power to you<br/>5: Psi Power Wave and Mind Armor Wave instantly restores 30 power to you<br/>6: Psi Power Wave and Mind Armor Wave instantly restores 36 power to you</td><td class="arrows">&#x2192;</td><td>1: Psi Power Wave and Mind Armor Wave instantly restores 4 power to you<br/>2: Psi Power Wave and Mind Armor Wave instantly restores 7 power to you<br/>3: Psi Power Wave and Mind Armor Wave instantly restores 10 power to you<br/>4: Psi Power Wave and Mind Armor Wave instantly restores 14 power to you<br/>5: Psi Power Wave and Mind Armor Wave instantly restores 18 power to you<br/>6: Psi Power Wave and Mind Armor Wave instantly restores 22 power to you</td></tr>
 
-                <tr><td class="ability-name">None</td><td class="attribute-name">tiers</td><td>1: Psi Health Wave instantly heals you for 12 health<br/>2: Psi Health Wave instantly heals you for 24 health<br/>3: Psi Health Wave instantly heals you for 36 health<br/>4: Psi Health Wave instantly heals you for 48 health<br/>5: Psi Health Wave instantly heals you for 60 health<br/>6: Psi Health Wave instantly heals you for 72 health</td><td class="arrows">&#x2192;</td><td>1: Psi Health Wave instantly heals you for 8 health<br/>2: Psi Health Wave instantly heals you for 16 health<br/>3: Psi Health Wave instantly heals you for 24 health<br/>4: Psi Health Wave instantly heals you for 32 health<br/>5: Psi Health Wave instantly heals you for 40 health<br/>6: Psi Health Wave instantly heals you for 48 health</td></tr>
-
                 <tr><td class="ability-name">None</td><td class="attribute-name">tiers</td><td>1: After using Mindreave, your Reconstruct ability heals +40<br/>2: After using Mindreave, your Reconstruct ability heals +80<br/>3: After using Mindreave, your Reconstruct ability heals +120<br/>4: After using Mindreave, your Reconstruct ability heals +160<br/>5: After using Mindreave, your Reconstruct ability heals +200<br/>6: After using Mindreave, your Reconstruct ability heals +240</td><td class="arrows">&#x2192;</td><td>1: After using Mindreave, your Reconstruct ability heals +6<br/>2: After using Mindreave, your Reconstruct ability heals +12<br/>3: After using Mindreave, your Reconstruct ability heals +18<br/>4: After using Mindreave, your Reconstruct ability heals +24<br/>5: After using Mindreave, your Reconstruct ability heals +30<br/>6: After using Mindreave, your Reconstruct ability heals +36</td></tr>
+
+                <tr><td class="ability-name">None</td><td class="attribute-name">tiers</td><td>1: Psi Health Wave instantly heals you for 12 health<br/>2: Psi Health Wave instantly heals you for 24 health<br/>3: Psi Health Wave instantly heals you for 36 health<br/>4: Psi Health Wave instantly heals you for 48 health<br/>5: Psi Health Wave instantly heals you for 60 health<br/>6: Psi Health Wave instantly heals you for 72 health</td><td class="arrows">&#x2192;</td><td>1: Psi Health Wave instantly heals you for 8 health<br/>2: Psi Health Wave instantly heals you for 16 health<br/>3: Psi Health Wave instantly heals you for 24 health<br/>4: Psi Health Wave instantly heals you for 32 health<br/>5: Psi Health Wave instantly heals you for 40 health<br/>6: Psi Health Wave instantly heals you for 48 health</td></tr>
 
                 <tr><td class="ability-name">None</td><td class="attribute-name">tiers</td><td>1: Snare Arrow deals +40 damage<br/>2: Snare Arrow deals +60 damage<br/>3: Snare Arrow deals +80 damage<br/>4: Snare Arrow deals +100 damage<br/>5: Snare Arrow deals +120 damage<br/>6: Snare Arrow deals +140 damage<br/>7: Snare Arrow deals +160 damage<br/>8: Snare Arrow deals +180 damage<br/>9: Snare Arrow deals +200 damage<br/>10: Snare Arrow deals +220 damage<br/>11: Snare Arrow deals +240 damage<br/>12: Snare Arrow deals +260 damage</td><td class="arrows">&#x2192;</td><td>1: Snare Arrow deals +20 damage<br/>2: Snare Arrow deals +40 damage<br/>3: Snare Arrow deals +60 damage<br/>4: Snare Arrow deals +80 damage<br/>5: Snare Arrow deals +100 damage<br/>6: Snare Arrow deals +120 damage<br/>7: Snare Arrow deals +140 damage<br/>8: Snare Arrow deals +160 damage<br/>9: Snare Arrow deals +180 damage<br/>10: Snare Arrow deals +200 damage<br/>11: Snare Arrow deals +220 damage<br/>12: Snare Arrow deals +240 damage</td></tr>
 

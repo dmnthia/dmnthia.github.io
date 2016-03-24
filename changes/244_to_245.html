@@ -50,7 +50,7 @@
   <body>
 
     <nav id="navMenu" class="navbar navbar-inverse navbar-fixed-top">
-      <div class="last-update">Last updated: 2016-03-13</div>
+      <div class="last-update">Last updated: 2016-03-23</div>
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -147,6 +147,7 @@ This skill covers only the creation of the dye; Textile Creation, Tanning, or Bl
 
 (The most common way to raise Endurance is simply to take armor damage in combat.)">Endurance</a></li>
                             <li><a href="/skills/24.html" title="The ability to use first aid kits to heal yourself or others.">First Aid</a></li>
+                            <li><a href="/skills/131.html" title="The art of arranging flowers so that they evoke strong emotions.">Flower Arrangement</a></li>
                             <li><a href="/skills/128.html" title="The ability to create elaborate contraptions that automate complex tasks.">Gadgeteering</a></li>
                             <li><a href="/skills/9.html" title="Growing things in a garden: herbs, food, and flowers.">Gardening</a></li>
                             <li><a href="/skills/22.html" title="A careful exploration of gender roles and sexuality, focusing on Human, Elven, and Raksasha cultures. This knowledge is not directly applicable to combat or crafting, but it helps you to be a well-rounded individual.">Gender Studies</a></li>
@@ -169,6 +170,7 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
                     <li class="dropdown-submenu">
                         <a href="#">Other (N..Z)</a>
                         <ul class="dropdown-menu">
+                            <li><a href="/skills/132.html" title="The ability to study nature and find inner peace and contentment. Even the most hardened warriors need the ability to appreciate nature.">Nature Appreciation</a></li>
                             <li><a href="/skills/72.html" title="A measure of your renown. You earn Notoriety the first time you defeat certain enemies (typically any monster with a proper name), and for completing particularly difficult quests.">Notoriety</a></li>
                             <li><a href="/skills/84.html" title="The ability to speak in public in a way that moves your audience.">Oratory</a></li>
                             <li><a href="/skills/19.html" title="Skill in figuring out how someone or something died. Higher skill allows more details to be determined and more difficult organisms to be examined.">Pathology</a></li>
@@ -189,12 +191,13 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
             <li><a href="/abilities.html">Abilities</a></li>
             <li><a href="/powers.html">Mods</a></li>
             <li><a href="/recipes.html">Recipes</a></li>
-            <li><a href="/simulator.html">Build simulator <span class="label label-danger">ALPHA</span></a></li>
+            <li><a href="/simulator.html">Build planner <span class="label label-danger">ALPHA</span></a></li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" title="Explore changes for every update">
                     Updates <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
+                    <li><a href="/changes/249_to_250.html">Update 250</a></li>
                     <li><a href="/changes/248_to_249.html">Update 249</a></li>
                     <li><a href="/changes/247_to_248.html">Update 248</a></li>
                     <li><a href="/changes/246_to_247.html">Update 247</a></li>
@@ -1097,45 +1100,13 @@ $(document).ready(function() {
             </thead>
             <tbody>
 
-                <tr><td class="ability-name">Ring of Kicking Ass</td><td class="attribute-name">effects</td><td>Kick Attacks Deal +1 Damage</td><td class="arrows">&#x21c9;</td><td>Kicks deal +2 damage</td></tr>
+                <tr><td class="ability-name">Desert Vagabond Cap</td><td class="attribute-name">effects</td><td>Max Armor +54<br/>Bonus Power from Combat Refresh +4<br/>Headbutt Attacks Deal +35 Damage</td><td class="arrows">&#x21c9;</td><td>Headbutt deals +35 damage<br/>Max Armor +54<br/>Bonus Power from Combat Refresh +4</td></tr>
 
-                <tr><td class="ability-name">Buckle of Slagging Blurs</td><td class="attribute-name">effects</td><td>Pound To Slag Reset Time -8</td><td class="arrows">&#x21c9;</td><td>Pound To Slag Reuse Time -8</td></tr>
+                <tr><td class="ability-name">Torturer's Claw</td><td class="attribute-name">effects</td><td>Unarmed Damage  +5%<br/>SlashingStrike Attacks Deal +20 Damage</td><td class="arrows">&#x21c9;</td><td>Slashing Strike deals +20 damage<br/>Unarmed Damage  +5%</td></tr>
 
-                <tr><td class="ability-name">Pure Cranium Powder</td><td class="attribute-name">effects</td><td>All Mentalism and Psychology attacks deal +10 damage for 15 minutes<br/>After-effects reduce damage for a time but can be countered with more Cranium Powder</td><td class="arrows">&#x21c9;</td><td>All Mentalism and Psychology attacks deal +15 damage for 15 minutes<br/>After-effects reduce damage for a time but can be countered with more Cranium Powder</td></tr>
-
-                <tr><td class="ability-name">Buckle of Confident Pounding 5</td><td class="attribute-name">description</td><td>While crude, this buckle has a certain charming skill to it.
-
-This buckle quickly decays when worn in combat, eventually disappearing.
-
-This buckle quickly decays when worn in combat, eventually disappearing.</td><td class="arrows">&#x21c9;</td><td>While crude, this buckle has a certain charming skill to it.
-
-This buckle quickly decays when worn in combat, eventually disappearing.</td></tr>
-
-                <tr><td class="ability-name">Stalwart Hammer</td><td class="attribute-name">effects</td><td>Hammer Base Damage  +6%<br/>RecklessSlam Attacks Deal +10 Damage</td><td class="arrows">&#x21c9;</td><td>Reckless Slam deals +10 damage<br/>Hammer Base Damage  +6%</td></tr>
-
-                <tr><td class="ability-name">Desert Vagabond Gloves</td><td class="attribute-name">effects</td><td>Max Armor +54<br/>Bonus Power from Combat Refresh +4<br/>Punch Attacks Deal +20 Damage</td><td class="arrows">&#x21c9;</td><td>Punch deals +20 damage<br/>Max Armor +54<br/>Bonus Power from Combat Refresh +4</td></tr>
-
-                <tr><td class="ability-name">Wolfbite</td><td class="attribute-name">value</td><td>175</td><td class="arrows">&#x21c9;</td><td>225</td></tr>
-
-                <tr><td class="ability-name">Stalwart Bow</td><td class="attribute-name">effects</td><td>Archery Base Damage  +10%<br/>RibShatter Attacks Deal +8 Damage</td><td class="arrows">&#x21c9;</td><td>Rib Shatter deals +8 damage<br/>Archery Base Damage  +10%</td></tr>
-
-                <tr><td class="ability-name">Desert Vagabond Boots</td><td class="attribute-name">effects</td><td>Max Armor +54<br/>Sprint Speed Boost +1<br/>Bonus Power from Combat Refresh +4<br/>Kick Attacks Deal +25 Damage</td><td class="arrows">&#x21c9;</td><td>Kicks deal +25 damage<br/>Max Armor +54<br/>Sprint Speed Boost +1<br/>Bonus Power from Combat Refresh +4</td></tr>
-
-                <tr><td class="ability-name">Asterion's Hammer</td><td class="attribute-name">effects</td><td>Hammer Base Damage  +15%<br/>RibShatter Attacks Deal +30 Damage</td><td class="arrows">&#x21c9;</td><td>Rib Shatter deals +30 damage<br/>Hammer Base Damage  +15%</td></tr>
-
-                <tr><td class="ability-name">Mallet of Obliteration</td><td class="attribute-name">effects</td><td>Hammer Base Damage  +10%<br/>PoundToSlag Attacks Deal +40 Damage</td><td class="arrows">&#x21c9;</td><td>Pound To Slag deals +40 damage<br/>Hammer Base Damage  +10%</td></tr>
-
-                <tr><td class="ability-name">Yagreet's Staff</td><td class="attribute-name">effects</td><td>Reconstruct Healing +20<br/>Psychology Healing +20<br/>Regrowth Healing +20</td><td class="arrows">&#x21c9;</td><td>Major Healing Reuse Time -5</td></tr>
-
-                <tr><td class="ability-name">Ring of Multiple Lacerations</td><td class="attribute-name">effects</td><td>ManyCuts Attacks Deal +1 Damage</td><td class="arrows">&#x21c9;</td><td>Many Cuts deals +5 damage</td></tr>
-
-                <tr><td class="ability-name">Ring of Furry Clawing</td><td class="attribute-name">effects</td><td>WerewolfClaw Attacks Deal +1 Damage</td><td class="arrows">&#x21c9;</td><td>Werewolf Claw deals +1 damage</td></tr>
-
-                <tr><td class="ability-name">Dwarven Brewer Flask</td><td class="attribute-name">effects</td><td>Battle Chemistry Base Damage  +7%<br/>ToxinBomb Attacks Deal +15 Damage</td><td class="arrows">&#x21c9;</td><td>Toxin Bomb deals +15 damage<br/>Battle Chemistry Base Damage  +7%</td></tr>
+                <tr><td class="ability-name">Desert Vagabond Pants</td><td class="attribute-name">effects</td><td>Max Armor +90<br/>Bonus Power from Combat Refresh +6<br/>KneeKick Attacks Deal +35 Damage</td><td class="arrows">&#x21c9;</td><td>Knee Kick deals +35 damage<br/>Max Armor +90<br/>Bonus Power from Combat Refresh +6</td></tr>
 
                 <tr><td class="ability-name">Ring of Wolfen Terror</td><td class="attribute-name">effects</td><td>SmellFear Attacks Deal +15 Damage</td><td class="arrows">&#x21c9;</td><td>Smell Fear deals +15 damage</td></tr>
-
-                <tr><td class="ability-name">Stalwart Claw</td><td class="attribute-name">effects</td><td>Unarmed Damage  +5%<br/>BruisingBlow Attacks Deal +20 Damage</td><td class="arrows">&#x21c9;</td><td>Bruising Blow deals +20 damage<br/>Unarmed Damage  +5%</td></tr>
 
                 <tr><td class="ability-name">Buckle of Confident Pounding 4</td><td class="attribute-name">description</td><td>While crude, this buckle has a certain charming skill to it.
 
@@ -1145,45 +1116,53 @@ This buckle quickly decays when worn in combat, eventually disappearing.</td><td
 
 This buckle quickly decays when worn in combat, eventually disappearing.</td></tr>
 
-                <tr><td class="ability-name">Cranium Balm</td><td class="attribute-name">value</td><td>500</td><td class="arrows">&#x21c9;</td><td>600</td></tr>
+                <tr><td class="ability-name">Dwarven Bashbow</td><td class="attribute-name">effects</td><td>Archery Damage +1<br/>BowBash Attacks Deal +8 Damage</td><td class="arrows">&#x21c9;</td><td>Bow Bash deals +8 damage<br/>Archery Damage +1</td></tr>
 
-                <tr><td class="ability-name">Minotaur Hammer</td><td class="attribute-name">effects</td><td>Hammer Base Damage  +14%<br/>PoundToSlag Attacks Deal +40 Damage</td><td class="arrows">&#x21c9;</td><td>Pound To Slag deals +40 damage<br/>Hammer Base Damage  +14%</td></tr>
+                <tr><td class="ability-name">Ring of Gusty Striking</td><td class="attribute-name">effects</td><td>WindStrike Attacks Deal +1 Damage</td><td class="arrows">&#x21c9;</td><td>Wind Strike deals +5 damage</td></tr>
 
-                <tr><td class="ability-name">Good Metal Slab</td><td class="attribute-name">description</td><td>Used in Blacksmithing recipes.</td><td class="arrows">&#x21c9;</td><td>Used in smithing recipes.</td></tr>
+                <tr><td class="ability-name">Ring of Increasing Anxiety</td><td class="attribute-name">effects</td><td>Direct Psychic Damage  +10%<br/>YouWereAdopted Attacks Deal +40 Damage</td><td class="arrows">&#x21c9;</td><td>You Were Adopted deals +40 damage<br/>Direct Psychic Damage  +10%</td></tr>
 
-                <tr><td class="ability-name">Ring of Booming</td><td class="attribute-name">effects</td><td>FireBurst Attacks Deal +1 Damage</td><td class="arrows">&#x21c9;</td><td>Ring of Fire, Defensive Burst, and Defensive Chill deal +5 damage</td></tr>
+                <tr><td class="ability-name">Yagreet's Staff</td><td class="attribute-name">effects</td><td>Reconstruct Healing +20<br/>Psychology Healing +20<br/>Regrowth Healing +20</td><td class="arrows">&#x21c9;</td><td>Major Healing Reuse Time -5</td></tr>
 
-                <tr><td class="ability-name">Ring of Mindblasts</td><td class="attribute-name">effects</td><td>SystemShock Attacks Deal +20 Damage</td><td class="arrows">&#x21c9;</td><td>System Shock deals +20 damage</td></tr>
+                <tr><td class="ability-name">Buckle of Swift Slagging</td><td class="attribute-name">effects</td><td>Pound To Slag Reset Time -2</td><td class="arrows">&#x21c9;</td><td>Pound To Slag Reuse Time -2</td></tr>
 
-                <tr><td class="ability-name">Buckle of Fast Slagging</td><td class="attribute-name">effects</td><td>Pound To Slag Reset Time -6</td><td class="arrows">&#x21c9;</td><td>Pound To Slag Reuse Time -6</td></tr>
+                <tr><td class="ability-name">Wolfbite</td><td class="attribute-name">value</td><td>175</td><td class="arrows">&#x21c9;</td><td>225</td></tr>
 
-                <tr><td class="ability-name">Ring of Trusty Punching</td><td class="attribute-name">effects</td><td>Punch Attacks Deal +1 Damage</td><td class="arrows">&#x21c9;</td><td>Punch deals +1 damage</td></tr>
-
-                <tr><td class="ability-name">Fastbow</td><td class="attribute-name">effects</td><td>Archery Base Damage  +15%<br/>QuickShot Attacks Deal +35 Damage</td><td class="arrows">&#x21c9;</td><td>Quick Shot deals +35 damage<br/>Archery Base Damage  +15%</td></tr>
-
-                <tr><td class="ability-name">Bow of Range</td><td class="attribute-name">effects</td><td>Archery Base Damage  +15%<br/>LongShot Attacks Deal +35 Damage</td><td class="arrows">&#x21c9;</td><td>Long Shot deals +35 damage<br/>Archery Base Damage  +15%</td></tr>
-
-                <tr><td class="ability-name">Expert-Quality Metal Slab</td><td class="attribute-name">description</td><td>Used in expert Blacksmithing recipes.</td><td class="arrows">&#x21c9;</td><td>Used in expert smithing recipes.</td></tr>
-
-                <tr><td class="ability-name">Ring of Ferocious Clawing</td><td class="attribute-name">effects</td><td>WerewolfClaw Attacks Deal +3 Damage</td><td class="arrows">&#x21c9;</td><td>Werewolf Claw deals +3 damage</td></tr>
-
-                <tr><td class="ability-name">Tyler's Ring</td><td class="attribute-name">effects</td><td>DisruptingBash Attacks Deal +10 Damage</td><td class="arrows">&#x21c9;</td><td>Disrupting Bash deals +10 damage</td></tr>
+                <tr><td class="ability-name">Sanguinizer</td><td class="attribute-name">icon</td><td><img src="http://cdn.projectgorgon.com/v244/icons/icon_5157.png" /></td><td class="arrows">&#x21c9;</td><td><img src="http://cdn.projectgorgon.com/v245/icons/icon_5437.png" /></td></tr>
 
                 <tr><td class="ability-name">Eltibule Bow</td><td class="attribute-name">effects</td><td>Archery Damage +1<br/>AimedShot Attacks Deal +15 Damage</td><td class="arrows">&#x21c9;</td><td>Aimed Shot deals +15 damage<br/>Archery Damage +1</td></tr>
 
-                <tr><td class="ability-name">Masterwork Metal Slab</td><td class="attribute-name">description</td><td>Used in masterwork Blacksmithing recipes.</td><td class="arrows">&#x21c9;</td><td>Used in masterwork smithing recipes.</td></tr>
+                <tr><td class="ability-name">Enhanced Cranium Powder</td><td class="attribute-name">effects</td><td>All Mentalism and Psychology attacks deal +13 damage for 15 minutes<br/>After-effects reduce damage for a time but can be countered with more Cranium Powder</td><td class="arrows">&#x21c9;</td><td>All Mentalism and Psychology attacks deal +23 damage for 15 minutes<br/>After-effects reduce damage for a time but can be countered with more Cranium Powder</td></tr>
 
-                <tr><td class="ability-name">Buckle of Confident Pounding 6</td><td class="attribute-name">description</td><td>While crude, this buckle has a certain charming skill to it.
+                <tr><td class="ability-name">Bombing Beaker</td><td class="attribute-name">effects</td><td>Battle Chemistry Base Damage  +11%<br/>Bomb Attacks Deal +35 Damage</td><td class="arrows">&#x21c9;</td><td>Bombs deal +35 damage<br/>Battle Chemistry Base Damage  +11%</td></tr>
 
-This buckle quickly decays when worn in combat, eventually disappearing.
+                <tr><td class="ability-name">Ring of Kicking Ass</td><td class="attribute-name">effects</td><td>Kick Attacks Deal +1 Damage</td><td class="arrows">&#x21c9;</td><td>Kicks deal +2 damage</td></tr>
 
-This buckle quickly decays when worn in combat, eventually disappearing.</td><td class="arrows">&#x21c9;</td><td>While crude, this buckle has a certain charming skill to it.
+                <tr><td class="ability-name">Stalwart Gauntlets</td><td class="attribute-name">effects</td><td>Max Armor +42<br/>Bonus Armor from Combat Refresh +6<br/>PoundToSlag Attacks Deal +20 Damage</td><td class="arrows">&#x21c9;</td><td>Pound To Slag deals +20 damage<br/>Max Armor +42<br/>Bonus Armor from Combat Refresh +6</td></tr>
 
-This buckle quickly decays when worn in combat, eventually disappearing.</td></tr>
+                <tr><td class="ability-name">PvP Juice (30 minutes)</td><td class="attribute-name">description</td><td>Makes you PvP for a half hour.</td><td class="arrows">&#x21c9;</td><td>Makes you PvP-flagged for a half hour. You can attack other players who are also PvP-flagged.</td></tr>
 
-                <tr><td class="ability-name">Desert Vagabond Cap</td><td class="attribute-name">effects</td><td>Max Armor +54<br/>Bonus Power from Combat Refresh +4<br/>Headbutt Attacks Deal +35 Damage</td><td class="arrows">&#x21c9;</td><td>Headbutt deals +35 damage<br/>Max Armor +54<br/>Bonus Power from Combat Refresh +4</td></tr>
+                <tr><td class="ability-name">Desert Vagabond Gloves</td><td class="attribute-name">effects</td><td>Max Armor +54<br/>Bonus Power from Combat Refresh +4<br/>Punch Attacks Deal +20 Damage</td><td class="arrows">&#x21c9;</td><td>Punch deals +20 damage<br/>Max Armor +54<br/>Bonus Power from Combat Refresh +4</td></tr>
 
-                <tr><td class="ability-name">Ring of Increasing Anxiety</td><td class="attribute-name">effects</td><td>Direct Psychic Damage  +10%<br/>YouWereAdopted Attacks Deal +40 Damage</td><td class="arrows">&#x21c9;</td><td>You Were Adopted deals +40 damage<br/>Direct Psychic Damage  +10%</td></tr>
+                <tr><td class="ability-name">Claw-Barrager</td><td class="attribute-name">effects</td><td>Unarmed Damage  +5%<br/>ClawBarrage Attacks Deal +20 Damage</td><td class="arrows">&#x21c9;</td><td>Claw Barrage deals +20 damage<br/>Unarmed Damage  +5%</td></tr>
+
+                <tr><td class="ability-name">Buckle of Fast Slagging</td><td class="attribute-name">effects</td><td>Pound To Slag Reset Time -6</td><td class="arrows">&#x21c9;</td><td>Pound To Slag Reuse Time -6</td></tr>
+
+                <tr><td class="ability-name">Buckle of Hastened Slagging</td><td class="attribute-name">effects</td><td>Pound To Slag Reset Time -4</td><td class="arrows">&#x21c9;</td><td>Pound To Slag Reuse Time -4</td></tr>
+
+                <tr><td class="ability-name">Ring of Mindblasts</td><td class="attribute-name">effects</td><td>SystemShock Attacks Deal +20 Damage</td><td class="arrows">&#x21c9;</td><td>System Shock deals +20 damage</td></tr>
+
+                <tr><td class="ability-name">Lawara's Bow</td><td class="attribute-name">description</td><td>Apparently once used by Lawara, an elf you met in a cave. It's high-quality, and has a custom hand plate that provides a bit of shielding.</td><td class="arrows">&#x21c9;</td><td>Apparently once used by Lawara, an elf you met in on an island. It's high-quality, and has a custom hand plate that provides a bit of shielding.</td></tr>
+
+                <tr><td class="ability-name">Dwarven Brewer Flask</td><td class="attribute-name">effects</td><td>Battle Chemistry Base Damage  +7%<br/>ToxinBomb Attacks Deal +15 Damage</td><td class="arrows">&#x21c9;</td><td>Toxin Bomb deals +15 damage<br/>Battle Chemistry Base Damage  +7%</td></tr>
+
+                <tr><td class="ability-name">Minotaur Hammer</td><td class="attribute-name">effects</td><td>Hammer Base Damage  +14%<br/>PoundToSlag Attacks Deal +40 Damage</td><td class="arrows">&#x21c9;</td><td>Pound To Slag deals +40 damage<br/>Hammer Base Damage  +14%</td></tr>
+
+                <tr><td class="ability-name">Simple Metal Slab</td><td class="attribute-name">description</td><td>Used in the most primitive of Blacksmithing recipes.</td><td class="arrows">&#x21c9;</td><td>Used in the most primitive of smithing recipes.</td></tr>
+
+                <tr><td class="ability-name">Stalwart Claw</td><td class="attribute-name">effects</td><td>Unarmed Damage  +5%<br/>BruisingBlow Attacks Deal +20 Damage</td><td class="arrows">&#x21c9;</td><td>Bruising Blow deals +20 damage<br/>Unarmed Damage  +5%</td></tr>
+
+                <tr><td class="ability-name">Furlak's Claw</td><td class="attribute-name">value</td><td>150</td><td class="arrows">&#x21c9;</td><td>250</td></tr>
 
                 <tr><td class="ability-name">Juicy Ham</td><td class="attribute-name">name</td><td>Ham</td><td class="arrows">&#x21c9;</td><td>Juicy Ham</td></tr>
 
@@ -1191,23 +1170,11 @@ This buckle quickly decays when worn in combat, eventually disappearing.</td></t
 
                 <tr><td class="ability-name">Juicy Ham</td><td class="attribute-name">icon</td><td><img src="http://cdn.projectgorgon.com/v244/icons/icon_5086.png" /></td><td class="arrows">&#x21c9;</td><td><img src="http://cdn.projectgorgon.com/v245/icons/icon_5067.png" /></td></tr>
 
-                <tr><td class="ability-name">Silver-Threaded Shirt</td><td class="attribute-name">effects</td><td>Max Armor +84<br/>Direct Cold Damage +5<br/>Bonus Health from Combat Refresh +8<br/>Bonus Power from Combat Refresh +4</td><td class="arrows">&#x21c9;</td><td>Max Armor +96<br/>Direct Cold Damage +5<br/>Bonus Health from Combat Refresh +9<br/>Bonus Power from Combat Refresh +4</td></tr>
+                <tr><td class="ability-name">Ring of Ferocious Clawing</td><td class="attribute-name">effects</td><td>WerewolfClaw Attacks Deal +3 Damage</td><td class="arrows">&#x21c9;</td><td>Werewolf Claw deals +3 damage</td></tr>
 
-                <tr><td class="ability-name">Silver-Threaded Shirt</td><td class="attribute-name">value</td><td>224</td><td class="arrows">&#x21c9;</td><td>252</td></tr>
+                <tr><td class="ability-name">Desert Vagabond Shirt</td><td class="attribute-name">effects</td><td>Max Armor +108<br/>Bonus Power from Combat Refresh +7<br/>HipThrow Attacks Deal +35 Damage</td><td class="arrows">&#x21c9;</td><td>Hip Throw deals +35 damage<br/>Max Armor +108<br/>Bonus Power from Combat Refresh +7</td></tr>
 
-                <tr><td class="ability-name">Stalwart Gauntlets</td><td class="attribute-name">effects</td><td>Max Armor +42<br/>Bonus Armor from Combat Refresh +6<br/>PoundToSlag Attacks Deal +20 Damage</td><td class="arrows">&#x21c9;</td><td>Pound To Slag deals +20 damage<br/>Max Armor +42<br/>Bonus Armor from Combat Refresh +6</td></tr>
-
-                <tr><td class="ability-name">Furlak's Claw</td><td class="attribute-name">value</td><td>150</td><td class="arrows">&#x21c9;</td><td>250</td></tr>
-
-                <tr><td class="ability-name">Lawara's Bow</td><td class="attribute-name">description</td><td>Apparently once used by Lawara, an elf you met in a cave. It's high-quality, and has a custom hand plate that provides a bit of shielding.</td><td class="arrows">&#x21c9;</td><td>Apparently once used by Lawara, an elf you met in on an island. It's high-quality, and has a custom hand plate that provides a bit of shielding.</td></tr>
-
-                <tr><td class="ability-name">Tail Ring of Righteousness</td><td class="attribute-name">value</td><td>50</td><td class="arrows">&#x21c9;</td><td>150</td></tr>
-
-                <tr><td class="ability-name">Orcish Rugged Boots</td><td class="attribute-name">effects</td><td>Max Armor +52<br/>Indirect Cold Damage Reduction +1<br/>Indirect Electricity Damage Reduction +1<br/>Bonus Power from Combat Refresh +3<br/>Kick Attacks Deal +-2 Damage</td><td class="arrows">&#x21c9;</td><td>Kicks deal -2 damage<br/>Max Armor +52<br/>Indirect Cold Damage Reduction +1<br/>Indirect Electricity Damage Reduction +1<br/>Bonus Power from Combat Refresh +3</td></tr>
-
-                <tr><td class="ability-name">Buckle of Hastened Slagging</td><td class="attribute-name">effects</td><td>Pound To Slag Reset Time -4</td><td class="arrows">&#x21c9;</td><td>Pound To Slag Reuse Time -4</td></tr>
-
-                <tr><td class="ability-name">PvP Juice (30 minutes)</td><td class="attribute-name">description</td><td>Makes you PvP for a half hour.</td><td class="arrows">&#x21c9;</td><td>Makes you PvP-flagged for a half hour. You can attack other players who are also PvP-flagged.</td></tr>
+                <tr><td class="ability-name">Masterwork Metal Slab</td><td class="attribute-name">description</td><td>Used in masterwork Blacksmithing recipes.</td><td class="arrows">&#x21c9;</td><td>Used in masterwork smithing recipes.</td></tr>
 
                 <tr><td class="ability-name">Cheap Meat (Legacy)</td><td class="attribute-name">description</td><td>A cut of meat from a wild creature that's not normally used for food. The meat is low-quality but still useful in many dishes.</td><td class="arrows">&#x21c9;</td><td>A cut of meat from a wild creature that's not normally used for food. The meat is low-quality but still useful in many dishes.
 
@@ -1217,45 +1184,81 @@ This buckle quickly decays when worn in combat, eventually disappearing.</td></t
 
                 <tr><td class="ability-name">Cheap Meat (Legacy)</td><td class="attribute-name">name</td><td>Cheap Meat</td><td class="arrows">&#x21c9;</td><td>Cheap Meat (Legacy)</td></tr>
 
-                <tr><td class="ability-name">Basic Metal Slab</td><td class="attribute-name">description</td><td>Used in neophyte Blacksmithing recipes.</td><td class="arrows">&#x21c9;</td><td>Used in neophyte smithing recipes.</td></tr>
+                <tr><td class="ability-name">Stalwart Bow</td><td class="attribute-name">effects</td><td>Archery Base Damage  +10%<br/>RibShatter Attacks Deal +8 Damage</td><td class="arrows">&#x21c9;</td><td>Rib Shatter deals +8 damage<br/>Archery Base Damage  +10%</td></tr>
 
-                <tr><td class="ability-name">Ring of Gusty Striking</td><td class="attribute-name">effects</td><td>WindStrike Attacks Deal +1 Damage</td><td class="arrows">&#x21c9;</td><td>Wind Strike deals +5 damage</td></tr>
+                <tr><td class="ability-name">Asterion's Hammer</td><td class="attribute-name">effects</td><td>Hammer Base Damage  +15%<br/>RibShatter Attacks Deal +30 Damage</td><td class="arrows">&#x21c9;</td><td>Rib Shatter deals +30 damage<br/>Hammer Base Damage  +15%</td></tr>
 
-                <tr><td class="ability-name">Enhanced Cranium Powder</td><td class="attribute-name">effects</td><td>All Mentalism and Psychology attacks deal +13 damage for 15 minutes<br/>After-effects reduce damage for a time but can be countered with more Cranium Powder</td><td class="arrows">&#x21c9;</td><td>All Mentalism and Psychology attacks deal +23 damage for 15 minutes<br/>After-effects reduce damage for a time but can be countered with more Cranium Powder</td></tr>
+                <tr><td class="ability-name">Ring of Snakelike Behavior</td><td class="attribute-name">effects</td><td>CobraStrike Attacks Deal +1 Damage</td><td class="arrows">&#x21c9;</td><td>Cobra Strike deals +5 damage</td></tr>
 
-                <tr><td class="ability-name">Dwarven Bashbow</td><td class="attribute-name">effects</td><td>Archery Damage +1<br/>BowBash Attacks Deal +8 Damage</td><td class="arrows">&#x21c9;</td><td>Bow Bash deals +8 damage<br/>Archery Damage +1</td></tr>
+                <tr><td class="ability-name">Mallet of Obliteration</td><td class="attribute-name">effects</td><td>Hammer Base Damage  +10%<br/>PoundToSlag Attacks Deal +40 Damage</td><td class="arrows">&#x21c9;</td><td>Pound To Slag deals +40 damage<br/>Hammer Base Damage  +10%</td></tr>
 
-                <tr><td class="ability-name">Ring of Projectile Expression</td><td class="attribute-name">effects</td><td>Archery Base Damage  +5%<br/>IceSpear Attacks Deal +30 Damage</td><td class="arrows">&#x21c9;</td><td>Ice Spear deals +30 damage<br/>Archery Base Damage  +5%</td></tr>
+                <tr><td class="ability-name">Tail Ring of Righteousness</td><td class="attribute-name">value</td><td>50</td><td class="arrows">&#x21c9;</td><td>150</td></tr>
 
-                <tr><td class="ability-name">Simple Metal Slab</td><td class="attribute-name">description</td><td>Used in the most primitive of Blacksmithing recipes.</td><td class="arrows">&#x21c9;</td><td>Used in the most primitive of smithing recipes.</td></tr>
+                <tr><td class="ability-name">Buckle of Confident Pounding 5</td><td class="attribute-name">description</td><td>While crude, this buckle has a certain charming skill to it.
 
-                <tr><td class="ability-name">Buckle of Swift Slagging</td><td class="attribute-name">effects</td><td>Pound To Slag Reset Time -2</td><td class="arrows">&#x21c9;</td><td>Pound To Slag Reuse Time -2</td></tr>
+This buckle quickly decays when worn in combat, eventually disappearing.
 
-                <tr><td class="ability-name">Amazing Metal Slab</td><td class="attribute-name">description</td><td>Used in amazing Blacksmithing recipes.</td><td class="arrows">&#x21c9;</td><td>Used in amazing smithing recipes.</td></tr>
+This buckle quickly decays when worn in combat, eventually disappearing.</td><td class="arrows">&#x21c9;</td><td>While crude, this buckle has a certain charming skill to it.
 
-                <tr><td class="ability-name">Desert Vagabond Shirt</td><td class="attribute-name">effects</td><td>Max Armor +108<br/>Bonus Power from Combat Refresh +7<br/>HipThrow Attacks Deal +35 Damage</td><td class="arrows">&#x21c9;</td><td>Hip Throw deals +35 damage<br/>Max Armor +108<br/>Bonus Power from Combat Refresh +7</td></tr>
-
-                <tr><td class="ability-name">Yagreet's Staff</td><td class="attribute-name">effects</td><td>Reconstruct Healing +20<br/>Psychology Healing +20<br/>Regrowth Healing +20</td><td class="arrows">&#x21c9;</td><td>Major Healing Reuse Time -5</td></tr>
-
-                <tr><td class="ability-name">Torturer's Claw</td><td class="attribute-name">effects</td><td>Unarmed Damage  +5%<br/>SlashingStrike Attacks Deal +20 Damage</td><td class="arrows">&#x21c9;</td><td>Slashing Strike deals +20 damage<br/>Unarmed Damage  +5%</td></tr>
-
-                <tr><td class="ability-name">Desert Vagabond Pants</td><td class="attribute-name">effects</td><td>Max Armor +90<br/>Bonus Power from Combat Refresh +6<br/>KneeKick Attacks Deal +35 Damage</td><td class="arrows">&#x21c9;</td><td>Knee Kick deals +35 damage<br/>Max Armor +90<br/>Bonus Power from Combat Refresh +6</td></tr>
-
-                <tr><td class="ability-name">Ring of Psychiatric Abuse</td><td class="attribute-name">effects</td><td>CauseTerror Attacks Deal +1 Damage</td><td class="arrows">&#x21c9;</td><td>Cause Terror deals +5 damage</td></tr>
+This buckle quickly decays when worn in combat, eventually disappearing.</td></tr>
 
                 <tr><td class="ability-name">Soothing Medallion</td><td class="attribute-name">effects</td><td>Soothe Attacks Deal +50 Damage</td><td class="arrows">&#x21c9;</td><td>Soothe deals +50 damage</td></tr>
 
-                <tr><td class="ability-name">Thentree Bow</td><td class="attribute-name">effects</td><td>Archery Base Damage  +10%<br/>HeavyShot Attacks Deal +25 Damage</td><td class="arrows">&#x21c9;</td><td>Heavy Shot deals +25 damage<br/>Archery Base Damage  +10%</td></tr>
+                <tr><td class="ability-name">Ring of Booming</td><td class="attribute-name">effects</td><td>FireBurst Attacks Deal +1 Damage</td><td class="arrows">&#x21c9;</td><td>Ring of Fire, Defensive Burst, and Defensive Chill deal +5 damage</td></tr>
+
+                <tr><td class="ability-name">Ring of Furry Clawing</td><td class="attribute-name">effects</td><td>WerewolfClaw Attacks Deal +1 Damage</td><td class="arrows">&#x21c9;</td><td>Werewolf Claw deals +1 damage</td></tr>
 
                 <tr><td class="ability-name">Ravana Soldier Shield</td><td class="attribute-name">effects</td><td>Max Armor +60<br/>StunningBash Attacks Deal +35 Damage</td><td class="arrows">&#x21c9;</td><td>Stunning Bash deals +35 damage<br/>Max Armor +60</td></tr>
 
-                <tr><td class="ability-name">Claw-Barrager</td><td class="attribute-name">effects</td><td>Unarmed Damage  +5%<br/>ClawBarrage Attacks Deal +20 Damage</td><td class="arrows">&#x21c9;</td><td>Claw Barrage deals +20 damage<br/>Unarmed Damage  +5%</td></tr>
+                <tr><td class="ability-name">Basic Metal Slab</td><td class="attribute-name">description</td><td>Used in neophyte Blacksmithing recipes.</td><td class="arrows">&#x21c9;</td><td>Used in neophyte smithing recipes.</td></tr>
 
-                <tr><td class="ability-name">Sanguinizer</td><td class="attribute-name">icon</td><td><img src="http://cdn.projectgorgon.com/v244/icons/icon_5157.png" /></td><td class="arrows">&#x21c9;</td><td><img src="http://cdn.projectgorgon.com/v245/icons/icon_5437.png" /></td></tr>
+                <tr><td class="ability-name">Stalwart Hammer</td><td class="attribute-name">effects</td><td>Hammer Base Damage  +6%<br/>RecklessSlam Attacks Deal +10 Damage</td><td class="arrows">&#x21c9;</td><td>Reckless Slam deals +10 damage<br/>Hammer Base Damage  +6%</td></tr>
 
-                <tr><td class="ability-name">Bombing Beaker</td><td class="attribute-name">effects</td><td>Battle Chemistry Base Damage  +11%<br/>Bomb Attacks Deal +35 Damage</td><td class="arrows">&#x21c9;</td><td>Bombs deal +35 damage<br/>Battle Chemistry Base Damage  +11%</td></tr>
+                <tr><td class="ability-name">Orcish Rugged Boots</td><td class="attribute-name">effects</td><td>Max Armor +52<br/>Indirect Cold Damage Reduction +1<br/>Indirect Electricity Damage Reduction +1<br/>Bonus Power from Combat Refresh +3<br/>Kick Attacks Deal +-2 Damage</td><td class="arrows">&#x21c9;</td><td>Kicks deal -2 damage<br/>Max Armor +52<br/>Indirect Cold Damage Reduction +1<br/>Indirect Electricity Damage Reduction +1<br/>Bonus Power from Combat Refresh +3</td></tr>
 
-                <tr><td class="ability-name">Ring of Snakelike Behavior</td><td class="attribute-name">effects</td><td>CobraStrike Attacks Deal +1 Damage</td><td class="arrows">&#x21c9;</td><td>Cobra Strike deals +5 damage</td></tr>
+                <tr><td class="ability-name">Yagreet's Staff</td><td class="attribute-name">effects</td><td>Reconstruct Healing +20<br/>Psychology Healing +20<br/>Regrowth Healing +20</td><td class="arrows">&#x21c9;</td><td>Major Healing Reuse Time -5</td></tr>
+
+                <tr><td class="ability-name">Silver-Threaded Shirt</td><td class="attribute-name">effects</td><td>Max Armor +84<br/>Direct Cold Damage +5<br/>Bonus Health from Combat Refresh +8<br/>Bonus Power from Combat Refresh +4</td><td class="arrows">&#x21c9;</td><td>Max Armor +96<br/>Direct Cold Damage +5<br/>Bonus Health from Combat Refresh +9<br/>Bonus Power from Combat Refresh +4</td></tr>
+
+                <tr><td class="ability-name">Silver-Threaded Shirt</td><td class="attribute-name">value</td><td>224</td><td class="arrows">&#x21c9;</td><td>252</td></tr>
+
+                <tr><td class="ability-name">Buckle of Confident Pounding 6</td><td class="attribute-name">description</td><td>While crude, this buckle has a certain charming skill to it.
+
+This buckle quickly decays when worn in combat, eventually disappearing.
+
+This buckle quickly decays when worn in combat, eventually disappearing.</td><td class="arrows">&#x21c9;</td><td>While crude, this buckle has a certain charming skill to it.
+
+This buckle quickly decays when worn in combat, eventually disappearing.</td></tr>
+
+                <tr><td class="ability-name">Desert Vagabond Boots</td><td class="attribute-name">effects</td><td>Max Armor +54<br/>Sprint Speed Boost +1<br/>Bonus Power from Combat Refresh +4<br/>Kick Attacks Deal +25 Damage</td><td class="arrows">&#x21c9;</td><td>Kicks deal +25 damage<br/>Max Armor +54<br/>Sprint Speed Boost +1<br/>Bonus Power from Combat Refresh +4</td></tr>
+
+                <tr><td class="ability-name">Expert-Quality Metal Slab</td><td class="attribute-name">description</td><td>Used in expert Blacksmithing recipes.</td><td class="arrows">&#x21c9;</td><td>Used in expert smithing recipes.</td></tr>
+
+                <tr><td class="ability-name">Tyler's Ring</td><td class="attribute-name">effects</td><td>DisruptingBash Attacks Deal +10 Damage</td><td class="arrows">&#x21c9;</td><td>Disrupting Bash deals +10 damage</td></tr>
+
+                <tr><td class="ability-name">Cranium Balm</td><td class="attribute-name">value</td><td>500</td><td class="arrows">&#x21c9;</td><td>600</td></tr>
+
+                <tr><td class="ability-name">Good Metal Slab</td><td class="attribute-name">description</td><td>Used in Blacksmithing recipes.</td><td class="arrows">&#x21c9;</td><td>Used in smithing recipes.</td></tr>
+
+                <tr><td class="ability-name">Amazing Metal Slab</td><td class="attribute-name">description</td><td>Used in amazing Blacksmithing recipes.</td><td class="arrows">&#x21c9;</td><td>Used in amazing smithing recipes.</td></tr>
+
+                <tr><td class="ability-name">Buckle of Slagging Blurs</td><td class="attribute-name">effects</td><td>Pound To Slag Reset Time -8</td><td class="arrows">&#x21c9;</td><td>Pound To Slag Reuse Time -8</td></tr>
+
+                <tr><td class="ability-name">Ring of Psychiatric Abuse</td><td class="attribute-name">effects</td><td>CauseTerror Attacks Deal +1 Damage</td><td class="arrows">&#x21c9;</td><td>Cause Terror deals +5 damage</td></tr>
+
+                <tr><td class="ability-name">Pure Cranium Powder</td><td class="attribute-name">effects</td><td>All Mentalism and Psychology attacks deal +10 damage for 15 minutes<br/>After-effects reduce damage for a time but can be countered with more Cranium Powder</td><td class="arrows">&#x21c9;</td><td>All Mentalism and Psychology attacks deal +15 damage for 15 minutes<br/>After-effects reduce damage for a time but can be countered with more Cranium Powder</td></tr>
+
+                <tr><td class="ability-name">Ring of Projectile Expression</td><td class="attribute-name">effects</td><td>Archery Base Damage  +5%<br/>IceSpear Attacks Deal +30 Damage</td><td class="arrows">&#x21c9;</td><td>Ice Spear deals +30 damage<br/>Archery Base Damage  +5%</td></tr>
+
+                <tr><td class="ability-name">Ring of Multiple Lacerations</td><td class="attribute-name">effects</td><td>ManyCuts Attacks Deal +1 Damage</td><td class="arrows">&#x21c9;</td><td>Many Cuts deals +5 damage</td></tr>
+
+                <tr><td class="ability-name">Ring of Trusty Punching</td><td class="attribute-name">effects</td><td>Punch Attacks Deal +1 Damage</td><td class="arrows">&#x21c9;</td><td>Punch deals +1 damage</td></tr>
+
+                <tr><td class="ability-name">Bow of Range</td><td class="attribute-name">effects</td><td>Archery Base Damage  +15%<br/>LongShot Attacks Deal +35 Damage</td><td class="arrows">&#x21c9;</td><td>Long Shot deals +35 damage<br/>Archery Base Damage  +15%</td></tr>
+
+                <tr><td class="ability-name">Fastbow</td><td class="attribute-name">effects</td><td>Archery Base Damage  +15%<br/>QuickShot Attacks Deal +35 Damage</td><td class="arrows">&#x21c9;</td><td>Quick Shot deals +35 damage<br/>Archery Base Damage  +15%</td></tr>
+
+                <tr><td class="ability-name">Thentree Bow</td><td class="attribute-name">effects</td><td>Archery Base Damage  +10%<br/>HeavyShot Attacks Deal +25 Damage</td><td class="arrows">&#x21c9;</td><td>Heavy Shot deals +25 damage<br/>Archery Base Damage  +10%</td></tr>
             </tbody>
         </table>
     </div>
@@ -1417,13 +1420,13 @@ This buckle quickly decays when worn in combat, eventually disappearing.</td></t
             </thead>
             <tbody>
 
+                <tr><td class="ability-name">None</td><td class="attribute-name">tiers</td><td>1: Pep Talk Reset Time -0.5<br/>2: Pep Talk Reset Time -1<br/>3: Pep Talk Reset Time -1.5<br/>4: Pep Talk Reset Time -2<br/>5: Pep Talk Reset Time -2.5<br/>6: Pep Talk Reset Time -3</td><td class="arrows">&#x2192;</td><td>1: Pep Talk Reuse Time -0.5<br/>2: Pep Talk Reuse Time -1<br/>3: Pep Talk Reuse Time -1.5<br/>4: Pep Talk Reuse Time -2<br/>5: Pep Talk Reuse Time -2.5<br/>6: Pep Talk Reuse Time -3</td></tr>
+
                 <tr><td class="ability-name">None</td><td class="attribute-name">tiers</td><td>1: Cow's Front Kick deals +5 damage<br/>2: Cow's Front Kick deals +10 damage<br/>3: Cow's Front Kick deals +15 damage<br/>4: Cow's Front Kick deals +20 damage<br/>5: Cow's Front Kick deals +25 damage<br/>6: Cow's Front Kick deals +30 damage</td><td class="arrows">&#x2192;</td><td>1: Cow's Front Kick deals +6 damage<br/>2: Cow's Front Kick deals +12 damage<br/>3: Cow's Front Kick deals +18 damage<br/>4: Cow's Front Kick deals +24 damage<br/>5: Cow's Front Kick deals +30 damage<br/>6: Cow's Front Kick deals +36 damage</td></tr>
 
                 <tr><td class="ability-name">None</td><td class="attribute-name">suffix</td><td>of Punitive Hooves</td><td class="arrows">&#x2192;</td><td>None</td></tr>
 
                 <tr><td class="ability-name">None</td><td class="attribute-name">tiers</td><td>1: Regrowth Reset Time -0.5<br/>2: Regrowth Reset Time -1<br/>3: Regrowth Reset Time -1.5<br/>4: Regrowth Reset Time -2<br/>5: Regrowth Reset Time -2.5<br/>6: Regrowth Reset Time -3</td><td class="arrows">&#x2192;</td><td>1: Regrowth Reuse Time -0.5<br/>2: Regrowth Reuse Time -1<br/>3: Regrowth Reuse Time -1.5<br/>4: Regrowth Reuse Time -2<br/>5: Regrowth Reuse Time -2.5<br/>6: Regrowth Reuse Time -3</td></tr>
-
-                <tr><td class="ability-name">None</td><td class="attribute-name">tiers</td><td>1: Pep Talk Reset Time -0.5<br/>2: Pep Talk Reset Time -1<br/>3: Pep Talk Reset Time -1.5<br/>4: Pep Talk Reset Time -2<br/>5: Pep Talk Reset Time -2.5<br/>6: Pep Talk Reset Time -3</td><td class="arrows">&#x2192;</td><td>1: Pep Talk Reuse Time -0.5<br/>2: Pep Talk Reuse Time -1<br/>3: Pep Talk Reuse Time -1.5<br/>4: Pep Talk Reuse Time -2<br/>5: Pep Talk Reuse Time -2.5<br/>6: Pep Talk Reuse Time -3</td></tr>
 
                 <tr><td class="ability-name">None</td><td class="attribute-name">tiers</td><td>1: Clobbering Hoof deals +10% damage and taunts the target as if it did +25 more damage<br/>2: Clobbering Hoof deals +16% damage and taunts the target as if it did +50 more damage<br/>3: Clobbering Hoof deals +22% damage and taunts the target as if it did +75 more damage<br/>4: Clobbering Hoof deals +28% damage and taunts the target as if it did +100 more damage<br/>5: Clobbering Hoof deals +34% damage and taunts the target as if it did +125 more damage<br/>6: Clobbering Hoof deals +40% damage and taunts the target as if it did +150 more damage<br/>7: Clobbering Hoof deals +46% damage and taunts the target as if it did +175 more damage<br/>8: Clobbering Hoof deals +52% damage and taunts the target as if it did +200 more damage<br/>9: Clobbering Hoof deals +58% damage and taunts the target as if it did +225 more damage<br/>10: Clobbering Hoof deals +64% damage and taunts the target as if it did +250 more damage<br/>11: Clobbering Hoof deals +70% damage and taunts the target as if it did +275 more damage<br/>12: Clobbering Hoof deals +76% damage and taunts the target as if it did +300 more damage</td><td class="arrows">&#x2192;</td><td>1: Clobbering Hoof deals +10% damage and taunts the target as if it did +25 more damage<br/>2: Clobbering Hoof deals +16% damage and taunts the target as if it did +50 more damage<br/>3: Clobbering Hoof deals +22% damage and taunts the target as if it did +75 more damage<br/>4: Clobbering Hoof deals +28% damage and taunts the target as if it did +100 more damage<br/>5: Clobbering Hoof deals +34% damage and taunts the target as if it did +140 more damage<br/>6: Clobbering Hoof deals +40% damage and taunts the target as if it did +180 more damage<br/>7: Clobbering Hoof deals +46% damage and taunts the target as if it did +220 more damage<br/>8: Clobbering Hoof deals +52% damage and taunts the target as if it did +260 more damage<br/>9: Clobbering Hoof deals +58% damage and taunts the target as if it did +300 more damage<br/>10: Clobbering Hoof deals +64% damage and taunts the target as if it did +340 more damage<br/>11: Clobbering Hoof deals +70% damage and taunts the target as if it did +380 more damage<br/>12: Clobbering Hoof deals +76% damage and taunts the target as if it did +420 more damage</td></tr>
 

@@ -50,7 +50,7 @@
   <body>
 
     <nav id="navMenu" class="navbar navbar-inverse navbar-fixed-top">
-      <div class="last-update">Last updated: 2016-03-13</div>
+      <div class="last-update">Last updated: 2016-03-23</div>
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -147,6 +147,7 @@ This skill covers only the creation of the dye; Textile Creation, Tanning, or Bl
 
 (The most common way to raise Endurance is simply to take armor damage in combat.)">Endurance</a></li>
                             <li><a href="/skills/24.html" title="The ability to use first aid kits to heal yourself or others.">First Aid</a></li>
+                            <li><a href="/skills/131.html" title="The art of arranging flowers so that they evoke strong emotions.">Flower Arrangement</a></li>
                             <li><a href="/skills/128.html" title="The ability to create elaborate contraptions that automate complex tasks.">Gadgeteering</a></li>
                             <li><a href="/skills/9.html" title="Growing things in a garden: herbs, food, and flowers.">Gardening</a></li>
                             <li><a href="/skills/22.html" title="A careful exploration of gender roles and sexuality, focusing on Human, Elven, and Raksasha cultures. This knowledge is not directly applicable to combat or crafting, but it helps you to be a well-rounded individual.">Gender Studies</a></li>
@@ -169,6 +170,7 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
                     <li class="dropdown-submenu">
                         <a href="#">Other (N..Z)</a>
                         <ul class="dropdown-menu">
+                            <li><a href="/skills/132.html" title="The ability to study nature and find inner peace and contentment. Even the most hardened warriors need the ability to appreciate nature.">Nature Appreciation</a></li>
                             <li><a href="/skills/72.html" title="A measure of your renown. You earn Notoriety the first time you defeat certain enemies (typically any monster with a proper name), and for completing particularly difficult quests.">Notoriety</a></li>
                             <li><a href="/skills/84.html" title="The ability to speak in public in a way that moves your audience.">Oratory</a></li>
                             <li><a href="/skills/19.html" title="Skill in figuring out how someone or something died. Higher skill allows more details to be determined and more difficult organisms to be examined.">Pathology</a></li>
@@ -189,12 +191,13 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
             <li><a href="/abilities.html">Abilities</a></li>
             <li><a href="/powers.html">Mods</a></li>
             <li><a href="/recipes.html">Recipes</a></li>
-            <li><a href="/simulator.html">Build simulator <span class="label label-danger">ALPHA</span></a></li>
+            <li><a href="/simulator.html">Build planner <span class="label label-danger">ALPHA</span></a></li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" title="Explore changes for every update">
                     Updates <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
+                    <li><a href="/changes/249_to_250.html">Update 250</a></li>
                     <li><a href="/changes/248_to_249.html">Update 249</a></li>
                     <li><a href="/changes/247_to_248.html">Update 248</a></li>
                     <li><a href="/changes/246_to_247.html">Update 247</a></li>
@@ -236,19 +239,20 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
 
   var dataSet33 = [
 
-    ["51", "<span class=\"automatic\">RECIPE: Meditation #51</span>", "MeditationVulnPsi25"],
-    ["56", "RECIPE: Meditation #56", "Meditation31"],
-    ["58", "RECIPE: Meditation #58", "Meditation32"],
-    ["50", "<span class=\"automatic\">RECIPE: Meditation #50</span>", "Meditation28"],
-    ["11", "<span class=\"automatic\">RECIPE: Meditation #11</span>", "MeditationBreath3"],
+    ["1", "<span class=\"automatic\">RECIPE: Meditation #01</span>", "Meditation1"],
     ["2", "<span class=\"automatic\">RECIPE: Meditation #02</span>", "Meditation2"],
     ["3", "<span class=\"automatic\">RECIPE: Meditation #03</span>", "Meditation3"],
     ["4", "<span class=\"automatic\">RECIPE: Meditation #04</span>", "Meditation4"],
     ["5", "<span class=\"automatic\">RECIPE: Meditation #05</span>", "Meditation5"],
     ["6", "<span class=\"automatic\">RECIPE: Meditation #06</span>", "Meditation6"],
+    ["7", "<span class=\"automatic\">RECIPE: Meditation #07</span>", "MeditationHealth5"],
     ["8", "<span class=\"automatic\">RECIPE: Meditation #08</span>", "Meditation7"],
+    ["9", "<span class=\"automatic\">RECIPE: Meditation #09</span>", "MeditationPower5"],
     ["13", "<span class=\"automatic\">RECIPE: Meditation #13</span>", "MeditationVulnPsi5"],
     ["14", "<span class=\"automatic\">RECIPE: Meditation #14</span>", "Meditation10"],
+    ["15", "<span class=\"automatic\">RECIPE: Meditation #15</span>", "MeditationPower10"],
+    ["16", "<span class=\"automatic\">RECIPE: Meditation #16</span>", "Meditation11"],
+    ["17", "<span class=\"automatic\">RECIPE: Meditation #17</span>", "MeditationVulnCold10"],
     ["18", "<span class=\"automatic\">RECIPE: Meditation #18</span>", "Meditation12"],
     ["19", "<span class=\"automatic\">RECIPE: Meditation #19</span>", "MeditationHealth10"],
     ["20", "<span class=\"automatic\">RECIPE: Meditation #20</span>", "Meditation13"],
@@ -278,29 +282,28 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
     ["44", "<span class=\"automatic\">RECIPE: Meditation #44</span>", "Meditation25"],
     ["45", "<span class=\"automatic\">RECIPE: Meditation #45</span>", "MeditationCritDmg10"],
     ["46", "<span class=\"automatic\">RECIPE: Meditation #46</span>", "Meditation26"],
+    ["47", "<span class=\"automatic\">RECIPE: Meditation #47</span>", "MeditationVulnCold20"],
     ["48", "<span class=\"automatic\">RECIPE: Meditation #48</span>", "Meditation27"],
     ["49", "<span class=\"automatic\">RECIPE: Meditation #49</span>", "MeditationPower25"],
-    ["62", "RECIPE: Meditation #62", "Meditation34"],
-    ["63", "RECIPE: Meditation #63", "MeditationVulnDarkness25"],
-    ["64", "RECIPE: Meditation #64", "Meditation35"],
-    ["53", "RECIPE: Meditation #53", "MeditationIndirect5"],
-    ["12", "<span class=\"automatic\">RECIPE: Meditation #12</span>", "Meditation9"],
-    ["16", "<span class=\"automatic\">RECIPE: Meditation #16</span>", "Meditation11"],
-    ["1", "<span class=\"automatic\">RECIPE: Meditation #01</span>", "Meditation1"],
-    ["7", "<span class=\"automatic\">RECIPE: Meditation #07</span>", "MeditationHealth5"],
-    ["9", "<span class=\"automatic\">RECIPE: Meditation #09</span>", "MeditationPower5"],
-    ["15", "<span class=\"automatic\">RECIPE: Meditation #15</span>", "MeditationPower10"],
-    ["17", "<span class=\"automatic\">RECIPE: Meditation #17</span>", "MeditationVulnCold10"],
-    ["10", "<span class=\"automatic\">RECIPE: Meditation #10</span>", "Meditation8"],
-    ["47", "<span class=\"automatic\">RECIPE: Meditation #47</span>", "MeditationVulnCold20"],
+    ["50", "<span class=\"automatic\">RECIPE: Meditation #50</span>", "Meditation28"],
+    ["51", "<span class=\"automatic\">RECIPE: Meditation #51</span>", "MeditationVulnPsi25"],
     ["52", "RECIPE: Meditation #52", "Meditation29"],
+    ["53", "RECIPE: Meditation #53", "MeditationIndirect5"],
     ["54", "RECIPE: Meditation #54", "Meditation30"],
     ["55", "RECIPE: Meditation #55", "MeditationVulnNature20"],
+    ["56", "RECIPE: Meditation #56", "Meditation31"],
     ["57", "RECIPE: Meditation #57", "MeditationVulnElectricity20"],
+    ["58", "RECIPE: Meditation #58", "Meditation32"],
     ["59", "RECIPE: Meditation #59", "MeditationHealth25"],
     ["60", "RECIPE: Meditation #60", "Meditation33"],
     ["61", "RECIPE: Meditation #61", "MeditationVulnPsi30"],
+    ["62", "RECIPE: Meditation #62", "Meditation34"],
+    ["63", "RECIPE: Meditation #63", "MeditationVulnDarkness25"],
+    ["64", "RECIPE: Meditation #64", "Meditation35"],
     ["65", "RECIPE: Meditation #65", "MeditationHealth30"],
+    ["10", "<span class=\"automatic\">RECIPE: Meditation #10</span>", "Meditation8"],
+    ["11", "<span class=\"automatic\">RECIPE: Meditation #11</span>", "MeditationBreath3"],
+    ["12", "<span class=\"automatic\">RECIPE: Meditation #12</span>", "Meditation9"],
     ["20", "<span class=\"automatic\">+1 Psychology</span>", "Understanding the mind of sentient creatures. Also, using that knowledge in combat and other stressful situations."],
     ["40", "<span class=\"automatic\">+1 Mentalism</span>", "The power of mind over matter: psychic powers! This combat skill focuses on recovery and restoration, but it also has multiple damaging abilities."],
   ];

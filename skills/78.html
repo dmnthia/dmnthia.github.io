@@ -50,7 +50,7 @@
   <body>
 
     <nav id="navMenu" class="navbar navbar-inverse navbar-fixed-top">
-      <div class="last-update">Last updated: 2016-03-13</div>
+      <div class="last-update">Last updated: 2016-03-23</div>
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -147,6 +147,7 @@ This skill covers only the creation of the dye; Textile Creation, Tanning, or Bl
 
 (The most common way to raise Endurance is simply to take armor damage in combat.)">Endurance</a></li>
                             <li><a href="/skills/24.html" title="The ability to use first aid kits to heal yourself or others.">First Aid</a></li>
+                            <li><a href="/skills/131.html" title="The art of arranging flowers so that they evoke strong emotions.">Flower Arrangement</a></li>
                             <li><a href="/skills/128.html" title="The ability to create elaborate contraptions that automate complex tasks.">Gadgeteering</a></li>
                             <li><a href="/skills/9.html" title="Growing things in a garden: herbs, food, and flowers.">Gardening</a></li>
                             <li><a href="/skills/22.html" title="A careful exploration of gender roles and sexuality, focusing on Human, Elven, and Raksasha cultures. This knowledge is not directly applicable to combat or crafting, but it helps you to be a well-rounded individual.">Gender Studies</a></li>
@@ -169,6 +170,7 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
                     <li class="dropdown-submenu">
                         <a href="#">Other (N..Z)</a>
                         <ul class="dropdown-menu">
+                            <li><a href="/skills/132.html" title="The ability to study nature and find inner peace and contentment. Even the most hardened warriors need the ability to appreciate nature.">Nature Appreciation</a></li>
                             <li><a href="/skills/72.html" title="A measure of your renown. You earn Notoriety the first time you defeat certain enemies (typically any monster with a proper name), and for completing particularly difficult quests.">Notoriety</a></li>
                             <li><a href="/skills/84.html" title="The ability to speak in public in a way that moves your audience.">Oratory</a></li>
                             <li><a href="/skills/19.html" title="Skill in figuring out how someone or something died. Higher skill allows more details to be determined and more difficult organisms to be examined.">Pathology</a></li>
@@ -189,12 +191,13 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
             <li><a href="/abilities.html">Abilities</a></li>
             <li><a href="/powers.html">Mods</a></li>
             <li><a href="/recipes.html">Recipes</a></li>
-            <li><a href="/simulator.html">Build simulator <span class="label label-danger">ALPHA</span></a></li>
+            <li><a href="/simulator.html">Build planner <span class="label label-danger">ALPHA</span></a></li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" title="Explore changes for every update">
                     Updates <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
+                    <li><a href="/changes/249_to_250.html">Update 250</a></li>
                     <li><a href="/changes/248_to_249.html">Update 249</a></li>
                     <li><a href="/changes/247_to_248.html">Update 248</a></li>
                     <li><a href="/changes/246_to_247.html">Update 247</a></li>
@@ -234,9 +237,10 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
 
   var dataSet78 = [
 
-    ["2", "RECIPE: Carded Cotton (from Cotton Gin)", "Remove the seeds and prepare cotton with a cotton gin. 35% of the time you also manage to collect enough quality fibers to make a bundle of Perfect Cotton, too. (Must be near a cotton gin.)"],
-    ["25", "RECIPE: Carded Cotton (Expert Level)", "Remove the seeds and prepare cotton with a cotton gin. Because of your expert skill, there is a higher chance of obtaining Perfect Cotton. (Must be near a cotton gin.)"],
-    ["45", "RECIPE: Carded Cotton (Master Level)", "Remove the seeds and prepare cotton with a cotton gin. Because of your master skill, less raw cotton is required. (Must be near a cotton gin.)"],
+    ["1", "RECIPE: Carded Cotton", "CheckForBonusPerfectCotton"],
+    ["2", "RECIPE: Carded Cotton (from Cotton Gin)", "CheckForBonusPerfectCotton"],
+    ["25", "RECIPE: Carded Cotton (Expert Level)", "CheckForBonusPerfectCotton"],
+    ["45", "RECIPE: Carded Cotton (Master Level)", "CheckForBonusPerfectCotton"],
     ["3", "RECIPE: Coarse Cotton Yarn", "Create rough yarn from prepared cotton."],
     ["10", "RECIPE: Fine Cotton Yarn", "Create smooth yarn from prepared cotton."],
     ["22", "RECIPE: Cotton Thread", "Create a spool of thread from fine yarn and spider's web. This recipe creates 4 spools of thread."],
@@ -253,7 +257,8 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
     ["25", "RECIPE: Strong Spider Silk", "This strange cloth is smooth and cool to the touch."],
     ["35", "RECIPE: Extreme Spider Silk", "This strange cloth is luxurious to the touch, yet incredibly strong."],
     ["45", "RECIPE: Incredible Spider Silk", "This strange cloth is luxurious to the touch, yet incredibly strong."],
-    ["1", "RECIPE: Carded Cotton", "Manually remove the seeds from cotton and stretch it out for yarn production. This manual method is extremely slow compared to using a cotton gin."],
+    ["9", "RECIPE: Flower Wrap", "Create a bit of low-quality gauze that is used to keep flowers organized in an arrangement. This recipe creates two."],
+    ["24", "RECIPE: Flower Banding", "Create a bit of very specialized cloth that is used by expert flower arrangers. This recipe creates three."],
     ["5", "RECIPE: Dye Cloth Armor (1 color)", "CraftingDyeItem"],
     ["25", "RECIPE: Dye Cloth Armor (2 colors)", "CraftingDyeItem"],
     ["50", "RECIPE: Dye Cloth Armor (3 colors)", "CraftingDyeItem"],

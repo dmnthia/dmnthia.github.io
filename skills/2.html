@@ -50,7 +50,7 @@
   <body>
 
     <nav id="navMenu" class="navbar navbar-inverse navbar-fixed-top">
-      <div class="last-update">Last updated: 2016-03-13</div>
+      <div class="last-update">Last updated: 2016-03-23</div>
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -147,6 +147,7 @@ This skill covers only the creation of the dye; Textile Creation, Tanning, or Bl
 
 (The most common way to raise Endurance is simply to take armor damage in combat.)">Endurance</a></li>
                             <li><a href="/skills/24.html" title="The ability to use first aid kits to heal yourself or others.">First Aid</a></li>
+                            <li><a href="/skills/131.html" title="The art of arranging flowers so that they evoke strong emotions.">Flower Arrangement</a></li>
                             <li><a href="/skills/128.html" title="The ability to create elaborate contraptions that automate complex tasks.">Gadgeteering</a></li>
                             <li><a href="/skills/9.html" title="Growing things in a garden: herbs, food, and flowers.">Gardening</a></li>
                             <li><a href="/skills/22.html" title="A careful exploration of gender roles and sexuality, focusing on Human, Elven, and Raksasha cultures. This knowledge is not directly applicable to combat or crafting, but it helps you to be a well-rounded individual.">Gender Studies</a></li>
@@ -169,6 +170,7 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
                     <li class="dropdown-submenu">
                         <a href="#">Other (N..Z)</a>
                         <ul class="dropdown-menu">
+                            <li><a href="/skills/132.html" title="The ability to study nature and find inner peace and contentment. Even the most hardened warriors need the ability to appreciate nature.">Nature Appreciation</a></li>
                             <li><a href="/skills/72.html" title="A measure of your renown. You earn Notoriety the first time you defeat certain enemies (typically any monster with a proper name), and for completing particularly difficult quests.">Notoriety</a></li>
                             <li><a href="/skills/84.html" title="The ability to speak in public in a way that moves your audience.">Oratory</a></li>
                             <li><a href="/skills/19.html" title="Skill in figuring out how someone or something died. Higher skill allows more details to be determined and more difficult organisms to be examined.">Pathology</a></li>
@@ -189,12 +191,13 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
             <li><a href="/abilities.html">Abilities</a></li>
             <li><a href="/powers.html">Mods</a></li>
             <li><a href="/recipes.html">Recipes</a></li>
-            <li><a href="/simulator.html">Build simulator <span class="label label-danger">ALPHA</span></a></li>
+            <li><a href="/simulator.html">Build planner <span class="label label-danger">ALPHA</span></a></li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" title="Explore changes for every update">
                     Updates <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
+                    <li><a href="/changes/249_to_250.html">Update 250</a></li>
                     <li><a href="/changes/248_to_249.html">Update 249</a></li>
                     <li><a href="/changes/247_to_248.html">Update 248</a></li>
                     <li><a href="/changes/246_to_247.html">Update 247</a></li>
@@ -240,8 +243,7 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
     ["35", "ABILITY: Spore Bomb 4", "Toss a Malevolent Spore Bomb to damage nearby enemies. Does extra damage to vulnerable targets."],
     ["45", "ABILITY: Spore Bomb 5", "Toss a Horrific Spore Bomb to damage nearby enemies. Does extra damage to vulnerable targets."],
     ["30", "ABILITY: Lycanspore Bomb", "Toss a Lycanspore Bomb to damage nearby enemies. Does extra damage to vulnerable targets."],
-    ["25", "RECIPE: Deadly Spore Bomb", "Concoct an explosive fungal bomb. The result is dangerous to most creatures, but especially to those that are momentarily Vulnerable."],
-    ["35", "RECIPE: Malevolent Spore Bomb", "Concoct an explosive fungal bomb. The result is dangerous to most creatures, but especially to those that are momentarily Vulnerable."],
+    ["20", "RECIPE: Myconutmeg", "Create a distilled-mushroom drink."],
     ["0", "RECIPE: Parasol Mushroom Flakes", "Creates a pile of flaked Parasol mushrooms."],
     ["0", "RECIPE: Mycena Mushroom Flakes", "Creates a pile of flaked Mycena mushrooms."],
     ["0", "RECIPE: Boletus Mushroom Flakes", "Creates a pile of flaked Boletus mushrooms."],
@@ -251,6 +253,7 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
     ["25", "RECIPE: Blood Mushroom Powder", "Creates a pile of powdered Blood mushrooms."],
     ["30", "RECIPE: Coral Mushroom Powder", "Creates a pile of powdered Coral mushrooms."],
     ["30", "RECIPE: Iocaine Powder", "Creates a pile of powdered iocaine mushroom, an incredibly deadly toxin. It's cut with blusher mushrooms to perfectly mask its taste and odor, making it a deadly food additive."],
+    ["35", "RECIPE: Iocaine Practice Dose", "Creates a carefully tuned version of iocaine powder that's designed to make you very ill without killing you outright, allowing the body to build up resistance to the deadly toxin."],
     ["35", "RECIPE: Poisoned Glazed Beets", "Poisons a beet dish with deadly iocaine powder."],
     ["37", "RECIPE: Poisoned Banana Bread", "Poisons a tasty bread with deadly iocaine powder."],
     ["39", "RECIPE: Poisoned Apple Juice", "Poisons apple juice with deadly iocaine powder."],
@@ -258,29 +261,29 @@ To meditate, you must be near a Meditation Pillar. Each meditation also requires
     ["43", "RECIPE: Poisoned Fried Banana", "Poisons a tasty dessert with deadly iocaine powder."],
     ["45", "RECIPE: Poisoned Cheesy Veggie Delight", "Poisons a vegetarian meal with deadly iocaine powder."],
     ["47", "RECIPE: Poisoned Crab Roll", "Poisons a crab roll with deadly iocaine powder."],
-    ["5", "RECIPE: Mycena Mushroom Smoothie", "Create a \"flavorful\" mushroom concoction. Some people have even learned to appreciate the taste."],
-    ["10", "RECIPE: Basic Rennet", "Create a liquidy cheese with large curds. (Requires a stove or fire pit.)<br><br>Cheese Type:Fresh"],
-    ["20", "RECIPE: Strong Rennet", "Create a spreadable cheese with a sour taste. (Requires a stove or fire pit.)<br><br>Cheese Type:Fresh"],
-    ["30", "RECIPE: Pungent Rennet", "Create a sweet brown cheese made with sour cream. (Requires a stove or fire pit.)<br><br>Cheese Type:Whey"],
-    ["20", "RECIPE: Thunderclap Potion", "75% chance to boost Electricity damage by 10 for 15 minutes. 25% chance to ground you, making your Electricity attacks deal 0 damage for 15 minutes."],
-    ["10", "RECIPE: Boletus Mushroom Smoothie", "Create a \"flavorful\" mushroom concoction. Some people have even learned to appreciate the taste."],
-    ["35", "RECIPE: Iocaine Practice Dose", "Creates a carefully tuned version of iocaine powder that's designed to make you very ill without killing you outright, allowing the body to build up resistance to the deadly toxin."],
-    ["45", "RECIPE: Horrific Spore Bomb", "Concoct an explosive fungal bomb. The result is dangerous to most creatures, but especially to those that are momentarily Vulnerable."],
-    ["2", "RECIPE: Basic Spore Bomb", "Concoct an explosive fungal bomb. The result is dangerous to most creatures, but especially to those that are momentarily Vulnerable."],
-    ["0", "RECIPE: Lycanspore Bomb", "Concoct an explosive fungal bomb. The is quite deadly to those vulnerable to fungus or wolfsbane."],
     ["0", "RECIPE: Parasol Mushroom Smoothie", "Create a \"flavorful\" mushroom concoction. Some people have even learned to appreciate the taste."],
-    ["15", "RECIPE: Potent Spore Bomb", "Concoct an explosive fungal bomb. The result is dangerous to most creatures, but especially to those that are momentarily Vulnerable."],
-    ["20", "RECIPE: Myconutmeg", "Create a distilled-mushroom drink."],
-    ["30", "RECIPE: Blood Mushroom Smoothie", "Creates a disgusting but healthful mushroom concoction."],
-    ["25", "RECIPE: Ruggedizer", "Boosts maximum health by 40 for 30 minutes. Small chance that you will be turned into a pig permanently."],
-    ["20", "RECIPE: Life Or Death Potion", "50% chance to restore 200 Health; 50% chance to deal 200 Health damage instead. Best consumed when you have nothing left to lose."],
-    ["40", "RECIPE: Healing Potion Omega", "Creates disposable potions that restore 100 Health."],
+    ["5", "RECIPE: Mycena Mushroom Smoothie", "Create a \"flavorful\" mushroom concoction. Some people have even learned to appreciate the taste."],
+    ["10", "RECIPE: Boletus Mushroom Smoothie", "Create a \"flavorful\" mushroom concoction. Some people have even learned to appreciate the taste."],
     ["15", "RECIPE: Field Mushroom Smoothie", "Create a \"flavorful\" mushroom concoction. Some people have even learned to appreciate the taste."],
     ["20", "RECIPE: Blusher Mushroom Smoothie", "Create a \"flavorful\" mushroom concoction. Some people have even learned to appreciate the taste."],
     ["25", "RECIPE: Milk Cap Mushroom Smoothie", "Create a \"flavorful\" mushroom concoction. Some people have even learned to appreciate the taste."],
     ["40", "RECIPE: Iocaine Milk Smoothie", "Creates a delicious but deadly mushroom smoothie that happens to look exactly like a Milk Cap Smoothie. Don't confuse them!"],
+    ["30", "RECIPE: Blood Mushroom Smoothie", "Creates a disgusting but healthful mushroom concoction."],
+    ["10", "RECIPE: Basic Rennet", "Create a liquidy cheese with large curds. (Requires a stove or fire pit.)<br><br>Cheese Type:Fresh"],
+    ["20", "RECIPE: Strong Rennet", "Create a spreadable cheese with a sour taste. (Requires a stove or fire pit.)<br><br>Cheese Type:Fresh"],
+    ["30", "RECIPE: Pungent Rennet", "Create a sweet brown cheese made with sour cream. (Requires a stove or fire pit.)<br><br>Cheese Type:Whey"],
+    ["2", "RECIPE: Basic Spore Bomb", "Concoct an explosive fungal bomb. The result is dangerous to most creatures, but especially to those that are momentarily Vulnerable."],
+    ["15", "RECIPE: Potent Spore Bomb", "Concoct an explosive fungal bomb. The result is dangerous to most creatures, but especially to those that are momentarily Vulnerable."],
+    ["25", "RECIPE: Deadly Spore Bomb", "Concoct an explosive fungal bomb. The result is dangerous to most creatures, but especially to those that are momentarily Vulnerable."],
+    ["35", "RECIPE: Malevolent Spore Bomb", "Concoct an explosive fungal bomb. The result is dangerous to most creatures, but especially to those that are momentarily Vulnerable."],
+    ["45", "RECIPE: Horrific Spore Bomb", "Concoct an explosive fungal bomb. The result is dangerous to most creatures, but especially to those that are momentarily Vulnerable."],
+    ["0", "RECIPE: Lycanspore Bomb", "Concoct an explosive fungal bomb. The is quite deadly to those vulnerable to fungus or wolfsbane."],
     ["35", "RECIPE: Coral Mushroom Smoothie", "Creates a disgusting but healthful mushroom concoction."],
+    ["25", "RECIPE: Ruggedizer", "Boosts maximum health by 40 for 30 minutes. Small chance that you will be turned into a pig permanently."],
+    ["20", "RECIPE: Life Or Death Potion", "50% chance to restore 200 Health; 50% chance to deal 200 Health damage instead. Best consumed when you have nothing left to lose."],
+    ["20", "RECIPE: Thunderclap Potion", "75% chance to boost Electricity damage by 10 for 15 minutes. 25% chance to ground you, making your Electricity attacks deal 0 damage for 15 minutes."],
     ["10", "RECIPE: Dimensional Folder", "50% chance to increase maximum inventory size by 1 for an hour. 25% chance to increase maximum inventory size by 3 for an hour. 25% chance to reduce maximum inventory size by 5 for an hour. You can drink this potion multiple times, with stacking effects."],
+    ["40", "RECIPE: Healing Potion Omega", "Creates disposable potions that restore 100 Health."],
     ["40", "<span class=\"automatic\">+1 Alchemy</span>", "The art of combining esoteric things together to make potions and poisons."],
     ["10", "<span class=\"automatic\">+1 Alchemy</span>", "The art of combining esoteric things together to make potions and poisons."],
     ["20", "<span class=\"automatic\">+1 Pig</span>", "The art of living and fighting as a pig."],
