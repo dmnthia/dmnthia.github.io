@@ -919,8 +919,4 @@ var mods = [
   [6134, "Werewolf", "None", "of Sanguine Fangs", ['Chest', 'Feet'], "Sanguine Fangs suddenly deals 180 trauma damage 15 seconds after use", "", 0, 0, 0, 0],
   [6135, "Werewolf", "None", "of Sanguine Fangs", ['Hands', 'Necklace'], "Sanguine Fangs deals +105% damage and doesn't cause the target to yell for help", "", 0, 0, 0, 0],
   [1023, "Sword", "None", "of Flinging the Naked", ['Head', 'Feet'], "Many Cuts knocks back targets that have less than a third of their Armor, also dealing +30 damage", "", 0, 0, 0, 0],
-<<<<<<< HEAD
 ];
-=======
-];
->>>>>>> 6f8d1a610d6d91b4717933358f9221dfb329e353
